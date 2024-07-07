@@ -22,6 +22,8 @@
 
   <modules>
     <module>smallred-common</module>
+    <module>smallred-spring-boot-starter-biz-operationlog</module>
+
   </modules>
 
 </project>

@@ -12,7 +12,15 @@
         </processorPath>
         <module name="smallredbook-auth" />
         <module name="smallred-common" />
+        <module name="smallred-spring-boot-starter-biz-operationlog" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="small-red-book" target="1.8" />
+      <module name="smallred-common" target="17" />
+      <module name="smallred-framework" target="1.8" />
+      <module name="smallred-spring-boot-starter-biz-operationlog" target="17" />
+      <module name="smallredbook-auth" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

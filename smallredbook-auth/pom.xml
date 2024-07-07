@@ -14,7 +14,6 @@
     <packaging>jar</packaging>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example</groupId>
     <artifactId>smallredbook-auth</artifactId>
 
 
@@ -22,6 +21,12 @@
     <description>小哈书：认证服务（负责处理用户登录、注册、账号注销等）</description>
 
     <dependencies>
+        <!-- 业务接口日志组件 -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-biz-operationlog</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>org.example</groupId>
