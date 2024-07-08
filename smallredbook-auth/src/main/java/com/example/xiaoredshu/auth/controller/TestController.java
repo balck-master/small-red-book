@@ -1,5 +1,6 @@
 package com.example.xiaoredshu.auth.controller;
 
+import com.example.xiaoredshu.auth.domain.dataobject.UserDO;
 import lombok.extern.slf4j.Slf4j;
 
 import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
@@ -28,9 +29,9 @@ public class TestController {
 
     @GetMapping("/test2")
     @ApiOperationLog(description = "测试接口2")
-    public Response<User> test2(){
-        return Response.success( User.builder()
-                .nickName("黑大帅")
+    public Response<UserDO> test2(){
+        return Response.success( UserDO.builder()
+                .username("黑大帅")
                 .createTime(LocalDateTime.now())
                 .build());
     }

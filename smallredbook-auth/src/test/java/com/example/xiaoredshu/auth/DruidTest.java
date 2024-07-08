@@ -34,8 +34,8 @@ public class DruidTest {
 
         String encodePassword = ConfigTools.encrypt(arr[0], password);
         log.info("加密后的密码: {}", encodePassword);
-        String decrypt = ConfigTools.decrypt(arr[1], encodePassword);
-        log.info("解密后的密码：{}",decrypt);
+//        String decrypt = ConfigTools.decrypt(arr[1], encodePassword);
+//        log.info("解密后的密码：{}",decrypt);
 
 //        privateKey: MIIBVgIBADANBgkqhkiG9w0BAQEFAASCAUAwggE8AgEAAkEAj8BzfSdG/eBapQLz6u6nTLP93zbK0i8Vcv3+oW2ednPoCpxiaCnw6zIeETJ8v9U3AdfWQuQB+dBBy8FC/lFFLQIDAQABAkAL0OrtT6wzNBzfUXXRStqvoF/u2Cclzb76m8wxYrxSyiXr6Vjb2IkYRGZURtxgwkPYAi45mcb2BBXpBzq0gyz1AiEAmfGevGrt4wJ2jjae9AlcHg85osf4K55BWQBFuqec4BMCIQDvDRj7/pgPM5qBhIFZfoJiEh+v2upKOcSczVRKz2ptvwIhAIFoFgrHTE+++1AS5E26LIBsRgPrW1e3QbGCRBti2MGXAiEA5qeJmuP9znUpOJ0kvbhej8gTAPhGphX1SqKoGYLmmzsCIQCN7WhLFdSfgN6go8GoMDTTcL9vZl+/2TqmeSBDqdCaCA==
 //        publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAI/Ac30nRv3gWqUC8+rup0yz/d82ytIvFXL9/qFtnnZz6AqcYmgp8OsyHhEyfL/VNwHX1kLkAfnQQcvBQv5RRS0CAwEAAQ==

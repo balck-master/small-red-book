@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
-import org.example.framework.common.utils.JsonUtil;
+import org.example.framework.common.utils.JsonUtils;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
@@ -61,7 +61,7 @@ public class ApiOperationLogAspect {
 
         // 打印出参等相关信息
         log.info("====== 请求结束: [{}], 耗时: {}ms, 出参: {} =================================== ",
-                description, executionTime, JsonUtil.toJsonString(result));
+                description, executionTime, JsonUtils.toJsonString(result));
 
         return result;
     }
@@ -90,7 +90,7 @@ public class ApiOperationLogAspect {
      * @return
      */
     private Function<Object, String> toJsonStr() {
-        return JsonUtil::toJsonString;
+        return JsonUtils::toJsonString;
     }
 
 }
