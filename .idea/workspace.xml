@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add MyBatis代码生成器+Jackson支持LocalDataTime日期API">
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/logback-spring.xml" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add logback日志框架">
+      <change afterPath="$PROJECT_DIR$/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/.flattened-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/.flattened-pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +52,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2ijrxsMt3VSpkVzCg6vC9AoFtVl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,6 +62,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -141,7 +149,7 @@
       <workItem from="1720402123169" duration="2121000" />
       <workItem from="1720406060430" duration="1030000" />
       <workItem from="1720416470373" duration="2770000" />
-      <workItem from="1720443144421" duration="1488000" />
+      <workItem from="1720443144421" duration="3013000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -164,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720433245801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add logback日志框架">
+      <created>1720444895605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720444895605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,10 +198,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="add MyBatis+Druid连接池(含数据库解密)" />
     <MESSAGE value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
-    <option name="LAST_COMMIT_MESSAGE" value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
+    <MESSAGE value="add logback日志框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logback日志框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
