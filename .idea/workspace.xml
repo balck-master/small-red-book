@@ -4,39 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add MyBatis+Druid连接池(含数据库解密)">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/constant/DateConstants.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BaseExceptionInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BizException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/response/Response.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/config/ApiOperationLogAutoConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/JacksonConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO$UserDOBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/mapper/UserDOMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/mapper/UserDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/target/test-classes/com/example/xiaoredshu/auth/DruidTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/dataobject/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/dataobject/UserDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/UserDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/UserDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/UserDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add MyBatis代码生成器+Jackson支持LocalDataTime日期API">
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +140,8 @@
       <workItem from="1720353390268" duration="5224000" />
       <workItem from="1720402123169" duration="2121000" />
       <workItem from="1720406060430" duration="1030000" />
-      <workItem from="1720416470373" duration="1667000" />
+      <workItem from="1720416470373" duration="2770000" />
+      <workItem from="1720443144421" duration="1488000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -185,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1720354731317</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add MyBatis代码生成器+Jackson支持LocalDataTime日期API">
+      <created>1720433245801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720433245801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +185,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="add MyBatis+Druid连接池(含数据库解密)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add MyBatis+Druid连接池(含数据库解密)" />
+    <MESSAGE value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
