@@ -5,6 +5,8 @@ import lombok.Setter;
 
 /**
  * biz：Biz 是 Business 英文的缩写，代表业务的意思
+ *
+ * 业务异常类
  */
 @Getter
 @Setter

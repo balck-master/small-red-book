@@ -449,3 +449,5 @@ Caused by: com.mysql.cj.exceptions.UnableToConnectException: Public Key Retrieva
 2024-07-08 21:06:54.622 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
 2024-07-08 21:06:54.889 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2024-07-08 21:06:54.896 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 1.984 seconds (process running for 2.514)
+2024-07-08 22:03:26.909 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-08 22:03:26.910 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

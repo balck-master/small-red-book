@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/small-red-book.iml" filepath="$PROJECT_DIR$/small-red-book.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smallred-framework/smallred-common/smallred-common.iml" filepath="$PROJECT_DIR$/smallred-framework/smallred-common/smallred-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/smallred-framework/smallred-framework.iml" filepath="$PROJECT_DIR$/smallred-framework/smallred-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/smallred-spring-boot-starter-biz-operationlog.iml" filepath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/smallred-spring-boot-starter-biz-operationlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/smallredbook-auth/smallredbook-auth.iml" filepath="$PROJECT_DIR$/smallredbook-auth/smallredbook-auth.iml" />
     </modules>
