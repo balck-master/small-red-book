@@ -93,3 +93,17 @@
 2024-07-13 21:05:15.472 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - key 是否存在：true
 2024-07-13 21:05:15.498 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-13 21:05:15.512 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 21:56:23.069 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - Starting ThreadPoolConfigTest using Java 17.0.11 with PID 31956 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 21:56:23.070 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - The following 1 profile is active: "dev"
+2024-07-13 21:56:23.708 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 21:56:23.711 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 21:56:23.738 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-07-13 21:56:23.813 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 21:56:24.510 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 21:56:25.141 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 21:56:25.557 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 21:56:25.572 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 21:56:25.965 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - Started ThreadPoolConfigTest in 3.276 seconds (process running for 4.089)
+2024-07-13 21:56:26.484 [AuthExecutor-1] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - 异步线程中说: 犬小哈专栏
+2024-07-13 21:56:26.505 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 21:56:26.514 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

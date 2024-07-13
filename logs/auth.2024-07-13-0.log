@@ -402,3 +402,28 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2024-07-13 21:22:47.814 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 2.562 seconds (process running for 3.196)
 2024-07-13 21:23:26.278 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
 2024-07-13 21:23:26.283 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 21:23:28.730 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 16496 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-13 21:23:28.732 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-13 21:23:29.205 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 21:23:29.207 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 21:23:29.225 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-13 21:23:29.288 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 21:23:29.627 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 21:23:29.792 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-07-13 21:23:29.802 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-13 21:23:29.803 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-13 21:23:29.882 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-13 21:23:29.882 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1119 ms
+2024-07-13 21:23:30.444 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 21:23:30.641 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 21:23:30.652 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 21:23:30.910 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-07-13 21:23:30.917 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 2.639 seconds (process running for 3.341)
+2024-07-13 21:23:39.392 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-13 21:23:39.392 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-13 21:23:39.393 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-07-13 21:23:39.533 [http-nio-8080-exec-1] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15908613250"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2024-07-13 21:23:50.972 [http-nio-8080-exec-1] INFO  c.e.x.a.service.impl.VerificationCodeServiceImpl - ==> 手机号,15908613250 , 验证码：606538
+2024-07-13 21:23:58.478 [http-nio-8080-exec-1] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [发送短信验证码], 耗时: 18955ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+2024-07-13 21:24:27.569 [http-nio-8080-exec-4] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15908613250"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2024-07-13 21:24:29.981 [http-nio-8080-exec-4] INFO  c.e.x.auth.exception.GlobalExceptionHandler - http://localhost:8080/verification/code/send request fail ,errorCode:AUTH-20000 , errorMessage:请求太频繁，请3分钟后再试

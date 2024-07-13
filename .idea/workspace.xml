@@ -5,48 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 获取手机验证码接口+redisTemplate">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/logs/auth.2024-07-13-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/RedisTemplateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/VerificationCodeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/model/vo/verificationcode/SendVerificationCodeReqVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/VerificationCodeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/config/RedisTemplateConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/ThreadPoolConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/constant/DateConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BaseExceptionInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BizException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/response/Response.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/config/ApiOperationLogAutoConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/src/main/java/org/example/framework/jackson/config/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/config/JacksonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO$UserDOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO$UserDOBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +111,7 @@
       <recent name="com.example.xiaoredshu.auth.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
+  <component name="RunManager" selected="JUnit.ThreadPoolConfigTest.testSubmit">
     <configuration name="DruidTest.testEncodePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <extension name="coverage">
@@ -215,6 +176,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThreadPoolConfigTest.testSubmit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.ThreadPoolConfigTest" />
+      <option name="METHOD_NAME" value="testSubmit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -235,6 +212,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThreadPoolConfigTest.testSubmit" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testHasKey" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testDelete" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.redisTemplate" />
@@ -280,7 +258,7 @@
       <workItem from="1720661529174" duration="599000" />
       <workItem from="1720663812670" duration="599000" />
       <workItem from="1720855160235" duration="5098000" />
-      <workItem from="1720875099103" duration="2396000" />
+      <workItem from="1720875099103" duration="3648000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -333,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720606380684</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add 获取手机验证码接口+redisTemplate">
+      <option name="closed" value="true" />
+      <created>1720877513481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720877513481</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
