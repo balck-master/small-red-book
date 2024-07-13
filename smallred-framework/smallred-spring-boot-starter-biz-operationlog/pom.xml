@@ -20,6 +20,12 @@
   <description>接口日志组件</description>
 
   <dependencies>
+
+    <!--  -->
+    <dependency>
+      <groupId>org.example</groupId>
+      <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+    </dependency>
     <dependency>
       <groupId>org.example</groupId>
       <artifactId>smallred-common</artifactId>

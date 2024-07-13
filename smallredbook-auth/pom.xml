@@ -21,6 +21,39 @@
     <description>小哈书：认证服务（负责处理用户登录、注册、账号注销等）</description>
 
     <dependencies>
+        <!-- 相关工具类 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Redis 连接池 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <!-- Sa-Token 权限认证 -->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-spring-boot3-starter</artifactId>
+        </dependency>
 
         <!-- Druid 数据库连接池 -->
         <dependency>
@@ -39,11 +72,25 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
+        <!--      JackSon 日期格式化-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
         <!-- 业务接口日志组件 -->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>smallred-spring-boot-starter-biz-operationlog</artifactId>
             <version>${revision}</version>
+        </dependency>
+
+        <!--  -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
         </dependency>
 
         <dependency>

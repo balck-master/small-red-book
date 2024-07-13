@@ -46,11 +46,41 @@
     <druid.version>1.2.21</druid.version>
     <mybatis-generator-maven-plugin.version>1.3.5</mybatis-generator-maven-plugin.version>
     <flatten-maven-plugin.version>1.5.0</flatten-maven-plugin.version>
+    <sa-token.version>1.38.0</sa-token.version>
+    <guava.version>33.0.0-jre</guava.version>
+    <hutool.version>5.8.26</hutool.version>
+    <commons-lang3.version>3.12.0</commons-lang3.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+
+      <!-- 相关工具类 -->
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.hutool</groupId>
+        <artifactId>hutool-all</artifactId>
+        <version>${hutool.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+
+      <!-- Sa-Token 权限认证 -->
+      <dependency>
+        <groupId>cn.dev33</groupId>
+        <artifactId>sa-token-spring-boot3-starter</artifactId>
+        <version>${sa-token.version}</version>
+      </dependency>
       <!-- Druid 数据库连接池 -->
       <dependency>
         <groupId>com.alibaba</groupId>
@@ -70,6 +100,13 @@
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql-connector-java.version}</version>
+      </dependency>
+
+<!--      JackSon 日期格式化-->
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+        <version>${revision}</version>
       </dependency>
 
       <!-- 业务接口日志组件 -->

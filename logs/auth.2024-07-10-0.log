@@ -549,3 +549,5 @@ org.springframework.http.converter.HttpMessageNotReadableException: Required req
 2024-07-10 17:49:38.665 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
 2024-07-10 17:49:38.879 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 2024-07-10 17:49:38.885 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 2.313 seconds (process running for 2.887)
+2024-07-10 18:37:18.848 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-10 18:37:18.849 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

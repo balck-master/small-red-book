@@ -4,114 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 插件flatten-maven-plugin，子模块单独打包">
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_2_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_3_starter_1_2_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_16_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_16_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_19_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_10_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_19_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_23_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-08-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-08-0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small-red-book.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/smallred-common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/constant/DateConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/constant/DateConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/exception/BizException.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/exception/BizException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/response/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BizException.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BizException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/response/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/response/Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-framework.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/smallred-spring-boot-starter-biz-operationlog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/smallred-spring-boot-starter-biz-operationlog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/smallredbook-auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/smallredbook-auth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/JacksonConfig.java" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 获取手机验证码接口+redisTemplate">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/logs/auth.2024-07-13-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/RedisTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/VerificationCodeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/model/vo/verificationcode/SendVerificationCodeReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/VerificationCodeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/config/RedisTemplateConfigTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/constant/DateConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BaseExceptionInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/exception/BizException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-common/target/classes/org/example/framework/common/response/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/target/classes/org/example/framework/biz/operationlog/config/ApiOperationLogAutoConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/src/main/java/org/example/framework/jackson/config/JacksonConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/config/JacksonConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO$UserDOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO$UserDOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/domain/dataobject/UserDO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +58,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -166,12 +102,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.RedisTemplateConfigTest.redisTemplate.executor": "Run",
+    "JUnit.RedisTemplateConfigTest.testHasKey.executor": "Debug",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
@@ -180,15 +121,33 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws"
+    ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog\aspect" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\resources\META-INF.spring" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.xiaoredshu.auth.config" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
@@ -203,6 +162,54 @@
       <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth" />
       <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.DruidTest" />
       <option name="METHOD_NAME" value="testEncodePassword" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateConfigTest.redisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
+      <option name="METHOD_NAME" value="redisTemplate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateConfigTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateConfigTest.testHasKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
+      <option name="METHOD_NAME" value="testHasKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -228,6 +235,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTemplateConfigTest.testHasKey" />
+        <item itemvalue="JUnit.RedisTemplateConfigTest.testDelete" />
+        <item itemvalue="JUnit.RedisTemplateConfigTest.redisTemplate" />
         <item itemvalue="JUnit.DruidTest.testEncodePassword" />
       </list>
     </recent_temporary>
@@ -266,7 +276,11 @@
       <workItem from="1720515833222" duration="362000" />
       <workItem from="1720516210066" duration="1659000" />
       <workItem from="1720525994553" duration="4381000" />
-      <workItem from="1720600266405" duration="4678000" />
+      <workItem from="1720600266405" duration="7470000" />
+      <workItem from="1720661529174" duration="599000" />
+      <workItem from="1720663812670" duration="599000" />
+      <workItem from="1720855160235" duration="5098000" />
+      <workItem from="1720875099103" duration="2396000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -303,7 +317,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720447370883</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add 全局参数校验、接口参数校验">
+      <option name="closed" value="true" />
+      <created>1720605248267</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720605248267</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add 全局参数校验、接口参数校验">
+      <option name="closed" value="true" />
+      <created>1720606380684</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720606380684</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,14 +357,16 @@
     <MESSAGE value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
     <MESSAGE value="add logback日志框架" />
     <MESSAGE value="add 插件flatten-maven-plugin，子模块单独打包" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 插件flatten-maven-plugin，子模块单独打包" />
+    <MESSAGE value="add 全局参数校验、接口参数校验" />
+    <MESSAGE value="add 获取手机验证码接口+redisTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 获取手机验证码接口+redisTemplate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -351,6 +383,11 @@
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java</url>
           <line>35</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

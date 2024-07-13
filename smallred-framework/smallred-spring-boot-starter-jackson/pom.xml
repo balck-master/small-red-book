@@ -3,18 +3,62 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <!--  指定父项目-->
     <parent>
         <groupId>org.example</groupId>
         <artifactId>smallred-framework</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
 
-    <artifactId>smallred-spring-boot-starter-jackson</artifactId>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+    <!--  指定打包方式-->
+    <packaging>jar</packaging>
+
+    <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+    <name>${project.artifactId}</name>
+    <description>自定义JackSon配置-支持 LocalDateTime 日期 API</description>
+
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+<!--        引入common，JacksonConfig里面用到了common依赖中的constants -->
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-common</artifactId>
+        </dependency>
+
+        <!-- Jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+
+        <!-- 解决 Jackson Java 8 新日期 API 的序列化问题 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <!--      JackSon 日期格式化-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
