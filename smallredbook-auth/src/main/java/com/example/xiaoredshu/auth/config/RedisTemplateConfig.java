@@ -9,13 +9,12 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * @Author: tzy
- * @Description:
+ * @Description: redis 配置类
  * @Date: 2024/7/13 16:12
  */
 
 @Configuration
 public class RedisTemplateConfig {
-
     @Bean
     public RedisTemplate<String,Object> redisTemplate(RedisConnectionFactory connectionFactory){
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();

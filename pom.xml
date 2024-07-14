@@ -50,12 +50,19 @@
     <guava.version>33.0.0-jre</guava.version>
     <hutool.version>5.8.26</hutool.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
+    <dysmsapi.version>3.0.0</dysmsapi.version>
   </properties>
 
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
 
+      <!--   阿里云短信发送   -->
+      <dependency>
+        <groupId>com.aliyun</groupId>
+        <artifactId>dysmsapi20170525</artifactId>
+        <version>${dysmsapi.version}</version>
+      </dependency>
       <!-- 相关工具类 -->
       <dependency>
         <groupId>com.google.guava</groupId>

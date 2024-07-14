@@ -21,6 +21,12 @@
     <description>小哈书：认证服务（负责处理用户登录、注册、账号注销等）</description>
 
     <dependencies>
+
+        <!-- 阿里云短信发送 -->
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>dysmsapi20170525</artifactId>
+        </dependency>
         <!-- 相关工具类 -->
         <dependency>
             <groupId>com.google.guava</groupId>
