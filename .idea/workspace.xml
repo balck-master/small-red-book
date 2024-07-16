@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 自定义线程池">
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/sms/AliyunAccessKeyProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/sms/AliyunSmsClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/sms/AliyunSmsHelper.java" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 自定义@PhoneNumber手机号校验注解+SaToken整合redis（持久化登录信息）">
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/validator/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/validator/PhoneNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/RedisTemplateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/config/RedisTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/model/vo/verificationcode/SendVerificationCodeReqVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/model/vo/verificationcode/SendVerificationCodeReqVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application-dev.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +34,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -69,39 +69,41 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.RedisTemplateConfigTest.redisTemplate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTemplateConfigTest.testHasKey.executor&quot;: &quot;Debug&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.RedisTemplateConfigTest.redisTemplate.executor": "Run",
+    "JUnit.RedisTemplateConfigTest.testGetValue.executor": "Run",
+    "JUnit.RedisTemplateConfigTest.testHasKey.executor": "Debug",
+    "JUnit.ThreadPoolConfigTest.testSubmit.executor": "Debug",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,23 +121,7 @@
       <recent name="com.example.xiaoredshu.auth.config" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ThreadPoolConfigTest.testSubmit">
-    <configuration name="DruidTest.testEncodePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.DruidTest" />
-      <option name="METHOD_NAME" value="testEncodePassword" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
     <configuration name="RedisTemplateConfigTest.redisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <extension name="coverage">
@@ -163,6 +149,22 @@
       <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
       <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
       <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateConfigTest.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
+      <option name="METHOD_NAME" value="testGetValue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,10 +223,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ThreadPoolConfigTest.testSubmit" />
+        <item itemvalue="JUnit.RedisTemplateConfigTest.testGetValue" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testHasKey" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testDelete" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.redisTemplate" />
-        <item itemvalue="JUnit.DruidTest.testEncodePassword" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +268,8 @@
       <workItem from="1720661529174" duration="599000" />
       <workItem from="1720663812670" duration="599000" />
       <workItem from="1720855160235" duration="5098000" />
-      <workItem from="1720875099103" duration="3648000" />
+      <workItem from="1720875099103" duration="7708000" />
+      <workItem from="1720960403572" duration="8488000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -327,13 +330,13 @@
       <option name="project" value="LOCAL" />
       <updated>1720877513481</updated>
     </task>
-    <task id="LOCAL-00009" summary="add 阿里云短信SDK">
+    <task id="LOCAL-00009" summary="add 自定义线程池">
       <option name="closed" value="true" />
-      <created>1720970616211</created>
+      <created>1720879098363</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1720970616211</updated>
+      <updated>1720879098363</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
@@ -361,8 +364,8 @@
     <MESSAGE value="add 插件flatten-maven-plugin，子模块单独打包" />
     <MESSAGE value="add 全局参数校验、接口参数校验" />
     <MESSAGE value="add 获取手机验证码接口+redisTemplate" />
-    <MESSAGE value="add 阿里云短信SDK" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 阿里云短信SDK" />
+    <MESSAGE value="add 自定义线程池" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 自定义线程池" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -378,19 +381,19 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/VerificationCodeServiceImpl.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="5" />
+          <line>51</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/sms/AliyunSmsHelper.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

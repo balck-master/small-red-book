@@ -56,6 +56,13 @@
   <!-- 统一依赖管理 -->
   <dependencyManagement>
     <dependencies>
+      <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
+      <dependency>
+        <groupId>cn.dev33</groupId>
+        <artifactId>sa-token-redis-jackson</artifactId>
+        <version>${sa-token.version}</version>
+      </dependency>
+
 
       <!--   阿里云短信发送   -->
       <dependency>
