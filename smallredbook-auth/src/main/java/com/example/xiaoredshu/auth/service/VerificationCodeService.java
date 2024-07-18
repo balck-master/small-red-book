@@ -5,7 +5,7 @@ import org.example.framework.common.response.Response;
 
 /**
  * @Author: tzy
- * @Description:
+ * @Description: 验证码业务接口
  * @Date: 2024/7/13 18:04
  */
 public interface VerificationCodeService {

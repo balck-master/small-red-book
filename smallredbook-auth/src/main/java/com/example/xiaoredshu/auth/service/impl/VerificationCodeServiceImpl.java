@@ -63,6 +63,4 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
 
         return Response.success();
     }
-
-
 }
