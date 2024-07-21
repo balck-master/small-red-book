@@ -25,6 +25,11 @@
     from t_permission
     where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectAppEnabledList" resultMap="BaseResultMap">
+    select id ,name ,permission_key
+    from t_permission
+    where type = 3 and status = 0 and is_deleted = 0
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_permission
     where id = #{id,jdbcType=BIGINT}

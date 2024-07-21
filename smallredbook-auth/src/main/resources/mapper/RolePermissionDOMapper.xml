@@ -18,6 +18,14 @@
     from t_role_permission_rel
     where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectByRoleIds" resultMap="BaseResultMap">
+    select role_id , permission_id
+    from t_role_permission_rel
+    where role_id in
+    <foreach collection="roleIds" item="roleId" separator="," close=")" open="(">
+      #{roleId}
+    </foreach>
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_role_permission_rel
     where id = #{id,jdbcType=BIGINT}

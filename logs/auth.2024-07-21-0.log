@@ -1,0 +1,1183 @@
+2024-07-21 12:43:34.035 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 12:43:34.115 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 12:43:34.127 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 12:43:34.127 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 12:43:34.128 [main] INFO  c.a.b.n.c.a.NacosConfigApplicationContextInitializer - [Nacos Config Boot] : The preload configuration is not enabled
+2024-07-21 12:43:34.131 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 31404 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 12:43:34.133 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 12:43:34.889 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 12:43:34.892 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 12:43:34.925 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-07-21 12:43:35.581 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 12:43:35.830 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 12:43:35.844 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 12:43:35.844 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 12:43:35.947 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 12:43:35.947 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1765 ms
+2024-07-21 12:43:36.378 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 12:43:36.738 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 12:43:37.450 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 12:43:37.669 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 12:43:37.700 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.201 seconds (process running for 5.805)
+2024-07-21 12:43:37.703 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 12:43:38.161 [main] ERROR c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 同步角色权限数据到 Redis 中失败: 
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1602)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1533)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1358)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1341)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1059)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:398)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:393)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:373)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97)
+	at org.springframework.data.redis.core.DefaultValueOperations.setIfAbsent(DefaultValueOperations.java:299)
+	at com.example.xiaoredshu.auth.runner.PushRolePermissions2RedisRunner.run(PushRolePermissions2RedisRunner.java:57)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:748)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:105)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1531)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 106.54.241.247/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:111)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:111)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$getConnection$0(LettucePoolingConnectionProvider.java:93)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:99)
+	... 19 common frames omitted
+Caused by: io.lettuce.core.RedisCommandExecutionException: NOAUTH HELLO must be called with the client already authenticated, otherwise the HELLO <proto> AUTH <user> <pass> option can be used to authenticate the client and select the RESP protocol version at the same time
+	at io.lettuce.core.internal.ExceptionFactory.createExecutionException(ExceptionFactory.java:147)
+	at io.lettuce.core.internal.ExceptionFactory.createExecutionException(ExceptionFactory.java:116)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:120)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:111)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:747)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:682)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:599)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 12:46:43.605 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 12:46:43.612 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 12:46:43.724 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 12:46:43.724 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 12:46:47.614 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 12:46:47.682 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 12:46:47.692 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 12:46:47.692 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 12:46:47.692 [main] INFO  c.a.b.n.c.a.NacosConfigApplicationContextInitializer - [Nacos Config Boot] : The preload configuration is not enabled
+2024-07-21 12:46:47.696 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 31968 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 12:46:47.696 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 12:46:48.298 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 12:46:48.300 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 12:46:48.328 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-07-21 12:46:48.887 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 12:46:49.088 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 12:46:49.099 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 12:46:49.099 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 12:46:49.196 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 12:46:49.196 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1456 ms
+2024-07-21 12:46:49.514 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 12:46:49.803 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 12:46:50.410 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 12:46:50.600 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 12:46:50.625 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 3.414 seconds (process running for 4.177)
+2024-07-21 12:46:50.627 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 12:46:51.015 [main] ERROR c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 同步角色权限数据到 Redis 中失败: 
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1602)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1533)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1358)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1341)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1059)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:398)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:393)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:373)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:97)
+	at org.springframework.data.redis.core.DefaultValueOperations.setIfAbsent(DefaultValueOperations.java:299)
+	at com.example.xiaoredshu.auth.runner.PushRolePermissions2RedisRunner.run(PushRolePermissions2RedisRunner.java:57)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:748)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+Caused by: org.springframework.data.redis.connection.PoolException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:105)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1531)
+	... 18 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 106.54.241.247/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:216)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:111)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:111)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.lambda$getConnection$0(LettucePoolingConnectionProvider.java:93)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:211)
+	at io.lettuce.core.support.ConnectionPoolSupport$RedisPooledObjectFactory.create(ConnectionPoolSupport.java:201)
+	at org.apache.commons.pool2.BasePooledObjectFactory.makeObject(BasePooledObjectFactory.java:70)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:571)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:298)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:223)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:122)
+	at io.lettuce.core.support.ConnectionPoolSupport$1.borrowObject(ConnectionPoolSupport.java:117)
+	at org.springframework.data.redis.connection.lettuce.LettucePoolingConnectionProvider.getConnection(LettucePoolingConnectionProvider.java:99)
+	... 19 common frames omitted
+Caused by: io.lettuce.core.RedisCommandExecutionException: WRONGPASS invalid username-password pair or user is disabled.
+	at io.lettuce.core.internal.ExceptionFactory.createExecutionException(ExceptionFactory.java:147)
+	at io.lettuce.core.internal.ExceptionFactory.createExecutionException(ExceptionFactory.java:116)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:120)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:111)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:747)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:682)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:599)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 13:29:31.950 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 13:29:31.951 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 13:29:32.074 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 13:29:32.074 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 13:29:35.849 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 13:29:35.912 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 13:29:35.922 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 13:29:35.922 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 13:29:35.922 [main] INFO  c.a.b.n.c.a.NacosConfigApplicationContextInitializer - [Nacos Config Boot] : The preload configuration is not enabled
+2024-07-21 13:29:35.925 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 7820 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 13:29:35.925 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 13:29:36.490 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 13:29:36.492 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 13:29:36.519 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-07-21 13:29:36.981 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 13:29:37.159 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 13:29:37.168 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 13:29:37.168 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 13:29:37.256 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 13:29:37.256 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1295 ms
+2024-07-21 13:29:37.547 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 13:29:37.816 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 13:29:38.356 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 13:29:38.531 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 13:29:38.552 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 3.096 seconds (process running for 3.786)
+2024-07-21 13:29:38.554 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 13:29:39.002 [main] DEBUG c.e.x.a.d.mapper.RoleDOMapper.selectEnabledList - ==>  Preparing: select id,role_key, role_name from t_role where status = 0 and is_deleted = 0;
+2024-07-21 13:29:39.150 [main] DEBUG c.e.x.a.d.mapper.RoleDOMapper.selectEnabledList - ==> Parameters: 
+2024-07-21 13:29:39.167 [main] DEBUG c.e.x.a.d.mapper.RoleDOMapper.selectEnabledList - <==      Total: 1
+2024-07-21 13:29:39.188 [main] ERROR c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 同步角色权限数据到 Redis 中失败: 
+org.mybatis.spring.MyBatisSystemException: null
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:97)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:439)
+	at jdk.proxy2/jdk.proxy2.$Proxy79.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:142)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy88.selectByRoleIds(Unknown Source)
+	at com.example.xiaoredshu.auth.runner.PushRolePermissions2RedisRunner.run(PushRolePermissions2RedisRunner.java:74)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:748)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+Caused by: org.apache.ibatis.binding.BindingException: Parameter 'roleIds' not found. Available parameters are [arg0, collection, list]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:210)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:119)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:3344)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:121)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:586)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:550)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateIterable(ExpressionEvaluator.java:54)
+	at org.apache.ibatis.scripting.xmltags.ForEachSqlNode.apply(ForEachSqlNode.java:71)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:320)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:88)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	... 14 common frames omitted
+2024-07-21 15:33:35.261 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 15:33:35.263 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 15:33:35.385 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 15:33:35.385 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 15:33:37.344 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:33:37.406 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='127.0.0.1:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=false, dataId='null', dataIds='null', group='DEFAULT_GROUP', type=PROPERTIES, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=false, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:33:37.416 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 15:33:37.416 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 15:33:37.416 [main] INFO  c.a.b.n.c.a.NacosConfigApplicationContextInitializer - [Nacos Config Boot] : The preload configuration is not enabled
+2024-07-21 15:33:37.419 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 31268 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 15:33:37.422 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 15:33:37.983 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 15:33:37.985 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 15:33:38.010 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-07-21 15:33:38.457 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 15:33:38.637 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 15:33:38.646 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 15:33:38.646 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 15:33:38.741 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 15:33:38.741 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1283 ms
+2024-07-21 15:33:39.025 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 15:33:39.282 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 15:33:39.789 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 15:33:39.959 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 15:33:39.977 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 3.042 seconds (process running for 3.784)
+2024-07-21 15:33:39.979 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 15:33:40.341 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 15:41:18.773 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 15:41:18.778 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 15:41:18.899 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 15:41:18.899 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 15:41:21.494 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:41:21.559 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:41:21.567 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 15:41:21.568 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 15:41:21.590 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 15:41:21.590 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 15:41:21.591 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 15:41:21.612 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 15:41:21.612 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 15:41:21.615 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 15:41:21.622 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of c3b83f36-580f-4c02-a2de-fe4b20702577_config-0
+2024-07-21 15:41:21.637 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$424/0x000002550f2beef8
+2024-07-21 15:41:21.637 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x000002550f2bf960
+2024-07-21 15:41:21.637 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 15:41:21.638 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 15:41:21.644 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:41:21.805 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:25.257 [main] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 4 milliseconds, 128900 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@65e21ce3[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:363)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.ensureRpcClient(ClientWorker.java:891)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.getOneRunningClient(ClientWorker.java:1038)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.queryConfig(ClientWorker.java:946)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:403)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:184)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:96)
+	at com.alibaba.nacos.spring.context.event.config.EventPublishingConfigService.getConfig(EventPublishingConfigService.java:63)
+	at com.alibaba.nacos.spring.util.NacosUtils.getContent(NacosUtils.java:386)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqNacosConfig(NacosConfigLoader.java:157)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:125)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:63)
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:603)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:383)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+2024-07-21 15:41:25.299 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:41:25.299 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:28.312 [main] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 10 milliseconds, 785400 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@3dfa819[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:363)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.ensureRpcClient(ClientWorker.java:891)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.getOneRunningClient(ClientWorker.java:1038)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.queryConfig(ClientWorker.java:946)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:403)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:184)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:96)
+	at com.alibaba.nacos.spring.context.event.config.EventPublishingConfigService.getConfig(EventPublishingConfigService.java:63)
+	at com.alibaba.nacos.spring.util.NacosUtils.getContent(NacosUtils.java:386)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqNacosConfig(NacosConfigLoader.java:157)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:125)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:63)
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:603)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:383)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+2024-07-21 15:41:28.313 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:41:28.313 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:31.320 [main] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 4 milliseconds, 823100 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@27d33393[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:363)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.ensureRpcClient(ClientWorker.java:891)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.getOneRunningClient(ClientWorker.java:1038)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.queryConfig(ClientWorker.java:946)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:403)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:184)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:96)
+	at com.alibaba.nacos.spring.context.event.config.EventPublishingConfigService.getConfig(EventPublishingConfigService.java:63)
+	at com.alibaba.nacos.spring.util.NacosUtils.getContent(NacosUtils.java:386)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqNacosConfig(NacosConfigLoader.java:157)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:125)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:63)
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:603)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:383)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+2024-07-21 15:41:31.321 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+2024-07-21 15:41:31.321 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 15:41:31.322 [main] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$479/0x000002550f45f228
+2024-07-21 15:41:31.322 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:31.361 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 15:41:31.475 [main] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigQueryRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9eedf14c5f7a524504713e828a8c97ff, Client-RequestTS=1721547691322, exConfigInfo=true, notify=false}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:31.582 [main] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigQueryRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9eedf14c5f7a524504713e828a8c97ff, Client-RequestTS=1721547691322, exConfigInfo=true, notify=false}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:31.692 [main] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigQueryRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9eedf14c5f7a524504713e828a8c97ff, Client-RequestTS=1721547691322, exConfigInfo=true, notify=false}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:31.692 [main] WARN  c.alibaba.nacos.client.config.NacosConfigService - [fixed-106.54.241.247_8848_] [get-config] get from server error, dataId=xiaohashu-auth, group=DEFAULT_GROUP, tenant=, msg=ErrCode:-401, ErrMsg:Client not connected, current status:STARTING
+2024-07-21 15:41:31.696 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 15:41:31.699 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 15:41:31.699 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 15:41:31.704 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 15:41:31.707 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 31108 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 15:41:31.708 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 15:41:31.817 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9ee876d8b84c7c55d22da9ae00f41427, Client-RequestTS=1721547691705, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:31.926 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9ee876d8b84c7c55d22da9ae00f41427, Client-RequestTS=1721547691705, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:32.035 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9ee876d8b84c7c55d22da9ae00f41427, Client-RequestTS=1721547691705, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:32.035 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:32.223 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 15:41:32.226 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 15:41:32.251 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-07-21 15:41:32.709 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 15:41:32.869 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 15:41:32.878 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 15:41:32.878 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 15:41:32.959 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 15:41:32.960 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1221 ms
+2024-07-21 15:41:33.246 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 15:41:33.527 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 15:41:34.079 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 15:41:34.250 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 15:41:34.272 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 13.18 seconds (process running for 13.907)
+2024-07-21 15:41:34.274 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 15:41:34.327 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3 milliseconds, 228500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@f5aada5[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:34.437 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:34.667 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 15:41:37.216 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=efb3b72a7a2344964f12f4f5ae901ad5, Client-RequestTS=1721547697111, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:37.327 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=efb3b72a7a2344964f12f4f5ae901ad5, Client-RequestTS=1721547697111, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:37.435 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=efb3b72a7a2344964f12f4f5ae901ad5, Client-RequestTS=1721547697111, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:37.435 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:37.450 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 11 milliseconds, 199700 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@5bd5f7d0[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:37.451 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 1 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:37.654 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:40.658 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 2 milliseconds, 10800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@30ce136[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:40.659 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 2 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:40.974 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:42.609 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=04d88817ece228c29d06a6900f2d62e9, Client-RequestTS=1721547702499, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:42.713 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=04d88817ece228c29d06a6900f2d62e9, Client-RequestTS=1721547702499, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:42.814 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=04d88817ece228c29d06a6900f2d62e9, Client-RequestTS=1721547702499, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:42.814 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:43.989 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 13 milliseconds, 754200 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@7afef6e6[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:43.990 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 3 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:44.399 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:47.403 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 1 milliseconds, 892800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@58faeb86[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:47.404 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 4 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:47.919 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:47.981 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2037ae1a1cb8df42ccfdf3337507efea, Client-RequestTS=1721547707872, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:48.090 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2037ae1a1cb8df42ccfdf3337507efea, Client-RequestTS=1721547707872, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:48.201 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2037ae1a1cb8df42ccfdf3337507efea, Client-RequestTS=1721547707872, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:48.201 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:50.933 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 11 milliseconds, 759100 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@16d24a21[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:50.934 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 5 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:51.542 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:53.381 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2835367a3b563c406e2a5912e9bb2dd9, Client-RequestTS=1721547713272, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:53.491 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2835367a3b563c406e2a5912e9bb2dd9, Client-RequestTS=1721547713272, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:53.602 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=2835367a3b563c406e2a5912e9bb2dd9, Client-RequestTS=1721547713272, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:53.602 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:54.547 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3 milliseconds, 204000 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@17ffec12[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:54.548 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 6 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:55.258 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:41:58.265 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 5 milliseconds, 377500 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@6c62d3fb[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:58.266 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 7 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:41:58.782 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9248a88df2e61a0130595de5860764aa, Client-RequestTS=1721547718672, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:58.894 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9248a88df2e61a0130595de5860764aa, Client-RequestTS=1721547718672, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:59.003 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=9248a88df2e61a0130595de5860764aa, Client-RequestTS=1721547718672, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:41:59.003 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:41:59.081 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:42:02.090 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 7 milliseconds, 804700 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@4581eb65[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:42:02.091 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 8 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:42:02.993 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:42:04.176 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=284297342414ebc33078020acfe63880, Client-RequestTS=1721547724069, exConfigInfo=true}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:42:04.285 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=284297342414ebc33078020acfe63880, Client-RequestTS=1721547724069, exConfigInfo=true}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:42:04.394 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.common.remote.client - Send request fail, request = ConfigBatchListenRequest{headers={charset=UTF-8, Client-AppName=unknown, Client-RequestToken=284297342414ebc33078020acfe63880, Client-RequestTS=1721547724069, exConfigInfo=true}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:STARTING
+2024-07-21 15:42:04.394 [com.alibaba.nacos.client.Worker] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - Async listen config change error 
+com.alibaba.nacos.api.exception.NacosException: Client not connected, current status:STARTING
+	at com.alibaba.nacos.common.remote.client.RpcClient.request(RpcClient.java:643)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:1011)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.requestProxy(ClientWorker.java:992)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.executeConfigListen(ClientWorker.java:786)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.lambda$startInternal$2(ClientWorker.java:704)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:42:06.003 [com.alibaba.nacos.client.remote.worker] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 7 milliseconds, 745400 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@5921836c[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@6c3659be, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@522bf64e, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2aff9dff}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:502)
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:343)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 15:42:06.004 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [c3b83f36-580f-4c02-a2de-fe4b20702577_config-0] Fail to connect server, after trying 9 times, last try server is {serverIp = '106.54.241.247', server main port = 8848}, error = unknown
+2024-07-21 15:42:07.009 [com.alibaba.nacos.client.remote.worker] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:42:07.605 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 15:42:07.605 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 15:42:07.605 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 15:42:07.605 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 15:42:07.635 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 15:42:07.639 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 15:42:07.755 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 15:42:07.756 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 15:43:10.592 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:43:10.662 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:43:10.672 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 15:43:10.672 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 15:43:10.684 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 15:43:10.684 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 15:43:10.685 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 15:43:10.703 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 15:43:10.704 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 15:43:10.706 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 15:43:10.713 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 6b2f27ad-8433-41fd-94e9-04272912464c_config-0
+2024-07-21 15:43:10.727 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x000001d1c82bd310
+2024-07-21 15:43:10.727 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$426/0x000001d1c82bddb8
+2024-07-21 15:43:10.728 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 15:43:10.728 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 15:43:10.734 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:43:10.901 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:43:14.313 [main] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 11 milliseconds, 217600 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@58fef7f7[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@31ddb930, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@12eedfee, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@3c3c4a71}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:363)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.ensureRpcClient(ClientWorker.java:891)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.getOneRunningClient(ClientWorker.java:1038)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.queryConfig(ClientWorker.java:946)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:403)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:184)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:96)
+	at com.alibaba.nacos.spring.context.event.config.EventPublishingConfigService.getConfig(EventPublishingConfigService.java:63)
+	at com.alibaba.nacos.spring.util.NacosUtils.getContent(NacosUtils.java:386)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqNacosConfig(NacosConfigLoader.java:157)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:125)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:63)
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:603)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:383)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+2024-07-21 15:43:14.319 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:43:14.319 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:43:17.328 [main] ERROR c.a.nacos.common.remote.client.grpc.GrpcClient - Server check fail, please check server 106.54.241.247 ,port 9848 is available , error ={}
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 7 milliseconds, 754000 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@53311681[status=PENDING, info=[GrpcFuture{clientCall=PendingCall{realCall=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@31ddb930, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@12eedfee, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@3c3c4a71}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:218)
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:329)
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:363)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.ensureRpcClient(ClientWorker.java:891)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.getOneRunningClient(ClientWorker.java:1038)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient.queryConfig(ClientWorker.java:946)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:403)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:184)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:96)
+	at com.alibaba.nacos.spring.context.event.config.EventPublishingConfigService.getConfig(EventPublishingConfigService.java:63)
+	at com.alibaba.nacos.spring.util.NacosUtils.getContent(NacosUtils.java:386)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqNacosConfig(NacosConfigLoader.java:157)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.reqGlobalNacosConfig(NacosConfigLoader.java:125)
+	at com.alibaba.boot.nacos.config.util.NacosConfigLoader.loadConfig(NacosConfigLoader.java:63)
+	at com.alibaba.boot.nacos.config.autoconfigure.NacosConfigApplicationContextInitializer.initialize(NacosConfigApplicationContextInitializer.java:94)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:603)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:383)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.xiaoredshu.auth.XiaoredshuAuthApplication.main(XiaoredshuAuthApplication.java:14)
+2024-07-21 15:43:17.329 [main] INFO  com.alibaba.nacos.common.remote.client - [6b2f27ad-8433-41fd-94e9-04272912464c_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:43:17.329 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:43:19.874 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 15:43:19.874 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 15:43:19.875 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 15:43:19.875 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 15:46:21.082 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:46:21.147 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:46:21.155 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 15:46:21.156 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 15:46:21.167 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 15:46:21.167 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 15:46:21.168 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 15:46:21.188 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 15:46:21.189 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 15:46:21.191 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 15:46:21.200 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0
+2024-07-21 15:46:21.214 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$424/0x000001e8c52be5a8
+2024-07-21 15:46:21.215 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x000001e8c52bee08
+2024-07-21 15:46:21.215 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 15:46:21.216 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 15:46:21.223 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:46:21.392 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:46:22.224 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Success to connect to server [106.54.241.247:8848] on start up, connectionId = 1721547982034_117.143.44.198_4669
+2024-07-21 15:46:22.225 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Notify connected event to listeners.
+2024-07-21 15:46:22.225 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Connected,notify listen context...
+2024-07-21 15:46:22.225 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 15:46:22.225 [main] INFO  com.alibaba.nacos.common.remote.client - [97a17bbc-c5b5-437a-9028-a158fd0acad9_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x000001e8c548c890
+2024-07-21 15:46:22.252 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 15:46:22.305 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 15:46:22.308 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 15:46:22.308 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 15:46:22.313 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 15:46:22.316 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 34596 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 15:46:22.317 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 15:46:22.480 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@1226b174 
+2024-07-21 15:46:22.482 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@1226b174 ,cost=2 millis.
+2024-07-21 15:46:22.886 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 15:46:22.888 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 15:46:22.916 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2024-07-21 15:46:23.415 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 15:46:23.602 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 15:46:23.613 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 15:46:23.613 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 15:46:23.697 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 15:46:23.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1346 ms
+2024-07-21 15:46:24.007 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 15:46:24.288 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 15:46:24.832 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 15:46:24.987 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 15:46:25.007 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.322 seconds (process running for 5.044)
+2024-07-21 15:46:25.009 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 15:46:25.385 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 15:46:35.584 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 15:46:35.584 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 15:46:35.585 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 15:46:35.585 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 15:46:35.615 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 15:46:35.620 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 15:46:35.742 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 15:46:35.742 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 15:46:38.235 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:46:38.299 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 15:46:38.307 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 15:46:38.307 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 15:46:38.319 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 15:46:38.319 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 15:46:38.320 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 15:46:38.339 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 15:46:38.339 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 15:46:38.342 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 15:46:38.349 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 3ded6fec-7e32-40cf-874b-6392fb085e69_config-0
+2024-07-21 15:46:38.362 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$424/0x0000023b992bdbf0
+2024-07-21 15:46:38.362 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x0000023b992be448
+2024-07-21 15:46:38.363 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 15:46:38.363 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 15:46:38.369 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 15:46:38.530 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 15:46:39.307 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Success to connect to server [106.54.241.247:8848] on start up, connectionId = 1721547999148_117.143.44.198_4751
+2024-07-21 15:46:39.308 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Notify connected event to listeners.
+2024-07-21 15:46:39.308 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 15:46:39.308 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Connected,notify listen context...
+2024-07-21 15:46:39.308 [main] INFO  com.alibaba.nacos.common.remote.client - [3ded6fec-7e32-40cf-874b-6392fb085e69_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x0000023b9948ba58
+2024-07-21 15:46:39.335 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 15:46:39.364 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 15:46:39.367 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 15:46:39.367 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 15:46:39.372 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 15:46:39.375 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 27748 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 15:46:39.376 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 15:46:39.557 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2376d019 
+2024-07-21 15:46:39.558 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2376d019 ,cost=1 millis.
+2024-07-21 15:46:39.924 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 15:46:39.926 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 15:46:39.951 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-07-21 15:46:40.403 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 15:46:40.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 15:46:40.579 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 15:46:40.579 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 15:46:40.654 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 15:46:40.654 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1243 ms
+2024-07-21 15:46:40.938 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 15:46:41.207 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 15:46:41.746 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 15:46:41.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 15:46:41.922 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.083 seconds (process running for 4.778)
+2024-07-21 15:46:41.923 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 15:46:42.313 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 16:12:17.820 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 16:12:17.820 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 16:12:17.820 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 16:12:17.821 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 16:12:17.871 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 16:12:17.872 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 16:12:18.001 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 16:12:18.002 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 16:12:20.417 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:12:20.482 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:12:20.491 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 16:12:20.491 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 16:12:20.502 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 16:12:20.502 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 16:12:20.503 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 16:12:20.521 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 16:12:20.521 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 16:12:20.524 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 16:12:20.531 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0
+2024-07-21 16:12:20.544 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$424/0x000001c4302bf540
+2024-07-21 16:12:20.545 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x000001c4302c0000
+2024-07-21 16:12:20.545 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 16:12:20.545 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 16:12:20.551 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 16:12:20.703 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 16:12:21.493 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Success to connect to server [106.54.241.247:8848] on start up, connectionId = 1721549541348_117.143.44.198_4707
+2024-07-21 16:12:21.494 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Notify connected event to listeners.
+2024-07-21 16:12:21.494 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 16:12:21.494 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Connected,notify listen context...
+2024-07-21 16:12:21.495 [main] INFO  com.alibaba.nacos.common.remote.client - [18dc8f90-78c3-4c58-8ff3-580187f1482a_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x000001c43048c890
+2024-07-21 16:12:21.521 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 16:12:21.565 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 16:12:21.568 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 16:12:21.568 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 16:12:21.573 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 16:12:21.576 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 26564 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 16:12:21.577 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 16:12:21.743 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@14f4bda5 
+2024-07-21 16:12:21.744 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@14f4bda5 ,cost=1 millis.
+2024-07-21 16:12:22.113 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 16:12:22.115 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 16:12:22.140 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-07-21 16:12:22.588 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 16:12:22.757 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 16:12:22.766 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 16:12:22.766 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 16:12:22.838 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 16:12:22.838 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
+2024-07-21 16:12:23.123 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 16:12:23.392 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 16:12:23.946 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 16:12:24.111 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 16:12:24.131 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.102 seconds (process running for 4.805)
+2024-07-21 16:12:24.132 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 16:12:24.489 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 16:13:04.778 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 16:13:04.778 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 16:13:04.779 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 16:13:04.779 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 16:13:04.839 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 16:13:04.851 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 16:13:04.980 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 16:13:04.980 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 16:13:07.525 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:13:07.584 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:13:07.593 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 16:13:07.593 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 16:13:07.608 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 16:13:07.608 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 16:13:07.609 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 16:13:07.628 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 16:13:07.628 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 16:13:07.631 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 16:13:07.638 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0
+2024-07-21 16:13:07.651 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$424/0x000001f1012bc740
+2024-07-21 16:13:07.652 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x000001f1012bd1e8
+2024-07-21 16:13:07.652 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 16:13:07.652 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 16:13:07.659 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 16:13:07.809 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 16:13:08.566 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Success to connect to server [106.54.241.247:8848] on start up, connectionId = 1721549588439_117.143.44.198_4796
+2024-07-21 16:13:08.567 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Notify connected event to listeners.
+2024-07-21 16:13:08.567 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 16:13:08.567 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Connected,notify listen context...
+2024-07-21 16:13:08.567 [main] INFO  com.alibaba.nacos.common.remote.client - [4bdda3a3-7045-4fc1-8f5a-e7a0a2cc3b2b_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$480/0x000001f10148b598
+2024-07-21 16:13:08.595 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 16:13:08.617 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 16:13:08.619 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 16:13:08.620 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 16:13:08.625 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 16:13:08.627 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 10344 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 16:13:08.628 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 16:13:08.818 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@69385faf 
+2024-07-21 16:13:08.819 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@69385faf ,cost=1 millis.
+2024-07-21 16:13:09.151 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 16:13:09.153 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 16:13:09.178 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-07-21 16:13:09.633 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 16:13:09.805 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 16:13:09.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 16:13:09.815 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 16:13:09.890 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 16:13:09.890 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1223 ms
+2024-07-21 16:13:10.193 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 16:13:10.471 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 16:13:11.027 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 16:13:11.179 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 16:13:11.198 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.062 seconds (process running for 4.802)
+2024-07-21 16:13:11.199 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 16:14:03.284 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 16:14:20.350 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 16:14:20.351 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 16:14:20.351 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-07-21 16:14:20.454 [http-nio-80-exec-2] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15908613885"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2024-07-21 16:14:20.468 [http-nio-80-exec-2] INFO  c.e.x.a.service.impl.VerificationCodeServiceImpl - ==> 手机号,15908613885 , 验证码：840589
+2024-07-21 16:14:20.469 [AuthExecutor-1] INFO  com.example.xiaoredshu.auth.sms.AliyunSmsHelper - ==> 开始短信发送, phone: 15908613885, signName: 阿里云短信测试, templateCode: SMS_154950909, templateParam: {"code":"840589"}
+2024-07-21 16:14:20.500 [http-nio-80-exec-2] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [发送短信验证码], 耗时: 47ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+2024-07-21 16:14:21.252 [AuthExecutor-1] INFO  com.example.xiaoredshu.auth.sms.AliyunSmsHelper - ==> 短信发送成功, response: {"headers":{"access-control-allow-origin":"*","date":"Sun, 21 Jul 2024 08:14:21 GMT","content-length":"148","keep-alive":"timeout=25","x-acs-request-id":"F11A4A2B-23CF-5B24-A1B7-077CB274B097","connection":"keep-alive","content-type":"application/json;charset=utf-8","etag":"1u1hFYmlQDyZiiQy9yvkWZQ6","access-control-expose-headers":"*","x-acs-trace-id":"b0a3c528388e07b33ee00b1fddc6c64a"},"statusCode":200,"body":{"bizId":null,"code":"isv.SMS_TEST_NUMBER_LIMIT","message":"只能向已回复授权信息的手机号发送","requestId":"F11A4A2B-23CF-5B24-A1B7-077CB274B097"}}
+2024-07-21 16:14:48.915 [http-nio-80-exec-3] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15908613885"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2024-07-21 16:14:48.933 [http-nio-80-exec-3] INFO  c.e.x.auth.exception.GlobalExceptionHandler - http://localhost/verification/code/send request fail ,errorCode:AUTH-20000 , errorMessage:请求太频繁，请3分钟后再试
+2024-07-21 16:15:03.617 [http-nio-80-exec-4] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [发送短信验证码], 入参: {"phone":"15908613250"}, 请求类: VerificationCodeController, 请求方法: send =================================== 
+2024-07-21 16:15:03.644 [http-nio-80-exec-4] INFO  c.e.x.a.service.impl.VerificationCodeServiceImpl - ==> 手机号,15908613250 , 验证码：597526
+2024-07-21 16:15:03.644 [AuthExecutor-2] INFO  com.example.xiaoredshu.auth.sms.AliyunSmsHelper - ==> 开始短信发送, phone: 15908613250, signName: 阿里云短信测试, templateCode: SMS_154950909, templateParam: {"code":"597526"}
+2024-07-21 16:15:03.659 [http-nio-80-exec-4] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [发送短信验证码], 耗时: 42ms, 出参: {"success":true,"message":null,"errorCode":null,"data":null} =================================== 
+2024-07-21 16:15:04.139 [AuthExecutor-2] INFO  com.example.xiaoredshu.auth.sms.AliyunSmsHelper - ==> 短信发送成功, response: {"headers":{"access-control-allow-origin":"*","date":"Sun, 21 Jul 2024 08:15:04 GMT","content-length":"110","keep-alive":"timeout=25","x-acs-request-id":"9F0BD8F2-7CD5-5011-92D9-F2D0A8FC4983","connection":"keep-alive","content-type":"application/json;charset=utf-8","etag":"10snF21xo22r0tKWnNFwZvg0","access-control-expose-headers":"*","x-acs-trace-id":"f3adae9e7cb8701157cb0a6036ffce8f"},"statusCode":200,"body":{"bizId":"382918621549703843^0","code":"OK","message":"OK","requestId":"9F0BD8F2-7CD5-5011-92D9-F2D0A8FC4983"}}
+2024-07-21 16:16:17.261 [http-nio-80-exec-6] ERROR c.e.x.auth.exception.GlobalExceptionHandler - /user/login request error, 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:504)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1274)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at com.alibaba.druid.support.jakarta.WebStatFilter.doFilter(WebStatFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 16:17:10.359 [http-nio-80-exec-7] ERROR c.e.x.auth.exception.GlobalExceptionHandler - /user/login request error, 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:504)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1274)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at com.alibaba.druid.support.jakarta.WebStatFilter.doFilter(WebStatFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-07-21 16:17:37.647 [http-nio-80-exec-8] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求开始: [用户登录/注册], 入参: {"phone":"15908613250","code":"597526","password":null,"type":1}, 请求类: UserController, 请求方法: loginAndRegister =================================== 
+2024-07-21 16:17:40.374 [http-nio-80-exec-8] DEBUG c.e.x.a.domain.mapper.UserDOMapper.selectByPhone - ==>  Preparing: select id, password from t_user where phone = ?
+2024-07-21 16:17:40.505 [http-nio-80-exec-8] DEBUG c.e.x.a.domain.mapper.UserDOMapper.selectByPhone - ==> Parameters: 15908613250(String)
+2024-07-21 16:17:40.524 [http-nio-80-exec-8] DEBUG c.e.x.a.domain.mapper.UserDOMapper.selectByPhone - <==      Total: 1
+2024-07-21 16:17:40.529 [http-nio-80-exec-8] INFO  c.e.xiaoredshu.auth.service.impl.UserServiceImpl - ==> 用户是否注册, phone: 15908613250, userDO: {"id":1,"xiaohashuId":null,"password":null,"nickname":null,"avatar":null,"birthday":null,"backgroundImg":null,"phone":null,"sex":null,"status":null,"introduction":null,"createTime":null,"updateTime":null,"isDeleted":null}
+2024-07-21 16:17:40.734 [http-nio-80-exec-8] INFO  o.e.f.b.operationlog.aspect.ApiOperationLogAspect - ====== 请求结束: [用户登录/注册], 耗时: 3087ms, 出参: {"success":true,"message":null,"errorCode":null,"data":"3775b759-ec99-491f-8113-f5ca2180c96a"} =================================== 
+2024-07-21 16:19:58.765 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2024-07-21 16:19:58.765 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2024-07-21 16:19:58.765 [Thread-5] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2024-07-21 16:19:58.765 [Thread-0] WARN  c.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2024-07-21 16:19:58.797 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-21 16:19:58.802 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-21 16:19:58.927 [SpringApplicationShutdownHook] INFO  c.a.n.s.c.a.c.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2024-07-21 16:19:58.927 [SpringApplicationShutdownHook] INFO  c.a.n.s.b.f.a.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2024-07-21 16:20:02.915 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:20:02.980 [main] INFO  c.a.b.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='http://106.54.241.247:8848/', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='******', secretKey='******', ramRoleName='null', autoRefresh=true, dataId='xiaohashu-auth', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='null', configLongPollTimeout='null', configRetryTime='null', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, snapshotEnable=false, logEnable=false}}
+2024-07-21 16:20:02.990 [main] WARN  com.alibaba.nacos.client.logging.NacosLogging - Load Logback Configuration of Nacos fail, message: Could not initialize Logback Nacos logging from classpath:nacos-logback.xml
+2024-07-21 16:20:02.990 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor - LOCAL_SNAPSHOT_PATH:C:\Users\唐子怡\nacos\config
+2024-07-21 16:20:03.002 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [req-serv] nacos-server port:8848
+2024-07-21 16:20:03.002 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - [settings] [http-client] connect timeout:1000
+2024-07-21 16:20:03.003 [main] INFO  com.alibaba.nacos.client.utils.ParamUtil - PER_TASK_CONFIG_SIZE: 3000.0
+2024-07-21 16:20:03.022 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2024-07-21 16:20:03.023 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2024-07-21 16:20:03.026 [main] INFO  c.a.n.client.auth.ram.identify.CredentialWatcher - null No credential found
+2024-07-21 16:20:03.034 [main] INFO  com.alibaba.nacos.common.remote.client - [RpcClientFactory] create a new rpc client of 81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0
+2024-07-21 16:20:03.046 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$425/0x00000199012c08d8
+2024-07-21 16:20:03.047 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Register server push request handler:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$$Lambda$426/0x00000199012c1348
+2024-07-21 16:20:03.047 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Registry connection listener to current client:com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$1
+2024-07-21 16:20:03.048 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] RpcClient init, ServerListFactory = com.alibaba.nacos.client.config.impl.ClientWorker$ConfigRpcTransportClient$2
+2024-07-21 16:20:03.054 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Try to connect to server on start up, server: {serverIp = '106.54.241.247', server main port = 8848}
+2024-07-21 16:20:03.210 [main] INFO  c.a.nacos.common.remote.client.grpc.GrpcClient - grpc client connection server:106.54.241.247 ip,serverPort:9848,grpcTslConfig:{"sslProvider":"OPENSSL","enableTls":false,"mutualAuthEnable":false,"trustAll":false}
+2024-07-21 16:20:03.991 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Success to connect to server [106.54.241.247:8848] on start up, connectionId = 1721550003862_117.143.44.198_4625
+2024-07-21 16:20:03.991 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Notify connected event to listeners.
+2024-07-21 16:20:03.992 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+2024-07-21 16:20:03.992 [com.alibaba.nacos.client.remote.worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Connected,notify listen context...
+2024-07-21 16:20:03.992 [main] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$481/0x000001990148d1f0
+2024-07-21 16:20:04.019 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter - limitTime:5.0
+2024-07-21 16:20:04.040 [main] INFO  c.alibaba.boot.nacos.config.util.NacosConfigLoader - load config from nacos, data-id is : xiaohashu-auth, group is : DEFAULT_GROUP
+2024-07-21 16:20:04.043 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - nacos.cache.data.init.snapshot = true 
+2024-07-21 16:20:04.043 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [subscribe] xiaohashu-auth+DEFAULT_GROUP
+2024-07-21 16:20:04.048 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [add-listener] ok, tenant=, dataId=xiaohashu-auth, group=DEFAULT_GROUP, cnt=1
+2024-07-21 16:20:04.050 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Starting XiaoredshuAuthApplication using Java 17.0.11 with PID 33192 (E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth\target\classes started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book)
+2024-07-21 16:20:04.051 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - The following 1 profile is active: "dev"
+2024-07-21 16:20:04.236 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2b7d37d7 
+2024-07-21 16:20:04.237 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=0cec1bfaf902c078169507ecf1a4f0b2, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2b7d37d7 ,cost=1 millis.
+2024-07-21 16:20:04.610 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-21 16:20:04.613 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-21 16:20:04.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-07-21 16:20:05.107 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-21 16:20:05.288 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 80 (http)
+2024-07-21 16:20:05.298 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-07-21 16:20:05.298 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2024-07-21 16:20:05.374 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-07-21 16:20:05.375 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1287 ms
+2024-07-21 16:20:05.678 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-21 16:20:05.961 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-21 16:20:06.495 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-21 16:20:06.648 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 80 (http) with context path ''
+2024-07-21 16:20:06.667 [main] INFO  c.e.xiaoredshu.auth.XiaoredshuAuthApplication - Started XiaoredshuAuthApplication in 4.174 seconds (process running for 4.885)
+2024-07-21 16:20:06.669 [main] INFO  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 服务启动，开始同步角色权限数据到 Redis 中...
+2024-07-21 16:20:10.802 [main] WARN  c.e.x.auth.runner.PushRolePermissions2RedisRunner - ==> 角色权限数据已经同步至 Redis 中，不再同步...
+2024-07-21 16:20:21.402 [http-nio-80-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-21 16:20:21.402 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-07-21 16:20:21.403 [http-nio-80-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-07-21 16:20:45.825 [nacos-grpc-client-executor-106.54.241.247-31] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Receive server push request, request = ConfigChangeNotifyRequest, requestId = 1
+2024-07-21 16:20:45.826 [nacos-grpc-client-executor-106.54.241.247-31] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] [server-push] config changed. dataId=xiaohashu-auth, group=DEFAULT_GROUP,tenant=null
+2024-07-21 16:20:45.826 [nacos-grpc-client-executor-106.54.241.247-31] INFO  com.alibaba.nacos.common.remote.client - [81a6f5c9-6da8-40aa-a9a7-308a079a1882_config-0] Ack server push request, request = ConfigChangeNotifyRequest, requestId = 1
+2024-07-21 16:20:45.852 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-106.54.241.247_8848_] [data-received] dataId=xiaohashu-auth, group=DEFAULT_GROUP, tenant=, md5=e0548c9b2db58d8740a1a428479b91fb, content=rate-limit:
+  api:
+    limit: 888 # 接口限流阈值, type=yaml
+2024-07-21 16:20:45.852 [com.alibaba.nacos.client.Worker] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-listener] time cost=0ms in ClientWorker, dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=e0548c9b2db58d8740a1a428479b91fb, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2b7d37d7 
+2024-07-21 16:20:45.853 [nacos.client.cachedata.internal.notifier] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-106.54.241.247_8848_] [notify-ok] dataId=xiaohashu-auth, group=DEFAULT_GROUP, md5=e0548c9b2db58d8740a1a428479b91fb, listener=com.alibaba.nacos.spring.context.event.config.DelegatingEventPublishingListener@2b7d37d7 ,cost=1 millis.
