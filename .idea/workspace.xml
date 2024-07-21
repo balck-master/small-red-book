@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）">
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-18-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-20-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-21-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/AlarmConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/AlarmInterface.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/impl/MailAlarmHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/impl/SmsAlarmHelper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/runner/PushRolePermissions2RedisRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-21-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/auth.2024-07-21-0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/PermissionDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/PermissionDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/RoleDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/RoleDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/RolePermissionDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/domain/mapper/RolePermissionDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/PermissionDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/PermissionDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/RoleDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/RoleDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/RolePermissionDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/mapper/RolePermissionDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -291,7 +281,7 @@
       <workItem from="1721305410232" duration="4204000" />
       <workItem from="1721352166490" duration="597000" />
       <workItem from="1721454673385" duration="11599000" />
-      <workItem from="1721536181525" duration="6288000" />
+      <workItem from="1721536181525" duration="12875000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -376,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721314132982</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）">
+      <option name="closed" value="true" />
+      <created>1721551890129</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721551890129</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,6 +428,16 @@
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
           <line>60</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/impl/MailAlarmHelper.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/AlarmConfig.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
