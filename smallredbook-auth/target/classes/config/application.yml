@@ -30,6 +30,10 @@ sa-token:
 alarm:
   type: sms # 告警类型
 
+
+rate-limit:
+  api:
+    limit: 100 # 接口限流阈值
 #nacos:
 #  config: # Nacos 配置中心
 #    access-key: # 身份验证
@@ -43,6 +47,3 @@ alarm:
 #    bootstrap:
 #      enable: true # 启动时，预热配置
 
-rate-limit:
-  api:
-    limit: 100 # 接口限流阈值

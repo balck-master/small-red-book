@@ -13,6 +13,7 @@
         <module name="smallredbook-auth" />
         <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallred-spring-boot-starter-jackson" />
+        <module name="smallredbook-gateway" />
         <module name="smallred-common" />
       </profile>
     </annotationProcessing>

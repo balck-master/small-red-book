@@ -7,10 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
 import org.example.framework.common.response.Response;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @Author: tzy
@@ -31,4 +28,13 @@ public class UserController {
     public Response<String> loginAndRegister(@Validated @RequestBody UserLoginReqVO userLoginReqVO){
         return userService.loginAndRegister(userLoginReqVO);
     }
+
+    @PostMapping("/logout")
+    @ApiOperationLog(description = "用户登出")
+    public Response<?> logout(){
+
+        return Response.success();
+    }
+
+
 }
