@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for small-red-book" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../../Environment/Maven/myRepository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="smallredbook-auth" />
+        <module name="smallred-spring-boot-starter-biz-operationlog" />
+        <module name="smallred-spring-boot-starter-jackson" />
+        <module name="smallredbook-gateway" />
+        <module name="smallred-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

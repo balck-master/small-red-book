@@ -1,0 +1,109 @@
+2024-07-13 16:44:24.200 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 26160 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:44:24.202 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:44:24.811 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:44:24.813 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:44:24.832 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:44:24.910 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:44:25.557 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:44:26.179 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:44:26.558 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:44:26.576 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:44:26.989 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 3.145 seconds (process running for 3.986)
+2024-07-13 16:44:28.063 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:44:28.070 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 16:45:53.201 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 11152 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:45:53.203 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:45:53.776 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:45:53.778 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:45:53.799 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:45:53.878 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:45:54.530 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:45:55.134 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:45:55.519 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:45:55.543 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:45:55.924 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 3.087 seconds (process running for 3.857)
+2024-07-13 16:45:56.982 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:45:56.989 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 16:46:12.973 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 29828 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:46:12.975 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:46:13.588 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:46:13.590 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:46:13.613 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:46:13.705 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:46:14.376 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:46:15.021 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:46:15.412 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:46:15.429 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:46:15.816 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 3.193 seconds (process running for 4.136)
+2024-07-13 16:46:16.858 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - key 是否存在：true
+2024-07-13 16:46:16.874 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:46:16.881 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 16:46:24.829 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 5208 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:46:24.830 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:46:25.459 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:46:25.461 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:46:25.481 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:46:25.554 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:46:26.296 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:46:26.918 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:46:27.318 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:46:27.335 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:46:27.740 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 3.255 seconds (process running for 4.163)
+2024-07-13 16:46:28.767 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:46:28.774 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 16:46:39.356 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 5108 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:46:39.358 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:46:39.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:46:39.916 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:46:39.937 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:46:40.010 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:46:40.666 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:46:41.268 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:46:41.618 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:46:41.633 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:46:41.993 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 2.989 seconds (process running for 3.846)
+2024-07-13 16:46:43.019 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - key 是否存在：false
+2024-07-13 16:46:43.035 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:46:43.042 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 16:46:57.903 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 23416 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 16:46:57.904 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 16:46:58.488 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 16:46:58.490 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 16:46:58.511 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-07-13 16:46:58.584 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 16:46:59.275 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 16:46:59.902 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 16:47:00.275 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 16:47:00.292 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 16:47:00.679 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 3.132 seconds (process running for 3.902)
+2024-07-13 16:47:01.685 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - key 是否存在：true
+2024-07-13 16:47:01.700 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 16:47:01.707 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 21:05:09.508 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Starting RedisTemplateConfigTest using Java 17.0.11 with PID 13320 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 21:05:09.510 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - The following 1 profile is active: "dev"
+2024-07-13 21:05:10.314 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 21:05:10.318 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 21:05:10.353 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-07-13 21:05:10.470 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 21:05:11.459 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 21:05:12.326 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 21:05:13.092 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 21:05:13.121 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 21:05:13.876 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - Started RedisTemplateConfigTest in 4.885 seconds (process running for 6.398)
+2024-07-13 21:05:15.472 [main] INFO  c.e.xiaoredshu.auth.config.RedisTemplateConfigTest - key 是否存在：true
+2024-07-13 21:05:15.498 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 21:05:15.512 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-07-13 21:56:23.069 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - Starting ThreadPoolConfigTest using Java 17.0.11 with PID 31956 (started by 唐子怡 in E:\javacode\dogXiaoHa\small-red-book\smallredbook-auth)
+2024-07-13 21:56:23.070 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - The following 1 profile is active: "dev"
+2024-07-13 21:56:23.708 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-07-13 21:56:23.711 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-07-13 21:56:23.738 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-07-13 21:56:23.813 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.xiaoredshu.auth]' package. Please check your configuration.
+2024-07-13 21:56:24.510 [main] ERROR org.apache.catalina.core.AprLifecycleListener - An incompatible version [1.2.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.34]
+2024-07-13 21:56:25.141 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2024-07-13 21:56:25.557 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-07-13 21:56:25.572 [main] INFO  o.e.f.b.o.config.ApiOperationLogAutoConfiguration - 进入config
+2024-07-13 21:56:25.965 [main] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - Started ThreadPoolConfigTest in 3.276 seconds (process running for 4.089)
+2024-07-13 21:56:26.484 [AuthExecutor-1] INFO  c.e.xiaoredshu.auth.config.ThreadPoolConfigTest - 异步线程中说: 犬小哈专栏
+2024-07-13 21:56:26.505 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-07-13 21:56:26.514 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
