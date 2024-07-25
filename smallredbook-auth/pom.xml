@@ -22,6 +22,18 @@
 
     <dependencies>
 
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Jackson 组件 -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+        </dependency>
+
 
         <!-- 服务注册发现 -->
         <dependency>

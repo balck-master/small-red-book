@@ -53,8 +53,8 @@
     <guava.version>33.0.0-jre</guava.version>
     <hutool.version>5.8.26</hutool.version>
     <commons-lang3.version>3.12.0</commons-lang3.version>
-<!--    <dysmsapi.version>3.0.0</dysmsapi.version>-->
-    <dysmsapi.version>2.0.24</dysmsapi.version>
+    <dysmsapi.version>3.0.0</dysmsapi.version>
+<!--    <dysmsapi.version>2.0.24</dysmsapi.version>-->
     <nacos-config.version>0.3.0-RC</nacos-config.version>
   </properties>
 
