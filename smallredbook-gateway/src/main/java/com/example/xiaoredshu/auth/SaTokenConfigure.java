@@ -4,6 +4,7 @@ import cn.dev33.satoken.reactor.filter.SaReactorFilter;
 import cn.dev33.satoken.router.SaRouter;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -12,10 +13,12 @@ import org.springframework.context.annotation.Configuration;
  * @author click33
  */
 @Configuration
+@Slf4j
 public class SaTokenConfigure {
     // 注册 Sa-Token全局过滤器 
     @Bean
     public SaReactorFilter getSaReactorFilter() {
+        log.error("===进入satoken过滤器");
         return new SaReactorFilter()
             // 拦截地址 
             .addInclude("/**")    /* 拦截全部path */
