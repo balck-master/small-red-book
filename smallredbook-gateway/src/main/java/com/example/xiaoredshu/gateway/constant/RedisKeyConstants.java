@@ -1,4 +1,4 @@
-package com.example.xiaoredshu.constant;
+package com.example.xiaoredshu.gateway.constant;
 
 /**
  * @author: 犬小哈

@@ -1,8 +1,8 @@
-package com.example.xiaoredshu.auth;
+package com.example.xiaoredshu.gateway.auth;
 
 import cn.dev33.satoken.stp.StpInterface;
 import com.alibaba.cloud.commons.lang.StringUtils;
-import com.example.xiaoredshu.constant.RedisKeyConstants;
+import com.example.xiaoredshu.gateway.constant.RedisKeyConstants;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.Resource;

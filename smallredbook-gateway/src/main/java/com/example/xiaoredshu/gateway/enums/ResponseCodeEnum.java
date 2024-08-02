@@ -1,4 +1,4 @@
-package com.example.xiaoredshu.enums;
+package com.example.xiaoredshu.gateway.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

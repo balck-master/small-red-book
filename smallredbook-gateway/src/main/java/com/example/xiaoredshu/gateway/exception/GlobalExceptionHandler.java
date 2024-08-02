@@ -1,7 +1,9 @@
-package com.example.xiaoredshu.exception;
+package com.example.xiaoredshu.gateway.exception;
 
+import cn.dev33.satoken.exception.NotLoginException;
+import cn.dev33.satoken.exception.NotPermissionException;
 import cn.dev33.satoken.exception.SaTokenException;
-import com.example.xiaoredshu.enums.ResponseCodeEnum;
+import com.example.xiaoredshu.gateway.enums.ResponseCodeEnum;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -42,6 +44,18 @@ public class GlobalExceptionHandler implements ErrorWebExceptionHandler {
             response.setStatusCode(HttpStatus.UNAUTHORIZED);
             // 构建响应结果
             result = Response.fail(ResponseCodeEnum.UNAUTHORIZED.getErrorCode(), ResponseCodeEnum.UNAUTHORIZED.getErrorMessage());
+        }else if(ex instanceof NotLoginException){// 未登录异常
+            // 设置 401 状态码
+            response.setStatusCode(HttpStatus.UNAUTHORIZED);
+            //构造响应结果
+            result = Response.fail(ResponseCodeEnum.UNAUTHORIZED.getErrorCode() ,ex.getMessage());
+
+        }else if(ex instanceof NotPermissionException){
+            // 设置 401 状态码
+            response.setStatusCode(HttpStatus.UNAUTHORIZED);
+            //构造响应结果
+            result = Response.fail(ResponseCodeEnum.UNAUTHORIZED.getErrorCode() ,ResponseCodeEnum.UNAUTHORIZED.getErrorMessage());
+
         } else { // 其他异常，则统一提示 “系统繁忙” 错误
             result = Response.fail(ResponseCodeEnum.SYSTEM_ERROR);
         }

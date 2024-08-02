@@ -1,4 +1,4 @@
-package com.example.xiaoredshu.config;
+package com.example.xiaoredshu.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
