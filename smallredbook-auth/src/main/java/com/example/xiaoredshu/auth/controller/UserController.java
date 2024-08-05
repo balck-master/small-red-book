@@ -31,8 +31,9 @@ public class UserController {
 
     @PostMapping("/logout")
     @ApiOperationLog(description = "用户登出")
-    public Response<?> logout(){
+    public Response<?> logout(@RequestHeader("userId") String userId){
         // todo 账号退出登录逻辑待实现
+        userService.logout();
         return Response.success();
     }
 

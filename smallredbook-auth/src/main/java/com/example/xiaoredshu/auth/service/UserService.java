@@ -25,4 +25,11 @@ public interface UserService {
      * @return
      */
     Long registerUser(String phone);
+
+    /**
+     * 用户登出
+     * @param userId
+     * @return
+     */
+    Response<?> logout();
 }

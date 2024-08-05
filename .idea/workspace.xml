@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add saToken接口鉴权">
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 网关过滤器">
       <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-26-0.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-28-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-30-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-02-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-04-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/constant/GlobalConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/HeaderUserId2ContextFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/LoginUserContextHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/StpInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/StpInterfaceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +28,26 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
@@ -97,7 +117,7 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -124,7 +144,7 @@
       <recent name="com.example.xiaoredshu.auth.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaohashuGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
     <configuration name="RedisTemplateConfigTest.redisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <extension name="coverage">
@@ -248,6 +268,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\唐子怡\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="" />
@@ -300,7 +323,15 @@
       <workItem from="1721784286345" duration="14067000" />
       <workItem from="1721813629366" duration="18037000" />
       <workItem from="1721974210252" duration="5301000" />
-      <workItem from="1722065843914" duration="2161000" />
+      <workItem from="1722065843914" duration="6346000" />
+      <workItem from="1722234851396" duration="598000" />
+      <workItem from="1722326913324" duration="1357000" />
+      <workItem from="1722342207050" duration="4322000" />
+      <workItem from="1722389803350" duration="66000" />
+      <workItem from="1722476929873" duration="1256000" />
+      <workItem from="1722568193506" duration="4078000" />
+      <workItem from="1722778671013" duration="4132000" />
+      <workItem from="1722822157242" duration="6159000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -417,7 +448,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721887931039</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add saToken接口鉴权bug修复">
+      <option name="closed" value="true" />
+      <created>1722152482148</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722152482148</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add 网关过滤器">
+      <option name="closed" value="true" />
+      <created>1722586716534</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1722586716534</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +497,9 @@
     <MESSAGE value="add Nacos配置中心+服务注册" />
     <MESSAGE value="add gateway路由转发+saToken接口鉴权" />
     <MESSAGE value="add saToken接口鉴权" />
-    <option name="LAST_COMMIT_MESSAGE" value="add saToken接口鉴权" />
+    <MESSAGE value="add saToken接口鉴权bug修复" />
+    <MESSAGE value="add 网关过滤器" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 网关过滤器" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,7 +516,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>64</line>
+          <line>66</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -477,28 +526,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>112</line>
+          <line>114</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/StpInterfaceImpl.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/StpInterfaceImpl.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/exception/GlobalExceptionHandler.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
           <line>35</line>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/SaTokenConfigure.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/HeaderUserId2ContextFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

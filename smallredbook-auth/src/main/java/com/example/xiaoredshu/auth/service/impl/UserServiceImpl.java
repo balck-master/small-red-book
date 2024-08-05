@@ -12,6 +12,8 @@ import com.example.xiaoredshu.auth.domain.mapper.UserDOMapper;
 import com.example.xiaoredshu.auth.domain.mapper.UserRoleDOMapper;
 import com.example.xiaoredshu.auth.enums.LoginTypeEnum;
 import com.example.xiaoredshu.auth.enums.ResponseCodeEnum;
+import com.example.xiaoredshu.auth.filter.HeaderUserId2ContextFilter;
+import com.example.xiaoredshu.auth.filter.LoginUserContextHolder;
 import com.example.xiaoredshu.auth.model.vo.user.UserLoginReqVO;
 import com.example.xiaoredshu.auth.service.UserService;
 import com.google.common.base.Preconditions;
@@ -185,6 +187,19 @@ public class UserServiceImpl implements UserService {
         });
 
 
+    }
+
+    /**
+     * 用户登出
+     * @return
+     */
+    @Override
+    public Response<?> logout() {
+        Long userId = LoginUserContextHolder.getUserId();
+
+        // 退出登录 (指定用户 ID)
+        StpUtil.logout(userId);
+        return Response.success();
     }
 
 
