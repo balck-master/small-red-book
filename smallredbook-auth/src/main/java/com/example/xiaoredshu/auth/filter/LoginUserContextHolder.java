@@ -1,5 +1,6 @@
 package com.example.xiaoredshu.auth.filter;
 
+import com.alibaba.ttl.TransmittableThreadLocal;
 import org.example.framework.common.constant.GlobalConstants;
 
 import java.util.HashMap;
@@ -14,7 +15,7 @@ import java.util.Objects;
 public class LoginUserContextHolder {
 
     //初始化一个ThreadLocal对象
-    private static final ThreadLocal<Map<String, Object>>LOGIN_USER_CONTEXT_THREAD_LOCAL = ThreadLocal.withInitial(HashMap::new);
+    private static final TransmittableThreadLocal <Map<String, Object>>LOGIN_USER_CONTEXT_THREAD_LOCAL = TransmittableThreadLocal.withInitial(HashMap::new);
 
     /**
      * 获取用户ID
