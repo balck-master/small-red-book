@@ -1,4 +1,4 @@
-package com.example.xiaoredshu.auth.filter;
+package org.example.framework.biz.context.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.example.framework.biz.context.holder.LoginUserContextHolder;
 import org.example.framework.common.constant.GlobalConstants;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
