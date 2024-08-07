@@ -1,5 +1,6 @@
 package com.example.xiaoredshu.auth.controller;
 
+import com.example.xiaoredshu.auth.model.vo.user.UpdatePasswordReqVO;
 import com.example.xiaoredshu.auth.model.vo.user.UserLoginReqVO;
 import com.example.xiaoredshu.auth.service.UserService;
 import jakarta.annotation.Resource;
@@ -35,6 +36,15 @@ public class UserController {
         // todo 账号退出登录逻辑待实现
         userService.logout();
         return Response.success();
+    }
+
+    /**
+     * 修改密码
+     * @param updatePasswordReqVO
+     * @return
+     */
+    public Response<?> updatePassword(@Validated @RequestBody UpdatePasswordReqVO updatePasswordReqVO){
+        return  userService.updatePassword(updatePasswordReqVO);
     }
 
 

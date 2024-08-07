@@ -1,5 +1,6 @@
 package com.example.xiaoredshu.auth.service;
 
+import com.example.xiaoredshu.auth.model.vo.user.UpdatePasswordReqVO;
 import com.example.xiaoredshu.auth.model.vo.user.UserLoginReqVO;
 import org.example.framework.common.response.Response;
 import org.springframework.stereotype.Service;
@@ -28,8 +29,15 @@ public interface UserService {
 
     /**
      * 用户登出
-     * @param userId
+     * @param
      * @return
      */
     Response<?> logout();
+
+    /**
+     * 修改密码
+     * @param updatePasswordReqVO
+     * @return
+     */
+    Response<?> updatePassword(UpdatePasswordReqVO updatePasswordReqVO);
 }

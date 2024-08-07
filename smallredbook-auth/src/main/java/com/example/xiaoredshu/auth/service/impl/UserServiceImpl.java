@@ -12,6 +12,7 @@ import com.example.xiaoredshu.auth.domain.mapper.UserDOMapper;
 import com.example.xiaoredshu.auth.domain.mapper.UserRoleDOMapper;
 import com.example.xiaoredshu.auth.enums.LoginTypeEnum;
 import com.example.xiaoredshu.auth.enums.ResponseCodeEnum;
+import com.example.xiaoredshu.auth.model.vo.user.UpdatePasswordReqVO;
 import com.example.xiaoredshu.auth.model.vo.user.UserLoginReqVO;
 import com.example.xiaoredshu.auth.service.UserService;
 import com.google.common.base.Preconditions;
@@ -26,6 +27,7 @@ import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -61,6 +63,9 @@ public class UserServiceImpl implements UserService {
 
     @Resource(name = "taskExecutor")
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    @Resource
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public Response<String> loginAndRegister(UserLoginReqVO userLoginReqVO) {
@@ -102,8 +107,21 @@ public class UserServiceImpl implements UserService {
                 }
                 break;
             case PASSWORD:{
+                //密码登录
                 //todo
+                String password = userLoginReqVO.getPassword();
+                // 根据手机号查询
+                UserDO userDO1 = userDOMapper.selectByPhone(phone);
+                if(Objects.isNull(userDO1)){
+                    throw new BizException(ResponseCodeEnum.USER_NOT_FOUND);
+                }
 
+                // 匹配密码是否一致
+                boolean matches = passwordEncoder.matches(password, userDO1.getPassword());
+                if(!matches){
+                    throw new BizException(ResponseCodeEnum.PHONE_OR_PASSWORD_ERROR);
+                }
+                userId = userDO1.getId();
                 break;
             }
 
@@ -207,6 +225,25 @@ public class UserServiceImpl implements UserService {
 
         // 退出登录 (指定用户 ID)
         StpUtil.logout(userId);
+        return Response.success();
+    }
+
+    @Override
+    public Response<?> updatePassword(UpdatePasswordReqVO updatePasswordReqVO) {
+        String newPassword = updatePasswordReqVO.getNewPassword();
+        //加密后的密码
+        String encodePassword = passwordEncoder.encode(newPassword);
+
+        // 获取当前请求对应的用户 ID
+        Long userId = LoginUserContextHolder.getUserId();
+        UserDO userDO = UserDO.builder()
+                .id(userId)
+                .password(encodePassword)
+                .updateTime(LocalDateTime.now())
+                .build();
+
+        //更新密码
+        userDOMapper.updateByPrimaryKey(userDO);
         return Response.success();
     }
 

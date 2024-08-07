@@ -168,6 +168,19 @@
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
         </dependency>
+<!--        上下文工具类-->
+        <dependency>
+            <groupId>org.example.framework.biz.context</groupId>
+            <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 密码加密 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+        </dependency>
+
 
     </dependencies>
 
