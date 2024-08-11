@@ -4,20 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 网关过滤器">
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-26-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-28-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-30-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-02-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-04-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/constant/GlobalConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/HeaderUserId2ContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/LoginUserContextHolder.java" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 账号密码登录">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-1.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-3.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/test/java/org/example/smallredbook/oss/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/XiaohashuOssBizApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,15 +119,16 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuOssBizApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Debug&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-gateway/src/main/java/com/example/xiaoredshu&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallred-oss/smallredbook-oss-biz/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -117,8 +137,10 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.PasswordEncoderConfig.executor&quot;: &quot;Run&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -131,21 +153,35 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\java\com\example\xiaoredshu" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog\aspect" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources\config" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.xiaoredshu.auth.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
-    <configuration name="RedisTemplateConfigTest.redisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.XiaohashuOssBizApplication">
+    <configuration name="PasswordEncoderConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.PasswordEncoderConfig" />
       <module name="smallredbook-auth" />
       <extension name="coverage">
         <pattern>
@@ -153,26 +189,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="redisTemplate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTemplateConfigTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -243,6 +259,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XiaohashuOssBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-oss-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.oss.biz.XiaohashuOssBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.oss.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XiaoredshuAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="smallredbook-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.xiaoredshu.auth.XiaoredshuAuthApplication" />
@@ -252,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
+        <item itemvalue="应用程序.PasswordEncoderConfig" />
         <item itemvalue="JUnit.ThreadPoolConfigTest.testSubmit" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testGetValue" />
         <item itemvalue="JUnit.RedisTemplateConfigTest.testHasKey" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.testDelete" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.redisTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +360,14 @@
       <workItem from="1722476929873" duration="1256000" />
       <workItem from="1722568193506" duration="4078000" />
       <workItem from="1722778671013" duration="4132000" />
-      <workItem from="1722822157242" duration="6159000" />
+      <workItem from="1722822157242" duration="13050000" />
+      <workItem from="1722909680787" duration="3488000" />
+      <workItem from="1722994895740" duration="8282000" />
+      <workItem from="1723025169811" duration="339000" />
+      <workItem from="1723036667505" duration="599000" />
+      <workItem from="1723082066338" duration="838000" />
+      <workItem from="1723096957012" duration="5091000" />
+      <workItem from="1723166708222" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -464,7 +500,31 @@
       <option name="project" value="LOCAL" />
       <updated>1722586716534</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add 用户登出：过滤器获取userId，用ThreadLocal实现上下文传递">
+      <option name="closed" value="true" />
+      <created>1722837729892</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1722837729892</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题">
+      <option name="closed" value="true" />
+      <created>1722849177266</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1722849177266</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add 账号密码登录">
+      <option name="closed" value="true" />
+      <created>1723021649435</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1723021649435</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,7 +559,10 @@
     <MESSAGE value="add saToken接口鉴权" />
     <MESSAGE value="add saToken接口鉴权bug修复" />
     <MESSAGE value="add 网关过滤器" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 网关过滤器" />
+    <MESSAGE value="add 用户登出：过滤器获取userId，用ThreadLocal实现上下文传递" />
+    <MESSAGE value="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题" />
+    <MESSAGE value="add 账号密码登录" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 账号密码登录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -511,12 +574,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
-          <line>28</line>
+          <line>29</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>66</line>
+          <line>72</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -525,24 +588,24 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/exception/GlobalExceptionHandler.java</url>
           <line>34</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
-          <line>35</line>
+          <line>36</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/filter/HeaderUserId2ContextFilter.java</url>
+          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java</url>
           <line>25</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

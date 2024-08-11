@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/smallred-oss/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/smallred-oss/smallred-oss-api/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Annotation profile for small-red-book" enabled="true">
@@ -11,11 +16,17 @@
           <entry name="$PROJECT_DIR$/../../../Environment/Maven/myRepository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="smallredbook-auth" />
-        <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallred-spring-boot-starter-jackson" />
+        <module name="smallredbook-oss-biz" />
         <module name="smallredbook-gateway" />
+        <module name="smallredbook-oss-api" />
+        <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallred-common" />
+        <module name="smallred-spring-boot-starter-biz-context" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smallred-oss-api" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

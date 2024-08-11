@@ -3,12 +3,22 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallred-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallred-oss-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallred-oss-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smallred-oss/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallredbook-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallredbook-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/smallredbook-gateway/src/main/java" charset="UTF-8" />

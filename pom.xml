@@ -25,6 +25,8 @@
     <module>smallred-framework</module>
     <!-- gateway网关服务-->
     <module>smallredbook-gateway</module>
+    <!-- 对象存储服务 -->
+    <module>smallred-oss</module>
   </modules>
 
   <properties>
