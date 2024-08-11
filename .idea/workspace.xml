@@ -4,39 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 账号密码登录">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-05-4.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-1.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-2.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-07-3.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 对象存储框架">
       <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/test/java/org/example/smallredbook/oss/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/XiaohashuOssBizApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/factory/FileStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/FileStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/AliyunOSSFileStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/MinioFileStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/test/java/org/example/smallredbook/oss/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,6 +347,7 @@
       <workItem from="1723082066338" duration="838000" />
       <workItem from="1723096957012" duration="5091000" />
       <workItem from="1723166708222" duration="606000" />
+      <workItem from="1723364031895" duration="5794000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -524,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723021649435</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add 对象存储框架">
+      <option name="closed" value="true" />
+      <created>1723364213455</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1723364213455</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +550,8 @@
     <MESSAGE value="add 用户登出：过滤器获取userId，用ThreadLocal实现上下文传递" />
     <MESSAGE value="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题" />
     <MESSAGE value="add 账号密码登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 账号密码登录" />
+    <MESSAGE value="add 对象存储框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 对象存储框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
