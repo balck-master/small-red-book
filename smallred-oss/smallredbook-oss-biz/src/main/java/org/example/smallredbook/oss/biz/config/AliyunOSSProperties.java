@@ -6,16 +6,13 @@ import org.springframework.stereotype.Component;
 
 /**
  * @Author: tzy
- * @Description: minio配置
- * @Date: 2024/8/11 22:08
+ * @Description:阿里云 OSS 配置项
+ * @Date: 2024/8/13 15:37
  */
-
-//@ConfigurationProperties:读取文件前缀为minio的配置
-@ConfigurationProperties(prefix = "storage.minio")
+@ConfigurationProperties(prefix = "storage.aliyun-oss")
 @Component
 @Data
-public class MinioProperties {
-
+public class AliyunOSSProperties {
     private String endpoint;
     private String accessKey;
     private String secretKey;

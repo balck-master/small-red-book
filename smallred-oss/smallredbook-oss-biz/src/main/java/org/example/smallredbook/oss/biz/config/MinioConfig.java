@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @Author: tzy
- * @Description: minio的配置
+ * @Description: 初始化minio 的配置
  * @Date: 2024/8/12 10:16
  */
 
