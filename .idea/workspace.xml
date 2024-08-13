@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 对象存储框架">
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/factory/FileStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/FileStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/AliyunOSSFileStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/MinioFileStrategy.java" afterDir="false" />
+    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 策略+工厂模式 实现文件处理可扩展">
+      <change afterPath="$PROJECT_DIR$/logs/auth.2024-08-11-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/oss.2024-08-11-0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/config/MinioConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/config/MinioProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/test/java/org/example/smallredbook/oss/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/factory/FileStrategyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/factory/FileStrategyFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/MinioFileStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/MinioFileStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallred-oss/smallredbook-oss-biz/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallred-oss/smallredbook-oss-biz/src/main/resources/config&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -132,11 +134,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources\config" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\java\com\example\xiaoredshu" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -347,7 +349,10 @@
       <workItem from="1723082066338" duration="838000" />
       <workItem from="1723096957012" duration="5091000" />
       <workItem from="1723166708222" duration="606000" />
-      <workItem from="1723364031895" duration="5794000" />
+      <workItem from="1723364031895" duration="11188000" />
+      <workItem from="1723426872682" duration="7805000" />
+      <workItem from="1723455139873" duration="889000" />
+      <workItem from="1723458024837" duration="4229000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1720106328674</created>
@@ -512,7 +517,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723364213455</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add 策略+工厂模式 实现文件处理可扩展">
+      <option name="closed" value="true" />
+      <created>1723380288681</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1723380288681</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +564,8 @@
     <MESSAGE value="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题" />
     <MESSAGE value="add 账号密码登录" />
     <MESSAGE value="add 对象存储框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 对象存储框架" />
+    <MESSAGE value="add 策略+工厂模式 实现文件处理可扩展" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 策略+工厂模式 实现文件处理可扩展" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

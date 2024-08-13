@@ -9,6 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -28,7 +29,7 @@ public class FileController {
 
 //    提交方式是 MULTIPART_FORM_DATA_VALUE, 代表此接口通过表单方式提交，而不是 JSON 方式，因为涉及到文件上传。
     @PostMapping(value = "/upload" , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public Response<?> uploadFile(MultipartFile multipartFile){
-        return fileService.uploadFile(multipartFile);
+    public Response<?> uploadFile(@RequestPart(value = "file")MultipartFile file){
+        return fileService.uploadFile(file);
     }
 }

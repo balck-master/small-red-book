@@ -20,9 +20,10 @@ public class FileServiceImpl implements FileService {
     @Resource
     private FileStrategy fileStrategy;
 
+    private static final String BUCKET_NAME = "xiaohashu";
     @Override
     public Response<?> uploadFile(MultipartFile multipartFile) {
-        fileStrategy.uploadFile(multipartFile,"smallredbook");
-        return Response.success();
+        String url = fileStrategy.uploadFile(multipartFile, BUCKET_NAME);
+        return Response.success(url);
     }
 }
