@@ -18,15 +18,18 @@
         <module name="smallredbook-auth" />
         <module name="smallred-spring-boot-starter-jackson" />
         <module name="smallredbook-oss-biz" />
+        <module name="smallredbook-user-biz" />
         <module name="smallredbook-gateway" />
         <module name="smallredbook-oss-api" />
         <module name="smallred-spring-boot-starter-biz-operationlog" />
+        <module name="smallredbook-user-api" />
         <module name="smallred-common" />
         <module name="smallred-spring-boot-starter-biz-context" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="smallred-oss-api" target="17" />
+      <module name="xiaohashu-user" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

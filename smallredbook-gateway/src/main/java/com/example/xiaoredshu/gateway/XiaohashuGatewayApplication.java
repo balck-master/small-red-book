@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: 2024/7/22 14:59
  */
 
-@SpringBootApplication(scanBasePackages = {"com.example.xiaoredshu.auth","com.example.xiaoredshu.config"})
+@SpringBootApplication(scanBasePackages = {"com.example.xiaoredshu.gateway.auth","com.example.xiaoredshu.gateway.config"})
 
 public class XiaohashuGatewayApplication {
 
