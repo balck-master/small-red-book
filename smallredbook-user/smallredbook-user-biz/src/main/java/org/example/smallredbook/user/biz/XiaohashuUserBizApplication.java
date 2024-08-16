@@ -3,6 +3,7 @@ package org.example.smallredbook.user.biz;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @Author: tzy
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @MapperScan("org.example.smallredbook.user.biz.domain.mapper")
+@EnableFeignClients(basePackages = "org.example.smallredbook")
 public class XiaohashuUserBizApplication {
     public static void main(String[] args) {
         SpringApplication.run(XiaohashuUserBizApplication.class,args);

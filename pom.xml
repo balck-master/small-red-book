@@ -67,6 +67,7 @@
     <jaxb-api.version>2.3.1</jaxb-api.version>
     <activation.version>1.1.1</activation.version>
     <jaxb-runtime.version>2.3.3</jaxb-runtime.version>
+    <feign-form.version>3.8.0</feign-form.version>
   </properties>
 
   <!-- 统一依赖管理 -->
@@ -245,6 +246,18 @@
         <groupId>org.glassfish.jaxb</groupId>
         <artifactId>jaxb-runtime</artifactId>
         <version>${jaxb-runtime.version}</version>
+      </dependency>
+    <!-- 小哈书oss     -->
+      <dependency>
+        <groupId>org.example.smallredbook.oss</groupId>
+        <artifactId>smallredbook-oss-api</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+      <!-- Feign 表单提交 -->
+      <dependency>
+        <groupId>io.github.openfeign.form</groupId>
+        <artifactId>feign-form</artifactId>
+        <version>${feign-form.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

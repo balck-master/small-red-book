@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.example</groupId>
         <artifactId>smallred-framework</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
 <!--        <relativePath>../../pom.xml</relativePath>-->
     </parent>
 
@@ -29,6 +29,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
+            <version>${transmittable-thread-local.version}</version>
         </dependency>
         <dependency>
             <groupId>org.example</groupId>
@@ -38,6 +39,11 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
         </dependency>
     </dependencies>
 </project>

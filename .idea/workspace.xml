@@ -4,39 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add 文件上传到阿里云oss功能开发">
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/ParamUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/XiaohashuUserBizApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/dataobject/UserDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/UserDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/SexEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/model/vo/UpdateUserInfoReqVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/UserDOMapper.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/api/FileFeignApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/config/FeignFormConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/constant/ApiConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/TestFenginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/rpc/OssRpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/test/java/org/example/smallredbook/user/biz/DruidTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/oss.2024-08-13-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/oss.2024-08-13-0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/resources/config/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-08-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/.flattened-pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/XiaohashuUserBizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/XiaohashuUserBizApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,37 +42,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <excluded-from-favorite>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="master" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -91,148 +62,128 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2ijrxsMt3VSpkVzCg6vC9AoFtVl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2khAH1pR0T8OrzTgNP9b1KjIlkI" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
-    <option name="showExcludedFiles" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.RedisTemplateConfigTest.redisTemplate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTemplateConfigTest.testGetValue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTemplateConfigTest.testHasKey.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ThreadPoolConfigTest.testSubmit.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallred-spring-boot-starter-biz-operationlog [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-gateway [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-user-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuOssBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuUserBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-user/smallredbook-user-biz/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.PasswordEncoderConfig.executor&quot;: &quot;Run&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.DruidTest.testEncodePassword (1).executor": "Run",
+    "JUnit.DruidTest.testEncodePassword.executor": "Run",
+    "JUnit.DruidTest.testSelect (1).executor": "Run",
+    "JUnit.DruidTest.testSelect.executor": "Run",
+    "Maven.small-red-book [clean].executor": "Run",
+    "Maven.smallredbook-auth [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.XiaohashuGatewayApplication.executor": "Debug",
+    "Spring Boot.XiaohashuOssBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.XiaoredshuAuthApplication.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-biz\src\main\resources" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-biz\src\main\java\org\example\smallredbook\user\biz" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources\config" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\java\com\example\xiaoredshu" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources\config" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss\smallredbook-oss-biz\src\main\resources" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-oss" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.xiaoredshu.auth.config" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.smallredbook.user.biz" />
     </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaohashuGatewayApplication">
-    <configuration name="PasswordEncoderConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.PasswordEncoderConfig" />
-      <module name="smallredbook-auth" />
+  <component name="RunManager" selected="Spring Boot.XiaohashuOssBizApplication">
+    <configuration name="DruidTest.testEncodePassword (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-user-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="PATTERN" value="org.example.smallredbook.user.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTemplateConfigTest.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testGetValue" />
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.user.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.user.biz.DruidTest" />
+      <option name="METHOD_NAME" value="testEncodePassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPoolConfigTest.testSubmit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DruidTest.testEncodePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.ThreadPoolConfigTest" />
-      <option name="METHOD_NAME" value="testSubmit" />
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.DruidTest" />
+      <option name="METHOD_NAME" value="testEncodePassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="DruidTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-user-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.user.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.user.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.user.biz.DruidTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
+    <configuration name="DruidTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.xiaoredshu.auth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth" />
+      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.DruidTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -257,20 +208,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiaohashuUserBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="XiaohashuUserBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="smallredbook-user-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.user.biz.XiaohashuUserBizApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.smallredbook.user.biz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiaoredshuAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="XiaoredshuAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.xiaoredshu.auth.XiaoredshuAuthApplication" />
       <method v="2">
@@ -279,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
         <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
-        <item itemvalue="应用程序.PasswordEncoderConfig" />
-        <item itemvalue="JUnit.ThreadPoolConfigTest.testSubmit" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.testGetValue" />
+        <item itemvalue="JUnit.DruidTest.testSelect (1)" />
+        <item itemvalue="JUnit.DruidTest.testEncodePassword (1)" />
+        <item itemvalue="JUnit.DruidTest.testSelect" />
+        <item itemvalue="JUnit.DruidTest.testEncodePassword" />
       </list>
     </recent_temporary>
   </component>
@@ -295,287 +240,19 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\唐子怡\AppData\Roaming\Subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="" />
-      <created>1720015079733</created>
+      <changelist id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="" />
+      <created>1723725344074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720015079733</updated>
-      <workItem from="1720015082027" duration="1719000" />
-      <workItem from="1720100087601" duration="212000" />
-      <workItem from="1720100335748" duration="1494000" />
-      <workItem from="1720102051818" duration="4021000" />
-      <workItem from="1720144395955" duration="13933000" />
-      <workItem from="1720272268361" duration="404000" />
-      <workItem from="1720272692225" duration="1284000" />
-      <workItem from="1720346447608" duration="2005000" />
-      <workItem from="1720353390268" duration="5224000" />
-      <workItem from="1720402123169" duration="2121000" />
-      <workItem from="1720406060430" duration="1030000" />
-      <workItem from="1720416470373" duration="2770000" />
-      <workItem from="1720443144421" duration="3798000" />
-      <workItem from="1720489059601" duration="259000" />
-      <workItem from="1720494166325" duration="142000" />
-      <workItem from="1720494326188" duration="1877000" />
-      <workItem from="1720515833222" duration="362000" />
-      <workItem from="1720516210066" duration="1659000" />
-      <workItem from="1720525994553" duration="4381000" />
-      <workItem from="1720600266405" duration="7470000" />
-      <workItem from="1720661529174" duration="599000" />
-      <workItem from="1720663812670" duration="599000" />
-      <workItem from="1720855160235" duration="5098000" />
-      <workItem from="1720875099103" duration="7708000" />
-      <workItem from="1720960403572" duration="8488000" />
-      <workItem from="1721132080753" duration="935000" />
-      <workItem from="1721133346694" duration="12000" />
-      <workItem from="1721133412901" duration="4100000" />
-      <workItem from="1721179914888" duration="51000" />
-      <workItem from="1721179990436" duration="461000" />
-      <workItem from="1721186803201" duration="9730000" />
-      <workItem from="1721207608275" duration="598000" />
-      <workItem from="1721305410232" duration="4204000" />
-      <workItem from="1721352166490" duration="597000" />
-      <workItem from="1721454673385" duration="11599000" />
-      <workItem from="1721536181525" duration="14707000" />
-      <workItem from="1721611072739" duration="1056000" />
-      <workItem from="1721627731662" duration="4720000" />
-      <workItem from="1721641200992" duration="693000" />
-      <workItem from="1721651047552" duration="4164000" />
-      <workItem from="1721655263211" duration="439000" />
-      <workItem from="1721698962423" duration="6324000" />
-      <workItem from="1721784286345" duration="14067000" />
-      <workItem from="1721813629366" duration="18037000" />
-      <workItem from="1721974210252" duration="5301000" />
-      <workItem from="1722065843914" duration="6346000" />
-      <workItem from="1722234851396" duration="598000" />
-      <workItem from="1722326913324" duration="1357000" />
-      <workItem from="1722342207050" duration="4322000" />
-      <workItem from="1722389803350" duration="66000" />
-      <workItem from="1722476929873" duration="1256000" />
-      <workItem from="1722568193506" duration="4078000" />
-      <workItem from="1722778671013" duration="4132000" />
-      <workItem from="1722822157242" duration="13050000" />
-      <workItem from="1722909680787" duration="3488000" />
-      <workItem from="1722994895740" duration="8282000" />
-      <workItem from="1723025169811" duration="339000" />
-      <workItem from="1723036667505" duration="599000" />
-      <workItem from="1723082066338" duration="838000" />
-      <workItem from="1723096957012" duration="5091000" />
-      <workItem from="1723166708222" duration="606000" />
-      <workItem from="1723364031895" duration="11188000" />
-      <workItem from="1723426872682" duration="7805000" />
-      <workItem from="1723455139873" duration="889000" />
-      <workItem from="1723458024837" duration="31618000" />
-      <workItem from="1723687559086" duration="2317000" />
+      <updated>1723725344074</updated>
+      <workItem from="1723725345245" duration="449000" />
+      <workItem from="1723725813953" duration="3120000" />
+      <workItem from="1723728954081" duration="1937000" />
+      <workItem from="1723771193193" duration="8327000" />
+      <workItem from="1723788954464" duration="1800000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1720106328674</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1720106328674</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add MyBatis+Druid连接池(含数据库解密)">
-      <created>1720354731317</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1720354731317</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add MyBatis代码生成器+Jackson支持LocalDataTime日期API">
-      <created>1720433245801</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1720433245801</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add logback日志框架">
-      <created>1720444895605</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1720444895605</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add 插件flatten-maven-plugin，子模块单独打包">
-      <created>1720447370883</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1720447370883</updated>
-    </task>
-    <task id="LOCAL-00006" summary="add 全局参数校验、接口参数校验">
-      <option name="closed" value="true" />
-      <created>1720605248267</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1720605248267</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add 全局参数校验、接口参数校验">
-      <option name="closed" value="true" />
-      <created>1720606380684</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1720606380684</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add 获取手机验证码接口+redisTemplate">
-      <option name="closed" value="true" />
-      <created>1720877513481</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1720877513481</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add 自定义线程池">
-      <option name="closed" value="true" />
-      <created>1720879098363</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1720879098363</updated>
-    </task>
-    <task id="LOCAL-00010" summary="add 自定义@PhoneNumber手机号校验注解+SaToken整合redis（持久化登录信息）">
-      <option name="closed" value="true" />
-      <created>1721097902023</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1721097902023</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add 用户登录注册功能">
-      <option name="closed" value="true" />
-      <created>1721314132982</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1721314132982</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）">
-      <option name="closed" value="true" />
-      <created>1721551890129</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1721551890129</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add Nacos配置中心+服务注册">
-      <option name="closed" value="true" />
-      <created>1721559081601</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1721559081601</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add gateway路由转发+saToken接口鉴权">
-      <option name="closed" value="true" />
-      <created>1721805098601</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1721805098601</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add saToken接口鉴权">
-      <option name="closed" value="true" />
-      <created>1721887931039</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1721887931039</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add saToken接口鉴权bug修复">
-      <option name="closed" value="true" />
-      <created>1722152482148</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1722152482148</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add 网关过滤器">
-      <option name="closed" value="true" />
-      <created>1722586716534</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1722586716534</updated>
-    </task>
-    <task id="LOCAL-00018" summary="add 用户登出：过滤器获取userId，用ThreadLocal实现上下文传递">
-      <option name="closed" value="true" />
-      <created>1722837729892</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1722837729892</updated>
-    </task>
-    <task id="LOCAL-00019" summary="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题">
-      <option name="closed" value="true" />
-      <created>1722849177266</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1722849177266</updated>
-    </task>
-    <task id="LOCAL-00020" summary="add 账号密码登录">
-      <option name="closed" value="true" />
-      <created>1723021649435</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1723021649435</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add 对象存储框架">
-      <option name="closed" value="true" />
-      <created>1723364213455</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1723364213455</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add 策略+工厂模式 实现文件处理可扩展">
-      <option name="closed" value="true" />
-      <created>1723380288681</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1723380288681</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add 对象存储 服务注册到nacos +Minio策略逻辑补充">
-      <option name="closed" value="true" />
-      <created>1723532433176</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1723532433176</updated>
-    </task>
-    <task id="LOCAL-00024" summary="add 文件上传到阿里云oss功能开发">
-      <option name="closed" value="true" />
-      <created>1723538523457</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1723538523457</updated>
-    </task>
-    <task id="LOCAL-00025" summary="add 文件上传到阿里云oss功能开发">
-      <option name="closed" value="true" />
-      <created>1723541805930</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1723541805930</updated>
-    </task>
-    <task id="LOCAL-00026" summary="add 文件上传到阿里云oss功能开发">
-      <option name="closed" value="true" />
-      <created>1723541869735</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1723541869735</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,95 +269,13 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="add MyBatis+Druid连接池(含数据库解密)" />
-    <MESSAGE value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
-    <MESSAGE value="add logback日志框架" />
-    <MESSAGE value="add 插件flatten-maven-plugin，子模块单独打包" />
-    <MESSAGE value="add 全局参数校验、接口参数校验" />
-    <MESSAGE value="add 获取手机验证码接口+redisTemplate" />
-    <MESSAGE value="add 自定义线程池" />
-    <MESSAGE value="add 自定义@PhoneNumber手机号校验注解+SaToken整合redis（持久化登录信息）" />
-    <MESSAGE value="add 用户登录注册功能" />
-    <MESSAGE value="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）" />
-    <MESSAGE value="add Nacos配置中心+服务注册" />
-    <MESSAGE value="add gateway路由转发+saToken接口鉴权" />
-    <MESSAGE value="add saToken接口鉴权" />
-    <MESSAGE value="add saToken接口鉴权bug修复" />
-    <MESSAGE value="add 网关过滤器" />
-    <MESSAGE value="add 用户登出：过滤器获取userId，用ThreadLocal实现上下文传递" />
-    <MESSAGE value="add 使用阿里 TransmittableThreadLocal：解决异步获取上下文问题" />
-    <MESSAGE value="add 账号密码登录" />
-    <MESSAGE value="add 对象存储框架" />
-    <MESSAGE value="add 策略+工厂模式 实现文件处理可扩展" />
-    <MESSAGE value="add 对象存储 服务注册到nacos +Minio策略逻辑补充" />
-    <MESSAGE value="add 文件上传到阿里云oss功能开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 文件上传到阿里云oss功能开发" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/response/Response.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/impl/MailAlarmHelper.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/exception/GlobalExceptionHandler.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/strategy/impl/AliyunOSSFileStrategy.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/factory/FileStrategyFactory.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/config/ContextAutoConfiguration.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

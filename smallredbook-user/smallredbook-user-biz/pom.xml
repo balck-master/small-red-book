@@ -85,6 +85,12 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
+
+        <!-- 小哈书oss     -->
+        <dependency>
+            <groupId>org.example.smallredbook.oss</groupId>
+            <artifactId>smallredbook-oss-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

@@ -24,7 +24,7 @@ import java.time.YearMonth;
 
 
 @Configuration
-public class JacksonConfig {
+public class JacksonAutoConfiguration {
 
     @Bean
     public ObjectMapper objectMapper() {

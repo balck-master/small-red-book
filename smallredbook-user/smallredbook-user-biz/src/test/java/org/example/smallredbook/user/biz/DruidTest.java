@@ -1,12 +1,12 @@
-package com.example.xiaoredshu.auth;
+package org.example.smallredbook.user.biz;
 
 import com.alibaba.druid.filter.config.ConfigTools;
-import com.example.xiaoredshu.auth.domain.dataobject.UserDO;
-import com.example.xiaoredshu.auth.domain.mapper.UserDOMapper;
 import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.example.framework.common.utils.JsonUtils;
+import org.example.smallredbook.user.biz.domain.dataobject.UserDO;
+import org.example.smallredbook.user.biz.domain.mapper.UserDOMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

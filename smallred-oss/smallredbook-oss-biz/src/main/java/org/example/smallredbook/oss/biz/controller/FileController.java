@@ -2,6 +2,7 @@ package org.example.smallredbook.oss.biz.controller;
 
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.example.framework.biz.context.holder.LoginUserContextHolder;
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.oss.biz.service.FileService;
 import org.example.smallredbook.oss.biz.service.impl.FileServiceImpl;
@@ -30,6 +31,7 @@ public class FileController {
 //    提交方式是 MULTIPART_FORM_DATA_VALUE, 代表此接口通过表单方式提交，而不是 JSON 方式，因为涉及到文件上传。
     @PostMapping(value = "/upload" , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Response<?> uploadFile(@RequestPart(value = "file")MultipartFile file){
+        log.info("当前用户 ID: {}", LoginUserContextHolder.getUserId());
         return fileService.uploadFile(file);
     }
 }
