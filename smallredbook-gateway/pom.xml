@@ -57,6 +57,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
         </dependency>
+<!--&lt;!&ndash; aop切面日志&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>smallred-spring-boot-starter-biz-operationlog</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

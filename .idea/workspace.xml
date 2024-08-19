@@ -5,34 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/api/FileFeignApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/config/FeignFormConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/src/main/java/org/example/smallredbook/oss/constant/ApiConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/TestFenginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/rpc/OssRpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/test/java/org/example/smallredbook/user/biz/DruidTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/rpc/UserRpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/api/UserFeignApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/constant/ApiConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/req/RegisterUserReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/config/RedisTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/constant/RedisKeyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/constant/RoleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/dataobject/PermissionDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/dataobject/RoleDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/dataobject/RolePermissionDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/dataobject/UserRoleDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/PermissionDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/RoleDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/RolePermissionDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/UserRoleDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/PermissionDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/RoleDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/RolePermissionDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/UserRoleDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-08-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-10-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-13-0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-jackson/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/src/main/java/org/example/smallredbook/oss/biz/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/.flattened-pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/XiaoredshuAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/constant/RedisKeyConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/runner/PushRolePermissions2RedisRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/runner/PushRolePermissions2RedisRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/XiaohashuUserBizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/XiaohashuUserBizApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/UserDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/domain/mapper/UserDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/resources/mapper/UserDOMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +72,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -82,7 +91,9 @@
     "JUnit.DruidTest.testSelect (1).executor": "Run",
     "JUnit.DruidTest.testSelect.executor": "Run",
     "Maven.small-red-book [clean].executor": "Run",
+    "Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "Maven.smallredbook-auth [clean].executor": "Run",
+    "Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -90,16 +101,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.XiaohashuGatewayApplication.executor": "Debug",
-    "Spring Boot.XiaohashuOssBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuOssBizApplication.executor": "Run",
     "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
     "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/req",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "库",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -112,6 +124,10 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-api\src\main\java\org\example\smallredbook\user\api\dto\req" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-biz\src\main\java\org\example\smallredbook\user\biz" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.smallredbook.user.biz" />
     </key>
@@ -222,6 +238,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.DruidTest.testEncodePassword" />
+      <item itemvalue="JUnit.DruidTest.testEncodePassword (1)" />
+      <item itemvalue="JUnit.DruidTest.testSelect" />
+      <item itemvalue="JUnit.DruidTest.testSelect (1)" />
+      <item itemvalue="Spring Boot.XiaohashuGatewayApplication" />
+      <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
+      <item itemvalue="Spring Boot.XiaoredshuAuthApplication" />
+      <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
@@ -252,6 +278,12 @@
       <workItem from="1723728954081" duration="1937000" />
       <workItem from="1723771193193" duration="8327000" />
       <workItem from="1723788954464" duration="1800000" />
+      <workItem from="1724031487094" duration="495000" />
+      <workItem from="1724031999875" duration="1759000" />
+      <workItem from="1724033799091" duration="216000" />
+      <workItem from="1724034045551" duration="1659000" />
+      <workItem from="1724036014271" duration="8957000" />
+      <workItem from="1724051594045" duration="4393000" />
     </task>
     <servers />
   </component>
@@ -276,6 +308,36 @@
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/test/java/com/example/xiaoredshu/auth/DruidTest.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Environment/Maven/myRepository/cn/dev33/sa-token-core/1.38.0/sa-token-core-1.38.0-sources.jar!/cn/dev33/satoken/stp/StpLogic.java</url>
+          <line>933</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../Environment/Maven/myRepository/cn/dev33/sa-token-core/1.38.0/sa-token-core-1.38.0-sources.jar!/cn/dev33/satoken/stp/StpLogic.java</url>
+          <line>1093</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

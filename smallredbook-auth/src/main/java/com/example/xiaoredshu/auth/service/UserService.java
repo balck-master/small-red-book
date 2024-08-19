@@ -20,12 +20,6 @@ public interface UserService {
      */
     Response<String> loginAndRegister(UserLoginReqVO userLoginReqVO);
 
-    /**
-     * 注册用户
-     * @param phone
-     * @return
-     */
-    Long registerUser(String phone);
 
     /**
      * 用户登出

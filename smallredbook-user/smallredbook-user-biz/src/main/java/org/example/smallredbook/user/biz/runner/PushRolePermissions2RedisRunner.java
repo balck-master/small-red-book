@@ -1,26 +1,25 @@
-package com.example.xiaoredshu.auth.runner;
+package org.example.smallredbook.user.biz.runner;
+
+
 
 import cn.hutool.core.collection.CollUtil;
-import com.example.xiaoredshu.auth.constant.RedisKeyConstants;
-import com.example.xiaoredshu.auth.domain.dataobject.PermissionDO;
-import com.example.xiaoredshu.auth.domain.dataobject.RoleDO;
-import com.example.xiaoredshu.auth.domain.dataobject.RolePermissionDO;
-import com.example.xiaoredshu.auth.domain.mapper.PermissionDOMapper;
-import com.example.xiaoredshu.auth.domain.mapper.RoleDOMapper;
-import com.example.xiaoredshu.auth.domain.mapper.RolePermissionDOMapper;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.checkerframework.checker.nullness.qual.Nullable;
 import org.example.framework.common.utils.JsonUtils;
-import org.springframework.beans.factory.SmartInitializingSingleton;
+import org.example.smallredbook.user.biz.constant.RedisKeyConstants;
+import org.example.smallredbook.user.biz.domain.dataobject.PermissionDO;
+import org.example.smallredbook.user.biz.domain.dataobject.RoleDO;
+import org.example.smallredbook.user.biz.domain.dataobject.RolePermissionDO;
+import org.example.smallredbook.user.biz.domain.mapper.PermissionDOMapper;
+import org.example.smallredbook.user.biz.domain.mapper.RoleDOMapper;
+import org.example.smallredbook.user.biz.domain.mapper.RolePermissionDOMapper;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;

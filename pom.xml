@@ -259,6 +259,12 @@
         <artifactId>feign-form</artifactId>
         <version>${feign-form.version}</version>
       </dependency>
+      <!-- 用户RPC层, 供其他服务调用-->
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>smallredbook-user-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

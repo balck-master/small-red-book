@@ -3,7 +3,9 @@ package org.example.smallredbook.user.biz.controller;
 import jakarta.annotation.Resource;
 import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
+import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
 import org.example.framework.common.response.Response;
+import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
 import org.example.smallredbook.user.biz.model.vo.UpdateUserInfoReqVO;
 import org.example.smallredbook.user.biz.service.UserService;
 import org.springframework.http.MediaType;
@@ -28,5 +30,12 @@ public class UserController {
     @PostMapping(value = "/update" , consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public Response<?> updateUserInfo(@Validated UpdateUserInfoReqVO updateUserInfoReqVO){
         return userService.updateUserInfo(updateUserInfoReqVO);
+    }
+
+    // ===================================== 对其他服务提供的接口 =====================================
+    @PostMapping("/register")
+    @ApiOperationLog(description = "用户注册")
+    public Response<Long> register(@Validated @RequestBody RegisterUserReqDTO registerUserReqDTO) {
+        return userService.register(registerUserReqDTO);
     }
 }

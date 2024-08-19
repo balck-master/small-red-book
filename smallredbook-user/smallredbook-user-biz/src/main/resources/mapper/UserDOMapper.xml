@@ -21,6 +21,14 @@
     id, xiaohashu_id, `password`, nickname, avatar, birthday, background_img, phone, 
     sex, `status`, introduction, create_time, update_time, is_deleted
   </sql>
+
+  <select id="selectByPhone"  resultMap="BaseResultMap">
+    select id, password
+    from t_user
+    where phone = #{phone}
+
+  </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -31,7 +39,7 @@
     delete from t_user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="org.example.smallredbook.user.biz.domain.dataobject.UserDO">
+  <insert id="insert" parameterType="org.example.smallredbook.user.biz.domain.dataobject.UserDO" useGeneratedKeys="true" keyProperty="id">
     insert into t_user (id, xiaohashu_id, `password`, 
       nickname, avatar, birthday, 
       background_img, phone, sex, 

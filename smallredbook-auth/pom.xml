@@ -158,7 +158,15 @@
             <artifactId>spring-security-crypto</artifactId>
         </dependency>
 
-
+        <!-- 用户RPC层, 供其他服务调用-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-user-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-user-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
