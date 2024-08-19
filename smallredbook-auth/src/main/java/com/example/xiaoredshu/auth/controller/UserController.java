@@ -43,6 +43,8 @@ public class UserController {
      * @param updatePasswordReqVO
      * @return
      */
+    @PostMapping("/password/update")
+    @ApiOperationLog(description = "修改密码")
     public Response<?> updatePassword(@Validated @RequestBody UpdatePasswordReqVO updatePasswordReqVO){
         return  userService.updatePassword(updatePasswordReqVO);
     }

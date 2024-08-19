@@ -26,6 +26,7 @@ import org.example.framework.common.enums.StatusEnum;
 import org.example.framework.common.exception.BizException;
 import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -113,17 +114,18 @@ public class UserServiceImpl implements UserService {
                 //todo
                 String password = userLoginReqVO.getPassword();
                 // 根据手机号查询
-                UserDO userDO1 = userDOMapper.selectByPhone(phone);
-                if(Objects.isNull(userDO1)){
+                FindUserByPhoneRspDTO findUserByPhoneRspDTO = userRpcService.findUserByPhone(phone);
+                //判断手机号是否注册
+                if(Objects.isNull(findUserByPhoneRspDTO)){
                     throw new BizException(ResponseCodeEnum.USER_NOT_FOUND);
                 }
 
                 // 匹配密码是否一致
-                boolean matches = passwordEncoder.matches(password, userDO1.getPassword());
+                boolean matches = passwordEncoder.matches(password, findUserByPhoneRspDTO.getPassword());
                 if(!matches){
                     throw new BizException(ResponseCodeEnum.PHONE_OR_PASSWORD_ERROR);
                 }
-                userId = userDO1.getId();
+                userId = findUserByPhoneRspDTO.getId();
                 break;
             }
 

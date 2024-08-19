@@ -4,7 +4,9 @@ import com.example.xiaoredshu.auth.service.UserService;
 import jakarta.annotation.Resource;
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.api.api.UserFeignApi;
+import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.stereotype.Component;
 
 /**
@@ -28,6 +30,22 @@ public class UserRpcService {
         registerUserReqDTO.setPhone(phone);
 
         Response<Long> response = userFeignApi.registerUser(registerUserReqDTO);
+        if(!response.isSuccess()){
+            return null;
+        }
+        return response.getData();
+    }
+
+    /**
+     * 根据手机号查找用户信息
+     * @param phone
+     * @return
+     */
+    public FindUserByPhoneRspDTO findUserByPhone(String phone) {
+        FindUserByPhoneReqDTO findUserByPhoneReqDTO = new FindUserByPhoneReqDTO();
+        findUserByPhoneReqDTO.setPhone(phone);
+
+        Response<FindUserByPhoneRspDTO> response = userFeignApi.findByPhone(findUserByPhoneReqDTO);
         if(!response.isSuccess()){
             return null;
         }

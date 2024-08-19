@@ -2,7 +2,9 @@ package org.example.smallredbook.user.api.api;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.api.constant.ApiConstants;
+import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,4 +25,12 @@ public interface UserFeignApi {
      */
     @PostMapping(value = PREFIX + "/register")
     Response<Long> registerUser(@RequestBody  RegisterUserReqDTO registerUserReqDTO);
+
+    /**
+     * 根据手机号查找用户信息
+     * @param findUserByPhoneReqDTO
+     * @return
+     */
+    @PostMapping(value = PREFIX +"/findByPhone")
+    Response<FindUserByPhoneRspDTO> findByPhone(@RequestBody FindUserByPhoneReqDTO findUserByPhoneReqDTO);
 }

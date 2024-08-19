@@ -5,7 +5,9 @@ import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
 import org.example.framework.common.response.Response;
+import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.model.vo.UpdateUserInfoReqVO;
 import org.example.smallredbook.user.biz.service.UserService;
 import org.springframework.http.MediaType;
@@ -37,5 +39,11 @@ public class UserController {
     @ApiOperationLog(description = "用户注册")
     public Response<Long> register(@Validated @RequestBody RegisterUserReqDTO registerUserReqDTO) {
         return userService.register(registerUserReqDTO);
+    }
+
+    @PostMapping("/findByPhone")
+    @ApiOperationLog(description = "根据手机号查询用户信息")
+    public Response<FindUserByPhoneRspDTO> findByPhone(@Validated @RequestBody FindUserByPhoneReqDTO findUserByPhoneReqDTO){
+        return userService.findByPhone(findUserByPhoneReqDTO);
     }
 }

@@ -2,7 +2,9 @@ package org.example.smallredbook.user.biz.service;
 
 import jakarta.annotation.Resource;
 import org.example.framework.common.response.Response;
+import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.model.vo.UpdateUserInfoReqVO;
 
 /**
@@ -25,4 +27,11 @@ public interface UserService {
      * @return
      */
     Response<Long> register(RegisterUserReqDTO registerUserReqDTO);
+
+    /**
+     * 根据手机号查询用户信息
+     * @param findUserByPhoneReqDTO
+     * @return
+     */
+    Response<FindUserByPhoneRspDTO> findByPhone(FindUserByPhoneReqDTO findUserByPhoneReqDTO);
 }

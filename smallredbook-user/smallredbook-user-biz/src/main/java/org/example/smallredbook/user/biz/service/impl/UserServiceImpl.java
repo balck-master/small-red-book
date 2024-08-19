@@ -15,7 +15,9 @@ import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
 import org.example.framework.common.utils.ParamUtils;
 import org.example.smallredbook.oss.api.FileFeignApi;
+import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.user.biz.constant.RoleConstants;
 import org.example.smallredbook.user.biz.domain.dataobject.RoleDO;
@@ -205,6 +207,33 @@ public class UserServiceImpl implements UserService {
         redisTemplate.opsForValue().set(userRolesKey, JsonUtils.toJsonString(roles));
 
         return Response.success(userId);
+    }
+
+    /**
+     * 根据手机号查询用户信息
+     *
+     * @param findUserByPhoneReqDTO
+     * @return
+     */
+    @Override
+    public Response<FindUserByPhoneRspDTO> findByPhone(FindUserByPhoneReqDTO findUserByPhoneReqDTO) {
+        String phone = findUserByPhoneReqDTO.getPhone();
+
+        // 根据手机号查询用户信息
+        UserDO userDO = userDOMapper.selectByPhone(phone);
+
+        // 判空
+        if (Objects.isNull(userDO)) {
+            throw new BizException(ResponseCodeEnum.USER_NOT_FOUND);
+        }
+
+        // 构建返参
+        FindUserByPhoneRspDTO findUserByPhoneRspDTO = FindUserByPhoneRspDTO.builder()
+                .id(userDO.getId())
+                .password(userDO.getPassword())
+                .build();
+
+        return Response.success(findUserByPhoneRspDTO);
     }
 }
 
