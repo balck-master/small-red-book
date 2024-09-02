@@ -17,6 +17,7 @@ import org.example.framework.common.utils.ParamUtils;
 import org.example.smallredbook.oss.api.FileFeignApi;
 import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.req.UpdateUserPasswordReqDTO;
 import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.user.biz.constant.RoleConstants;
@@ -234,6 +235,28 @@ public class UserServiceImpl implements UserService {
                 .build();
 
         return Response.success(findUserByPhoneRspDTO);
+    }
+
+    /**
+     * 更新密码
+     *
+     * @param updateUserPasswordReqDTO
+     * @return
+     */
+    @Override
+    public Response<?> updatePassword(UpdateUserPasswordReqDTO updateUserPasswordReqDTO) {
+        // 获取当前请求对应的用户 ID
+        Long userId = LoginUserContextHolder.getUserId();
+
+        UserDO userDO = UserDO.builder()
+                .id(userId)
+                .password(updateUserPasswordReqDTO.getEncodePassword()) // 加密后的密码
+                .updateTime(LocalDateTime.now())
+                .build();
+        // 更新密码
+        userDOMapper.updateByPrimaryKeySelective(userDO);
+
+        return Response.success();
     }
 }
 

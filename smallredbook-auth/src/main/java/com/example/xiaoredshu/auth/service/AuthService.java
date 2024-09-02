@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
  * @Date: 2024/7/16 21:20
  */
 @Service
-public interface UserService {
+public interface AuthService {
 
     /**
      * 用户登录与注册

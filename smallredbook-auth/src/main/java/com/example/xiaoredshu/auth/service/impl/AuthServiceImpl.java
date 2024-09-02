@@ -3,26 +3,17 @@ package com.example.xiaoredshu.auth.service.impl;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import com.example.xiaoredshu.auth.constant.RedisKeyConstants;
-import com.example.xiaoredshu.auth.constant.RoleConstants;
-import com.example.xiaoredshu.auth.domain.dataobject.RoleDO;
-import com.example.xiaoredshu.auth.domain.dataobject.UserDO;
-import com.example.xiaoredshu.auth.domain.dataobject.UserRoleDO;
-import com.example.xiaoredshu.auth.domain.mapper.RoleDOMapper;
-import com.example.xiaoredshu.auth.domain.mapper.UserDOMapper;
-import com.example.xiaoredshu.auth.domain.mapper.UserRoleDOMapper;
 import com.example.xiaoredshu.auth.enums.LoginTypeEnum;
 import com.example.xiaoredshu.auth.enums.ResponseCodeEnum;
 import com.example.xiaoredshu.auth.model.vo.user.UpdatePasswordReqVO;
 import com.example.xiaoredshu.auth.model.vo.user.UserLoginReqVO;
 import com.example.xiaoredshu.auth.rpc.UserRpcService;
-import com.example.xiaoredshu.auth.service.UserService;
+import com.example.xiaoredshu.auth.service.AuthService;
 import com.google.common.base.Preconditions;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.example.framework.biz.context.holder.LoginUserContextHolder;
-import org.example.framework.common.enums.DeletedEnum;
-import org.example.framework.common.enums.StatusEnum;
 import org.example.framework.common.exception.BizException;
 import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
@@ -31,12 +22,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.support.TransactionTemplate;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 
@@ -48,28 +35,25 @@ import java.util.Objects;
  */
 @Service
 @Slf4j
-public class UserServiceImpl implements UserService {
+public class AuthServiceImpl implements AuthService {
     @Resource
     private RedisTemplate redisTemplate;
 
-    @Resource
-    private UserRoleDOMapper userRoleDOMapper;
-    @Resource
-    private UserDOMapper userDOMapper;
+
 
     @Resource
     private TransactionTemplate transactionTemplate;
 
+
     @Resource
-    private RoleDOMapper roleDOMapper;
+    private UserRpcService userRpcService;
 
     @Resource(name = "taskExecutor")
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
     @Resource
     private PasswordEncoder passwordEncoder;
-    @Resource
-    private UserRpcService userRpcService;
+
 
     @Override
     public Response<String> loginAndRegister(UserLoginReqVO userLoginReqVO) {
@@ -96,9 +80,9 @@ public class UserServiceImpl implements UserService {
                 if(!StringUtils.equals(verificationCode,redisCode)){
                     throw new BizException(ResponseCodeEnum.VERIFICATION_CODE_ERROR);
                 }
-                UserDO userDO = userDOMapper.selectByPhone(phone);
+                FindUserByPhoneRspDTO findUserByPhoneRspDTO1 = userRpcService.findUserByPhone(phone);
 
-                log.info("==> 用户是否注册, phone: {}, userDO: {}", phone, JsonUtils.toJsonString(userDO));
+                log.info("==> 用户是否注册, phone: {}, userDO: {}", phone, JsonUtils.toJsonString(findUserByPhoneRspDTO1));
 
                 //RPC：调用远程服务，调用用户
                 Long userIdTmp = userRpcService.registerUser(phone);
@@ -171,16 +155,9 @@ public class UserServiceImpl implements UserService {
         //加密后的密码
         String encodePassword = passwordEncoder.encode(newPassword);
 
-        // 获取当前请求对应的用户 ID
-        Long userId = LoginUserContextHolder.getUserId();
-        UserDO userDO = UserDO.builder()
-                .id(userId)
-                .password(encodePassword)
-                .updateTime(LocalDateTime.now())
-                .build();
+        //RPC : 调用用户服务：更新密码
+        userRpcService.updatePassword(encodePassword);
 
-        //更新密码
-        userDOMapper.updateByPrimaryKey(userDO);
         return Response.success();
     }
 

@@ -1,11 +1,11 @@
 package com.example.xiaoredshu.auth.rpc;
 
-import com.example.xiaoredshu.auth.service.UserService;
 import jakarta.annotation.Resource;
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.api.api.UserFeignApi;
 import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
+import org.example.smallredbook.user.api.dto.req.UpdateUserPasswordReqDTO;
 import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.stereotype.Component;
 
@@ -50,5 +50,17 @@ public class UserRpcService {
             return null;
         }
         return response.getData();
+    }
+
+    /**
+     * 密码更新
+     *
+     * @param encodePassword
+     */
+    public void updatePassword(String encodePassword) {
+        UpdateUserPasswordReqDTO updateUserPasswordReqDTO = new UpdateUserPasswordReqDTO();
+        updateUserPasswordReqDTO.setEncodePassword(encodePassword);
+
+        userFeignApi.updatePassword(updateUserPasswordReqDTO);
     }
 }
