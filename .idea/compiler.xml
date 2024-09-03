@@ -13,9 +13,11 @@
         <module name="smallredbook-auth" />
         <module name="smallred-spring-boot-starter-jackson" />
         <module name="smallredbook-oss-biz" />
+        <module name="smallredbook-kv-biz" />
         <module name="smallredbook-user-biz" />
         <module name="smallredbook-gateway" />
         <module name="smallredbook-oss-api" />
+        <module name="smallredbook-kv-api" />
         <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallredbook-user-api" />
         <module name="smallred-common" />

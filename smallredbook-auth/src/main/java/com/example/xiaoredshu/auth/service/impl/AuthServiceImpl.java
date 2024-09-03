@@ -41,9 +41,9 @@ public class AuthServiceImpl implements AuthService {
 
 
 
-    @Resource
-    private TransactionTemplate transactionTemplate;
-
+//    @Resource
+//    private TransactionTemplate transactionTemplate;
+//
 
     @Resource
     private UserRpcService userRpcService;
