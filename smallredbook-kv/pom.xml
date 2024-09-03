@@ -22,5 +22,10 @@
     <name>${project.artifactId}</name>
     <!-- 项目描述 -->
     <description>Key-Value 键值存储服务</description>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-kv-api</artifactId>
+        </dependency>
+    </dependencies>
 </project>

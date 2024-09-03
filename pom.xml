@@ -266,6 +266,13 @@
         <artifactId>smallredbook-user-api</artifactId>
         <version>${revision}</version>
       </dependency>
+
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>smallredbook-kv-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 

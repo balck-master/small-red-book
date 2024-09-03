@@ -4,20 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 密码更新接口 代码重构">
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/XiaohashuKVBizApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add KV 键值存储微服务搭建">
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/AddNoteContentReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/config/CassandraConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/domain/dataobject/NoteContentDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/domain/repository/NoteContentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/test/java/org/example/smallredbook/kv/biz/CassandraTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-kv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +26,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -59,45 +62,49 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.DruidTest.testEncodePassword (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testEncodePassword.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testSelect (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testSelect.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.small-red-book [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.XiaohashuKVBizApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.XiaohashuOssBizApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.XiaohashuUserBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-kv/smallredbook-kv-biz/src/main/resources/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.XiaoredshuAuthApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CassandraTests.testDelete.executor": "Run",
+    "JUnit.CassandraTests.testInsert.executor": "Run",
+    "JUnit.CassandraTests.testSelect.executor": "Run",
+    "JUnit.CassandraTests.testUpdate.executor": "Run",
+    "JUnit.DruidTest.testEncodePassword (1).executor": "Run",
+    "JUnit.DruidTest.testEncodePassword.executor": "Run",
+    "JUnit.DruidTest.testSelect (1).executor": "Run",
+    "JUnit.DruidTest.testSelect.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.small-red-book [clean].executor": "Run",
+    "Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallredbook-auth [clean].executor": "Run",
+    "Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.XiaohashuGatewayApplication.executor": "Run",
+    "Spring Boot.XiaohashuKVBizApplication.executor": "Run",
+    "Spring Boot.XiaohashuOssBizApplication.executor": "Run",
+    "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuAuthApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-kv/smallredbook-kv-biz/src/main/resources/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.XiaoredshuAuthApplication.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -119,50 +126,66 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaohashuKVBizApplication">
-    <configuration name="DruidTest.testEncodePassword (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-user-biz" />
+  <component name="RunManager" selected="JUnit.CassandraTests.testDelete">
+    <configuration name="CassandraTests.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-kv-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.smallredbook.user.biz.*" />
+          <option name="PATTERN" value="org.example.smallredbook.kv.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.smallredbook.user.biz" />
-      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.user.biz.DruidTest" />
-      <option name="METHOD_NAME" value="testEncodePassword" />
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.kv.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.kv.biz.CassandraTests" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.testSelect (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-user-biz" />
+    <configuration name="CassandraTests.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-kv-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.smallredbook.user.biz.*" />
+          <option name="PATTERN" value="org.example.smallredbook.kv.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.smallredbook.user.biz" />
-      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.user.biz.DruidTest" />
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.kv.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.kv.biz.CassandraTests" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CassandraTests.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-kv-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.kv.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.kv.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.kv.biz.CassandraTests" />
       <option name="METHOD_NAME" value="testSelect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DruidTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
+    <configuration name="CassandraTests.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-kv-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.*" />
+          <option name="PATTERN" value="org.example.smallredbook.kv.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.DruidTest" />
-      <option name="METHOD_NAME" value="testSelect" />
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.kv.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.kv.biz.CassandraTests" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -188,19 +211,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiaohashuOssBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-oss-biz" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.oss.biz.XiaohashuOssBizApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.smallredbook.oss.biz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="XiaohashuUserBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="smallredbook-user-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.user.biz.XiaohashuUserBizApplication" />
@@ -216,22 +226,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DruidTest.testEncodePassword (1)" />
-      <item itemvalue="JUnit.DruidTest.testSelect" />
-      <item itemvalue="JUnit.DruidTest.testSelect (1)" />
+      <item itemvalue="JUnit.CassandraTests.testDelete" />
+      <item itemvalue="JUnit.CassandraTests.testInsert" />
+      <item itemvalue="JUnit.CassandraTests.testSelect" />
+      <item itemvalue="JUnit.CassandraTests.testUpdate" />
       <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
       <item itemvalue="Spring Boot.XiaohashuGatewayApplication" />
       <item itemvalue="Spring Boot.XiaoredshuAuthApplication" />
       <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
-      <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
-        <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
-        <item itemvalue="JUnit.DruidTest.testSelect (1)" />
-        <item itemvalue="JUnit.DruidTest.testEncodePassword (1)" />
-        <item itemvalue="JUnit.DruidTest.testSelect" />
+        <item itemvalue="JUnit.CassandraTests.testDelete" />
+        <item itemvalue="JUnit.CassandraTests.testSelect" />
+        <item itemvalue="JUnit.CassandraTests.testUpdate" />
+        <item itemvalue="JUnit.CassandraTests.testInsert" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +274,7 @@
       <workItem from="1724117102943" duration="29000" />
       <workItem from="1724663688327" duration="2344000" />
       <workItem from="1725331882097" duration="3300000" />
-      <workItem from="1725359173109" duration="1528000" />
+      <workItem from="1725359173109" duration="7008000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -290,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725270928840</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add KV 键值存储微服务搭建">
+      <option name="closed" value="true" />
+      <created>1725363390740</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725363390740</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +329,8 @@
     <MESSAGE value="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）" />
     <MESSAGE value="add 手机号查询用户信息接口重构(通过openFeign)" />
     <MESSAGE value="add 密码更新接口 代码重构" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 密码更新接口 代码重构" />
+    <MESSAGE value="add KV 键值存储微服务搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="add KV 键值存储微服务搭建" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
