@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记内容新增 接口开发">
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/FindNoteContentReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/rsp/FindNoteContentRspDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记内容查询 接口开发">
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/DeleteNoteContentReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" afterDir="false" />
@@ -268,7 +267,7 @@
       <workItem from="1724117102943" duration="29000" />
       <workItem from="1724663688327" duration="2344000" />
       <workItem from="1725331882097" duration="3300000" />
-      <workItem from="1725359173109" duration="10541000" />
+      <workItem from="1725359173109" duration="12262000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -310,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725371687185</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add 笔记内容查询 接口开发">
+      <option name="closed" value="true" />
+      <created>1725427086171</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725427086171</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +340,8 @@
     <MESSAGE value="add 密码更新接口 代码重构" />
     <MESSAGE value="add KV 键值存储微服务搭建" />
     <MESSAGE value="add 笔记内容新增 接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 笔记内容新增 接口开发" />
+    <MESSAGE value="add 笔记内容查询 接口开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 笔记内容查询 接口开发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -350,7 +358,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java</url>
-          <line>31</line>
+          <line>32</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

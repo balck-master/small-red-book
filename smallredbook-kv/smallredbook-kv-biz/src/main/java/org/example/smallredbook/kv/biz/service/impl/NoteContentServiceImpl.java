@@ -10,6 +10,7 @@ import org.example.smallredbook.kv.biz.domain.repository.NoteContentRepository;
 import org.example.smallredbook.kv.biz.enums.ResponseCodeEnum;
 import org.example.smallredbook.kv.biz.service.NoteContentService;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.DeleteNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
 import org.springframework.stereotype.Service;
@@ -74,5 +75,17 @@ public class NoteContentServiceImpl implements NoteContentService {
                 .build();
 
         return Response.success(findNoteContentRspDTO);
+    }
+
+    /**
+     * 删除笔记内容
+     * @param deleteNoteContentReqDTO
+     * @return
+     */
+    @Override
+    public Response<DeleteNoteContentReqDTO> deleteNoteContent(DeleteNoteContentReqDTO deleteNoteContentReqDTO) {
+        String noteId = deleteNoteContentReqDTO.getNoteId();
+        noteContentRepository.deleteById(UUID.fromString(noteId));
+        return Response.success();
     }
 }

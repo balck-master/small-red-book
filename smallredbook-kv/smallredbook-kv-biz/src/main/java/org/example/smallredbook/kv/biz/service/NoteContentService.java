@@ -2,6 +2,7 @@ package org.example.smallredbook.kv.biz.service;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.DeleteNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
 
@@ -25,4 +26,11 @@ public interface NoteContentService {
      * @return
      */
     Response<FindNoteContentRspDTO> findNoteContent(FindNoteContentReqDTO findNoteContentReqDTO);
+
+    /**
+     * 删除笔记内容
+     * @param deleteNoteContentReqDTO
+     * @return
+     */
+    Response<DeleteNoteContentReqDTO> deleteNoteContent(DeleteNoteContentReqDTO deleteNoteContentReqDTO);
 }

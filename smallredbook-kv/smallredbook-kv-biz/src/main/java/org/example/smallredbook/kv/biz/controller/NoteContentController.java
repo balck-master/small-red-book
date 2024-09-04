@@ -7,6 +7,7 @@ import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.biz.domain.repository.NoteContentRepository;
 import org.example.smallredbook.kv.biz.service.NoteContentService;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.DeleteNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
 import org.springframework.beans.factory.annotation.Value;
@@ -36,5 +37,10 @@ public class NoteContentController {
     @PostMapping(value = "/note/content/find")
     public Response<FindNoteContentRspDTO> findNoteContent(@Valid @RequestBody FindNoteContentReqDTO findNoteContentReqDTO){
         return noteContentService.findNoteContent(findNoteContentReqDTO);
+    }
+
+    @PostMapping(value = "/note/content/delete")
+    public Response<DeleteNoteContentReqDTO> deleteNoteContent(@Valid @RequestBody DeleteNoteContentReqDTO deleteNoteContentReqDTO){
+        return noteContentService.deleteNoteContent(deleteNoteContentReqDTO);
     }
 }
