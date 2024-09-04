@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add KV 键值存储微服务搭建">
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/AddNoteContentReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/config/CassandraConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/domain/dataobject/NoteContentDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/domain/repository/NoteContentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/test/java/org/example/smallredbook/kv/biz/CassandraTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记内容新增 接口开发">
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/FindNoteContentReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/rsp/FindNoteContentRspDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/NoteContentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +268,7 @@
       <workItem from="1724117102943" duration="29000" />
       <workItem from="1724663688327" duration="2344000" />
       <workItem from="1725331882097" duration="3300000" />
-      <workItem from="1725359173109" duration="7008000" />
+      <workItem from="1725359173109" duration="10541000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -308,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725363390740</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add 笔记内容新增 接口开发">
+      <option name="closed" value="true" />
+      <created>1725371687185</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725371687185</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +332,8 @@
     <MESSAGE value="add 手机号查询用户信息接口重构(通过openFeign)" />
     <MESSAGE value="add 密码更新接口 代码重构" />
     <MESSAGE value="add KV 键值存储微服务搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="add KV 键值存储微服务搭建" />
+    <MESSAGE value="add 笔记内容新增 接口开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 笔记内容新增 接口开发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -344,6 +347,11 @@
           <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/AuthController.java</url>
           <line>36</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/controller/NoteContentController.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

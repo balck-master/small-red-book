@@ -3,6 +3,8 @@ package org.example.smallredbook.kv.api;
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.constant.ApiConstants;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,4 +19,7 @@ public interface KeyValueFeignApi {
     String PREFIX = "/kv";
     @PostMapping(value = PREFIX+"/note/content/add")
     Response<?> addNoteContent(@RequestBody AddNoteContentReqDTO addNoteContentReqDTO);
+
+    @PostMapping(value = PREFIX +"/note/content/find")
+    Response<FindNoteContentRspDTO> findNoteContent(@RequestBody FindNoteContentReqDTO findNoteContentReqDTO);
 }

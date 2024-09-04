@@ -2,6 +2,8 @@ package org.example.smallredbook.kv.biz.service;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
 
 /**
  * @Author: tzy
@@ -16,4 +18,11 @@ public interface NoteContentService {
      * @return
      */
     Response<?> addNodeContent(AddNoteContentReqDTO addNoteContentReqDTO);
+
+    /**
+     * 查询笔记内容
+     * @param findNoteContentReqDTO
+     * @return
+     */
+    Response<FindNoteContentRspDTO> findNoteContent(FindNoteContentReqDTO findNoteContentReqDTO);
 }
