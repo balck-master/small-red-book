@@ -6,23 +6,19 @@
         <artifactId>small-red-book</artifactId>
         <version>${revision}</version>
     </parent>
-
-    <!-- 多模块项目需要配置打包方式为 pom -->
+<!-- 打包方式-->
     <packaging>pom</packaging>
-
-    <!-- 子模块管理 -->
+<!-- 子模块管理-->
     <modules>
-        <module>smallredbook-kv-api</module>
-        <module>smallredbook-kv-biz</module>
+        <module>smallredbook-distributed-id-generator-api</module>
+        <module>smallredbook-distributed-id-generator-biz</module>
     </modules>
 
-    <artifactId>smallredbook-kv</artifactId>
-
-    <!-- 项目名称 -->
+    <artifactId>smallredbook-distributed-id-generator</artifactId>
     <name>${project.artifactId}</name>
-    <!-- 项目描述 -->
-    <description>Key-Value 键值存储服务</description>
-    <dependencies>
+    <description>分布式ID生成服务</description>
 
-    </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 </project>

@@ -29,7 +29,8 @@
     <module>smallred-oss</module>
     <!-- 用户服务   -->
     <module>smallredbook-user</module>
-      <module>smallredbook-kv</module>
+    <module>smallredbook-kv</module>
+      <module>smallredbook-distributed-id-generator</module>
 
   </modules>
 

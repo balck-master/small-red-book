@@ -3,17 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.example</groupId>
-        <artifactId>smallredbook-kv</artifactId>
+        <artifactId>smallredbook-distributed-id-generator</artifactId>
         <version>${revision}</version>
     </parent>
 
-<!--    打包方式-->
+    <!-- 打包方式 -->
     <packaging>jar</packaging>
 
-    <artifactId>smallredbook-kv-biz</artifactId>
+    <artifactId>smallredbook-distributed-id-generator-biz</artifactId>
     <name>${project.artifactId}</name>
-    <description>Key-Value 键值存储业务层</description>
-
+    <description>分布式 ID 生成业务层</description>
 
     <dependencies>
         <dependency>
@@ -21,10 +20,6 @@
             <artifactId>smallred-common</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>smallredbook-kv-api</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -36,7 +31,6 @@
             <scope>test</scope>
         </dependency>
 
-<!--        nacos -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
@@ -47,13 +41,14 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-
-        <!-- Cassandra 存储 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-cassandra</artifactId>
-        </dependency>
-
-
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

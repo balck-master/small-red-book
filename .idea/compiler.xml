@@ -10,13 +10,15 @@
         <processorPath useClasspath="false">
           <entry name="$PROJECT_DIR$/../../../Environment/Maven/myRepository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="smallredbook-auth" />
-        <module name="smallred-spring-boot-starter-jackson" />
-        <module name="smallredbook-oss-biz" />
         <module name="smallredbook-kv-biz" />
         <module name="smallredbook-user-biz" />
         <module name="smallredbook-gateway" />
         <module name="smallredbook-oss-api" />
+        <module name="smallredbook-distributed-id-generator-api" />
+        <module name="smallredbook-auth" />
+        <module name="smallred-spring-boot-starter-jackson" />
+        <module name="smallredbook-oss-biz" />
+        <module name="smallredbook-distributed-id-generator-biz" />
         <module name="smallredbook-kv-api" />
         <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallredbook-user-api" />
