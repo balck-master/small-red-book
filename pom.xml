@@ -274,6 +274,11 @@
         <version>${revision}</version>
       </dependency>
 
+      <dependency>
+        <groupId>org.example.distributed.id.generator</groupId>
+        <artifactId>smallredbook-distributed-id-generator-api</artifactId>
+        <version>${revision}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

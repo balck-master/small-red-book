@@ -4,17 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记内容删除 接口开发">
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/XiaohashuDistributedIdGeneratorBizApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 分布式id微服务搭建">
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/controller/LeafController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/controller/LeafMonitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/IDGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/CheckVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/PropertyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/common/ZeroIDGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/SegmentIDGenImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/dao/IDAllocDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/dao/IDAllocMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/dao/impl/IDAllocDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/model/LeafAlloc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/model/Segment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/segment/model/SegmentBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/snowflake/SnowflakeIDGenImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/snowflake/SnowflakeZookeeperHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/snowflake/exception/CheckLastTimeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/snowflake/exception/CheckOtherNodeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/core/snowflake/exception/ClockGoBackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/exception/InitException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/exception/LeafServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/exception/NoKeyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/model/SegmentBufferView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/service/SegmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/distributed/id/generator/biz/service/SnowflakeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources/leaf.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-18-0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-07-20-0.log" beforeDir="false" />
@@ -31,10 +50,7 @@
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-05-2.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-05-3.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-05-4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/test/java/org/example/smallredbook/user/biz/DruidTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/test/java/org/example/smallredbook/user/biz/DruidTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,9 +133,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
+    "project.structure.side.proportion": "0.3505747",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation",
     "vue.rearranger.settings.migration": "true",
@@ -131,10 +147,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\resources" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\java\org\example\distributed\id\generator\biz" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\java\org\example\distributed\id\generator\biz\core" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-kv\smallredbook-kv-biz\src\main\resources\config" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-kv\smallredbook-kv-biz\src\main\resources" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-api\src\main\java\org\example\smallredbook\user\api\dto\req" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user\smallredbook-user-biz\src\main\java\org\example\smallredbook\user\biz" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.smallredbook.user.biz" />
@@ -293,7 +310,7 @@
       <workItem from="1724663688327" duration="2344000" />
       <workItem from="1725331882097" duration="3300000" />
       <workItem from="1725359173109" duration="16553000" />
-      <workItem from="1725444819549" duration="10643000" />
+      <workItem from="1725444819549" duration="15178000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -351,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725431892067</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add 分布式id微服务搭建">
+      <option name="closed" value="true" />
+      <created>1725508126978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1725508126978</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +401,8 @@
     <MESSAGE value="add 笔记内容新增 接口开发" />
     <MESSAGE value="add 笔记内容查询 接口开发" />
     <MESSAGE value="add 笔记内容删除 接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 笔记内容删除 接口开发" />
+    <MESSAGE value="add 分布式id微服务搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 分布式id微服务搭建" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
