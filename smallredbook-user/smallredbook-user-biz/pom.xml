@@ -114,7 +114,11 @@
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
-
+<!--      分布式id 模块 -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-distributed-id-generator-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

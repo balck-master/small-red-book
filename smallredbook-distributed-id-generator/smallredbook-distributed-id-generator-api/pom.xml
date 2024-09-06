@@ -7,8 +7,6 @@
         <version>${revision}</version>
     </parent>
 
-    <groupId>org.example.distributed.id.generator</groupId>
-
 
     <!-- 打包方式 -->
     <packaging>jar</packaging>

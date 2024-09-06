@@ -145,10 +145,6 @@
             <groupId>org.example</groupId>
             <artifactId>smallredbook-user-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>smallredbook-user-api</artifactId>
-        </dependency>
     </dependencies>
 
     <build>

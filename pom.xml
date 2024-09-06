@@ -275,9 +275,9 @@
       </dependency>
 
       <dependency>
-        <groupId>org.example.distributed.id.generator</groupId>
+        <groupId>org.example</groupId>
         <artifactId>smallredbook-distributed-id-generator-api</artifactId>
-        <version>${revision}</version>
+        <version>0.0.1-SNAPSHOT</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

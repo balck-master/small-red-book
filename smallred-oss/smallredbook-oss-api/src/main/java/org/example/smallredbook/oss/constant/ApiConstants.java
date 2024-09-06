@@ -9,5 +9,5 @@ public interface ApiConstants {
     /**
      * 服务名称
      */
-    String SERVICE_NAME = "xioahashu-oss";
+    String SERVICE_NAME = "xiaohashu-oss";
 }

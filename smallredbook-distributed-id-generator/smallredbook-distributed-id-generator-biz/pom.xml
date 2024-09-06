@@ -20,7 +20,7 @@
         <druid.version>1.0.18</druid.version>
         <mybatis.version>3.3.0</mybatis.version>
         <curator-recipes.version>2.6.0</curator-recipes.version>
-        <zookeeper.version>3.6.0</zookeeper.version>
+        <zookeeper.version>3.5.7</zookeeper.version>
     </properties>
 
 
@@ -100,10 +100,6 @@
             <version>${zookeeper.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.example.distributed.id.generator</groupId>
-            <artifactId>smallredbook-distributed-id-generator-api</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
