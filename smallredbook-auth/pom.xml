@@ -129,9 +129,8 @@
         </dependency>
         <!--        上下文工具类-->
         <dependency>
-            <groupId>org.example.framework.biz.context</groupId>
+            <groupId>org.example</groupId>
             <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- 密码加密 -->

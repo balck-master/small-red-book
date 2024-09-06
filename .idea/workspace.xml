@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 调用分布式id 生成用户id、小红书id&#10;add 修复zookeeper的bug">
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题">
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/XiaoredshuNoteBizApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/ChannelDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/ChannelTopicRelDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/NoteDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/TopicDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/ChannelDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/ChannelTopicRelDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/NoteDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/TopicDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/NoteStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/NoteTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/NoteVisibleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/ChannelDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/ChannelTopicRelDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/NoteDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/TopicDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/constant/RedisKeyConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/constant/RedisKeyConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-oss/smallredbook-oss-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -72,6 +104,9 @@
     "Maven.smallredbook-distributed-id-generator [clean].executor": "Run",
     "Maven.smallredbook-gateway [clean].executor": "Run",
     "Maven.smallredbook-kv [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallredbook-note [clean].executor": "Run",
+    "Maven.smallredbook-note-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor": "Run",
+    "Maven.smallredbook-oss-biz [clean].executor": "Run",
     "Maven.smallredbook-user [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -87,9 +122,10 @@
     "Spring Boot.XiaohashuOssBizApplication.executor": "Run",
     "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
     "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication.executor": "Debug",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/resources",
+    "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-note/smallredbook-note-biz/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,11 +145,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-note\smallredbook-note-biz\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\resources" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\java\org\example\distributed\id\generator\biz" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\java\org\example\distributed\id\generator\biz\core" />
       <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-kv\smallredbook-kv-biz\src\main\resources\config" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-kv\smallredbook-kv-biz\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.smallredbook.user.biz" />
@@ -126,7 +162,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaohashuUserBizApplication">
+  <component name="RunManager" selected="Spring Boot.XiaoredshuNoteBizApplication">
     <configuration name="CassandraTests.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="smallredbook-kv-biz" />
       <extension name="coverage">
@@ -216,6 +252,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XiaoredshuNoteBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-note-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.note.biz.domain.XiaoredshuNoteBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.note.biz.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.DruidTest.testEncodePassword" />
       <item itemvalue="JUnit.CassandraTests.testDelete" />
@@ -224,10 +273,12 @@
       <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
       <item itemvalue="Spring Boot.XiaohashuGatewayApplication" />
       <item itemvalue="Spring Boot.XiaoredshuAuthApplication" />
+      <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication" />
       <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication" />
         <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
         <item itemvalue="JUnit.DruidTest.testEncodePassword" />
         <item itemvalue="JUnit.CassandraTests.testDelete" />
@@ -267,7 +318,7 @@
       <workItem from="1725359173109" duration="16553000" />
       <workItem from="1725444819549" duration="26229000" />
       <workItem from="1725547118468" duration="1190000" />
-      <workItem from="1725590489906" duration="9963000" />
+      <workItem from="1725590489906" duration="15902000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -349,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725611904907</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题">
+      <option name="closed" value="true" />
+      <created>1725612980427</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725612980427</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +436,8 @@
     <MESSAGE value="add 分布式id微服务搭建" />
     <MESSAGE value="add 分布式id生成服务 整合美团leaf源码" />
     <MESSAGE value="add 调用分布式id 生成用户id、小红书id&#10;add 修复zookeeper的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 调用分布式id 生成用户id、小红书id&#10;add 修复zookeeper的bug" />
+    <MESSAGE value="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

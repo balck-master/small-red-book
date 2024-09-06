@@ -87,9 +87,8 @@
         </dependency>
         <!-- 上下文组件 -->
         <dependency>
-            <groupId>org.example.framework.biz.context</groupId>
+            <groupId>org.example</groupId>
             <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

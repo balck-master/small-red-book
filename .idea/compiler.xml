@@ -16,12 +16,14 @@
         <module name="smallredbook-oss-api" />
         <module name="smallredbook-distributed-id-generator-api" />
         <module name="smallredbook-auth" />
+        <module name="smallredbook-note-api" />
         <module name="smallred-spring-boot-starter-jackson" />
         <module name="smallredbook-oss-biz" />
         <module name="smallredbook-distributed-id-generator-biz" />
         <module name="smallredbook-kv-api" />
         <module name="smallred-spring-boot-starter-biz-operationlog" />
         <module name="smallredbook-user-api" />
+        <module name="smallredbook-note-biz" />
         <module name="smallred-common" />
         <module name="smallred-spring-boot-starter-biz-context" />
       </profile>

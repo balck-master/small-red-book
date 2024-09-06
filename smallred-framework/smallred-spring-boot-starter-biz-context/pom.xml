@@ -8,7 +8,6 @@
 <!--        <relativePath>../../pom.xml</relativePath>-->
     </parent>
 
-    <groupId>org.example.framework.biz.context</groupId>
 
     <!--  指定打包方式-->
     <packaging>jar</packaging>

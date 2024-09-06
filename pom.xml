@@ -31,6 +31,7 @@
     <module>smallredbook-user</module>
     <module>smallredbook-kv</module>
       <module>smallredbook-distributed-id-generator</module>
+      <module>smallredbook-note</module>
 
   </modules>
 
@@ -277,7 +278,12 @@
       <dependency>
         <groupId>org.example</groupId>
         <artifactId>smallredbook-distributed-id-generator-api</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${revision}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.example</groupId>
+        <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
+        <version>${revision}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
