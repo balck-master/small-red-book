@@ -18,6 +18,10 @@ public class RedisKeyConstants {
      * 角色对应的权限集合 KEY 前缀
      */
     private static final String ROLE_PERMISSIONS_KEY_PREFIX = "role:permissions:";
+    /**
+     * Sa-Token 登录的 Token KEY 前缀
+     */
+    public static final String SA_TOKEN_TOKEN_KEY_PREFIX = "Authorization:login:token:";
 
     /**
      * 构建角色对应的权限集合 KEY
