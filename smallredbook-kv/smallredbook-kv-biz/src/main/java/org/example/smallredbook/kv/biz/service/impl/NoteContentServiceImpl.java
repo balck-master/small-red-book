@@ -37,11 +37,11 @@ public class NoteContentServiceImpl implements NoteContentService {
     @Override
     public Response<?> addNodeContent(AddNoteContentReqDTO addNoteContentReqDTO) {
         //笔记id
-        Long noteId = addNoteContentReqDTO.getNoteId();
+        String uuid = addNoteContentReqDTO.getUuid();
         //笔记内容
         String content = addNoteContentReqDTO.getContent();
         NoteContentDO noteContentDO = NoteContentDO.builder()
-                .id(UUID.randomUUID())
+                .id(UUID.fromString(uuid))
                 .content(content)
                 .build();
 
@@ -58,9 +58,9 @@ public class NoteContentServiceImpl implements NoteContentService {
     @Override
     public Response<FindNoteContentRspDTO> findNoteContent(FindNoteContentReqDTO findNoteContentReqDTO) {
         //笔记id
-        String noteId = findNoteContentReqDTO.getNoteId();
+        String uuid = findNoteContentReqDTO.getUuid();
         //根据笔记id查询笔记
-        Optional<NoteContentDO> optional = noteContentRepository.findById(UUID.fromString(noteId));
+        Optional<NoteContentDO> optional = noteContentRepository.findById(UUID.fromString(uuid));
 
         //如果笔记不存在
         if(!optional.isPresent()){
@@ -70,7 +70,7 @@ public class NoteContentServiceImpl implements NoteContentService {
         NoteContentDO noteContentDO = optional.get();
 
         FindNoteContentRspDTO findNoteContentRspDTO = FindNoteContentRspDTO.builder()
-                .noteId(noteContentDO.getId())
+                .uuid(noteContentDO.getId())
                 .content(noteContentDO.getContent())
                 .build();
 
@@ -84,8 +84,8 @@ public class NoteContentServiceImpl implements NoteContentService {
      */
     @Override
     public Response<DeleteNoteContentReqDTO> deleteNoteContent(DeleteNoteContentReqDTO deleteNoteContentReqDTO) {
-        String noteId = deleteNoteContentReqDTO.getNoteId();
-        noteContentRepository.deleteById(UUID.fromString(noteId));
+        String uuid = deleteNoteContentReqDTO.getUuid();
+        noteContentRepository.deleteById(UUID.fromString(uuid));
         return Response.success();
     }
 }

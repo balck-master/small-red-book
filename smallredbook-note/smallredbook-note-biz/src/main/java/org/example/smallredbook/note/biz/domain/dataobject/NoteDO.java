@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -39,4 +40,6 @@ public class NoteDO {
     private LocalDateTime updateTime;
 
     private Integer status;
+
+    private String contentUuid;
 }

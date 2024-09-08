@@ -47,7 +47,5 @@ public class HeaderUserId2ContextFilter extends OncePerRequestFilter {
             LoginUserContextHolder.remove();
             log.info("====删除ThreadLocal ，userID：{}",userId);
         }
-
-
     }
 }

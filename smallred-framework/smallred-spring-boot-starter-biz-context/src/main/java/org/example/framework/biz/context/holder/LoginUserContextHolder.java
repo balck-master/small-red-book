@@ -15,7 +15,8 @@ import java.util.Objects;
 public class LoginUserContextHolder {
 
     //初始化一个ThreadLocal对象
-    private static final TransmittableThreadLocal <Map<String, Object>>LOGIN_USER_CONTEXT_THREAD_LOCAL = TransmittableThreadLocal.withInitial(HashMap::new);
+    private static final TransmittableThreadLocal <Map<String, Object>>LOGIN_USER_CONTEXT_THREAD_LOCAL =
+            TransmittableThreadLocal.withInitial(HashMap::new);
 
     /**
      * 获取用户ID

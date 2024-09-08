@@ -26,7 +26,7 @@ public interface KeyValueFeignApi {
     Response<FindNoteContentRspDTO> findNoteContent(@RequestBody FindNoteContentReqDTO findNoteContentReqDTO);
 
     @PostMapping(value = PREFIX + "/note/content/delete")
-    Response<DeleteNoteContentReqDTO> deleteNoteContent(@RequestBody DeleteNoteContentReqDTO deleteNoteContentReqDTO);
+    Response<?> deleteNoteContent(@RequestBody DeleteNoteContentReqDTO deleteNoteContentReqDTO);
 
 
 }

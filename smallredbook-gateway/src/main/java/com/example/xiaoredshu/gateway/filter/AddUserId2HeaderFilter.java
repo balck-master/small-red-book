@@ -67,7 +67,7 @@ public class AddUserId2HeaderFilter implements GlobalFilter {
         //将token前缀去掉
         String token = tokenValue.replace(TOKEN_HEADER_VALUE_PREFIX, "");
 
-        String tokenRedisKey = RedisKeyConstants.SA_TOKEN_TOKEN_KEY_PREFIX;
+        String tokenRedisKey = RedisKeyConstants.SA_TOKEN_TOKEN_KEY_PREFIX + token;
         Integer userId = (Integer)redisTemplate.opsForValue().get(tokenRedisKey);
 
         if(Objects.isNull(userId)){
