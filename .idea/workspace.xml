@@ -4,37 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记微服务搭建">
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/model/vo/PublishNoteReqVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/DistributedIdGeneratorRpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/KeyValueRpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/NoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 添加dev文件">
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/req/FindUserByIdReqDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/resp/FindUserByIdRspDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-07-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-07-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-07-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-07-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/holder/LoginUserContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/holder/LoginUserContextHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/api/KeyValueFeignApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/api/KeyValueFeignApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/AddNoteContentReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/AddNoteContentReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/DeleteNoteContentReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/DeleteNoteContentReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/FindNoteContentReqDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/req/FindNoteContentReqDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/rsp/FindNoteContentRspDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-api/src/main/java/org/example/smallredbook/kv/dto/rsp/FindNoteContentRspDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-kv/smallredbook-kv-biz/src/main/java/org/example/smallredbook/kv/biz/service/impl/NoteContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/XiaoredshuNoteBizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/XiaoredshuNoteBizApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/ChannelTopicRelDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/ChannelTopicRelDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/NoteDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/dataobject/NoteDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/TopicDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/domain/mapper/TopicDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/NoteDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/NoteDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/TopicDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/TopicDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +71,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.small-red-book [clean].executor": "Run",
     "Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallred-oss [clean].executor": "Run",
     "Maven.smallredbook-auth [clean].executor": "Run",
     "Maven.smallredbook-distributed-id-generator [clean].executor": "Run",
     "Maven.smallredbook-gateway [clean].executor": "Run",
@@ -113,6 +90,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1).executor": "Debug",
+    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor": "Debug",
     "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication.executor": "Debug",
     "Spring Boot.XiaohashuGatewayApplication.executor": "Debug",
     "Spring Boot.XiaohashuKVBizApplication.executor": "Debug",
@@ -195,7 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiaohashuDistributedIdGeneratorBizApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="XiaohashuDistributedIdGeneratorBizApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="smallredbook-distributed-id-generator-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.distributed.id.generator.biz.XiaohashuDistributedIdGeneratorBizApplication" />
       <method v="2">
@@ -265,7 +243,7 @@
     <list>
       <item itemvalue="JUnit.DruidTest.testEncodePassword" />
       <item itemvalue="JUnit.CassandraTests.testDelete" />
-      <item itemvalue="Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1)" />
+      <item itemvalue="Spring Boot.XiaohashuDistributedIdGeneratorBizApplication " />
       <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
       <item itemvalue="Spring Boot.XiaohashuGatewayApplication" />
       <item itemvalue="Spring Boot.XiaoredshuAuthApplication" />
@@ -275,9 +253,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
         <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication" />
         <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
-        <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
         <item itemvalue="JUnit.DruidTest.testEncodePassword" />
         <item itemvalue="JUnit.CassandraTests.testDelete" />
       </list>
@@ -319,7 +297,9 @@
       <workItem from="1725685670443" duration="2600000" />
       <workItem from="1725689258732" duration="1433000" />
       <workItem from="1725691125005" duration="13409000" />
-      <workItem from="1725765747373" duration="2074000" />
+      <workItem from="1725765747373" duration="5523000" />
+      <workItem from="1725875508636" duration="617000" />
+      <workItem from="1725949661608" duration="2116000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -417,7 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725628351736</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add 笔记发布接口开发">
+      <option name="closed" value="true" />
+      <created>1725801457204</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1725801457204</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add 添加dev文件">
+      <option name="closed" value="true" />
+      <created>1725801638086</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725801638086</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +443,9 @@
     <MESSAGE value="add 调用分布式id 生成用户id、小红书id&#10;add 修复zookeeper的bug" />
     <MESSAGE value="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题" />
     <MESSAGE value="add 笔记微服务搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 笔记微服务搭建" />
+    <MESSAGE value="add 笔记发布接口开发" />
+    <MESSAGE value="add 添加dev文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 添加dev文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -469,7 +467,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>258</line>
+          <line>260</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -479,7 +477,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>162</line>
+          <line>164</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -504,7 +502,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>179</line>
+          <line>181</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -528,9 +526,14 @@
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/auth/SaTokenConfigure.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
+          <line>279</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

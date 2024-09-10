@@ -2,9 +2,11 @@ package org.example.smallredbook.user.biz.service;
 
 import jakarta.annotation.Resource;
 import org.example.framework.common.response.Response;
+import org.example.smallredbook.user.api.dto.req.FindUserByIdReqDTO;
 import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
 import org.example.smallredbook.user.api.dto.req.UpdateUserPasswordReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByIdRspDTO;
 import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.model.vo.UpdateUserInfoReqVO;
 
@@ -43,4 +45,11 @@ public interface UserService {
      * @return
      */
     Response<?> updatePassword(UpdateUserPasswordReqDTO updateUserPasswordReqDTO);
+
+    /**
+     * 根据 根据id查询用户信息
+     * @param findUserByIdReqDTO
+     * @return
+     */
+    Response<FindUserByIdRspDTO> findById(FindUserByIdReqDTO findUserByIdReqDTO);
 }

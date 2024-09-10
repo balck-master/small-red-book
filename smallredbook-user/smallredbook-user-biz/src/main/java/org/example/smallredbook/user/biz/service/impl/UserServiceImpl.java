@@ -15,9 +15,11 @@ import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
 import org.example.framework.common.utils.ParamUtils;
 import org.example.smallredbook.oss.api.FileFeignApi;
+import org.example.smallredbook.user.api.dto.req.FindUserByIdReqDTO;
 import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
 import org.example.smallredbook.user.api.dto.req.UpdateUserPasswordReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByIdRspDTO;
 import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.example.smallredbook.user.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.user.biz.constant.RoleConstants;
@@ -267,6 +269,29 @@ public class UserServiceImpl implements UserService {
         userDOMapper.updateByPrimaryKeySelective(userDO);
 
         return Response.success();
+    }
+
+    /**
+     * 根据 根据id查询用户信息
+     * @param findUserByIdReqDTO
+     * @return
+     */
+    public Response<FindUserByIdRspDTO> findById(FindUserByIdReqDTO findUserByIdReqDTO) {
+        Long userId = findUserByIdReqDTO.getId();
+        //根据用户id查询信息
+        UserDO userDO = userDOMapper.selectByPrimaryKey(userId);
+
+        if(Objects.isNull(userDO)){
+            throw new BizException(ResponseCodeEnum.USER_NOT_FOUND);
+        }
+
+        //构建返参
+        FindUserByIdRspDTO findUserByIdRspDTO = FindUserByIdRspDTO.builder()
+                .id(userId)
+                .avatar(userDO.getAvatar())
+                .nickName(userDO.getNickname())
+                .build();
+        return Response.success(findUserByIdRspDTO);
     }
 }
 
