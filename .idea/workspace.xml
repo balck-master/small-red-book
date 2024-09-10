@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 添加dev文件">
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/req/FindUserByIdReqDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/dto/resp/FindUserByIdRspDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +103,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3505747",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true",
     "应用程序.XiaoredshuAuthApplication.executor": "Run"
   }
@@ -299,7 +292,7 @@
       <workItem from="1725691125005" duration="13409000" />
       <workItem from="1725765747373" duration="5523000" />
       <workItem from="1725875508636" duration="617000" />
-      <workItem from="1725949661608" duration="2116000" />
+      <workItem from="1725949661608" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -413,7 +406,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725801638086</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add 根据用户id查询用户信息接口开发">
+      <option name="closed" value="true" />
+      <created>1725952463831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725952463831</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数">
+      <option name="closed" value="true" />
+      <created>1725959754193</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1725959754193</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +454,9 @@
     <MESSAGE value="add 笔记微服务搭建" />
     <MESSAGE value="add 笔记发布接口开发" />
     <MESSAGE value="add 添加dev文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 添加dev文件" />
+    <MESSAGE value="add 根据用户id查询用户信息接口开发" />
+    <MESSAGE value="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,7 +478,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>260</line>
+          <line>267</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -477,7 +488,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>164</line>
+          <line>171</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -502,7 +513,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>181</line>
+          <line>188</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -527,7 +538,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
-          <line>279</line>
+          <line>286</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
