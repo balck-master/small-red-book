@@ -71,6 +71,7 @@
     <activation.version>1.1.1</activation.version>
     <jaxb-runtime.version>2.3.3</jaxb-runtime.version>
     <feign-form.version>3.8.0</feign-form.version>
+    <caffeine.version>3.1.8</caffeine.version>
   </properties>
 
   <!-- 统一依赖管理 -->
@@ -284,6 +285,12 @@
         <groupId>org.example</groupId>
         <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
         <version>${revision}</version>
+      </dependency>
+      <!-- Caffeine 本地缓存 -->
+      <dependency>
+        <groupId>com.github.ben-manes.caffeine</groupId>
+        <artifactId>caffeine</artifactId>
+        <version>${caffeine.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

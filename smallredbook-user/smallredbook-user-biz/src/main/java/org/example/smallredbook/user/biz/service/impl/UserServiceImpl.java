@@ -5,6 +5,8 @@ package org.example.smallredbook.user.biz.service.impl;
 
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.cloud.commons.lang.StringUtils;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import com.google.common.base.Preconditions;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -75,6 +77,15 @@ public class UserServiceImpl implements UserService {
     private DistributedIdGeneratorRpcService distributedIdGeneratorRpcService;
     @Resource(name="taskExecutor")
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    /**
+     * 用户信息本地缓存
+     */
+    private static final Cache<Long, FindUserByIdRspDTO> LOCAL_CACHE = Caffeine.newBuilder()
+            .initialCapacity(10000) // 设置初始容量为 10000 个条目
+            .maximumSize(10000) // 设置缓存的最大容量为 10000 个条目
+            .expireAfterWrite(1, TimeUnit.HOURS) // 设置缓存条目在写入后 1 小时过期
+            .build();
 
     @Override
     public Response<?> updateUserInfo(UpdateUserInfoReqVO updateUserInfoReqVO) {
@@ -286,6 +297,13 @@ public class UserServiceImpl implements UserService {
     public Response<FindUserByIdRspDTO> findById(FindUserByIdReqDTO findUserByIdReqDTO) {
         Long userId = findUserByIdReqDTO.getId();
 
+        //先从本地缓存中查询
+        FindUserByIdRspDTO findUserByIdRspDTOLocalCache  = LOCAL_CACHE.getIfPresent(userId);
+        if(Objects.nonNull(findUserByIdRspDTOLocalCache)){
+            log.info("==>命中了本地缓存：{}",findUserByIdRspDTOLocalCache);
+            return Response.success(findUserByIdRspDTOLocalCache);
+        }
+
         // 用户缓存 redis key
         String userInfoRedisKey = RedisKeyConstants.buildUserInfoKey(userId);
         String userInfoRedisValue = (String)redisTemplate.opsForValue().get(userInfoRedisKey);
@@ -293,6 +311,11 @@ public class UserServiceImpl implements UserService {
         //若redis中有该用户信息,则将存储的 Json 字符串转换成 FindUserByIdRspDTO 对象，并返参；
         if(StringUtils.isNotBlank(userInfoRedisValue)){
             FindUserByIdRspDTO findUserByIdRspDTO = JsonUtils.parseObject(userInfoRedisValue, FindUserByIdRspDTO.class);
+            //异步线程中将用户信息存入本地缓存
+            threadPoolTaskExecutor.submit(()->{
+                //写入本地缓存
+                LOCAL_CACHE.put(userId,findUserByIdRspDTO);
+            });
             return Response.success(findUserByIdRspDTO);
         }
 

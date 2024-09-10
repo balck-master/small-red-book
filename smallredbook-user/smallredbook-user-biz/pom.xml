@@ -118,6 +118,11 @@
             <groupId>org.example</groupId>
             <artifactId>smallredbook-distributed-id-generator-api</artifactId>
         </dependency>
+        <!-- Caffeine 本地缓存 -->
+        <dependency>
+            <groupId>com.github.ben-manes.caffeine</groupId>
+            <artifactId>caffeine</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
