@@ -5,6 +5,7 @@ import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
 import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
 
 /**
  * @Author: tzy
@@ -26,4 +27,11 @@ public interface NoteService {
      * @return
      */
     Response<FindNoteDetailRspVO> findNoteDetail(FindNoteDetailReqVO findNoteDetailReqVO);
+
+    /**
+     * 笔记更新
+     * @param updateNoteReqVO
+     * @return
+     */
+    Response<?> updateNote(UpdateNoteReqVO updateNoteReqVO);
 }

@@ -8,6 +8,7 @@ import org.example.framework.common.response.Response;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
 import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
 import org.example.smallredbook.note.biz.service.NoteService;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,5 +35,10 @@ public class NoteController {
     @ApiOperationLog(description = "笔记详情")
     Response<FindNoteDetailRspVO> findNoteDetail(@Valid @RequestBody FindNoteDetailReqVO findNoteDetailReqVO){
         return noteService.findNoteDetail(findNoteDetailReqVO);
+    }
+    @PostMapping(value = "/update")
+    @ApiOperationLog(description = "笔记修改")
+    public Response<?> updateNote(@Valid @RequestBody UpdateNoteReqVO updateNoteReqVO) {
+        return noteService.updateNote(updateNoteReqVO);
     }
 }

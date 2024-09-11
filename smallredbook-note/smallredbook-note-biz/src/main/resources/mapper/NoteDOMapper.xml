@@ -192,19 +192,13 @@
   <update id="updateByPrimaryKey" parameterType="org.example.smallredbook.note.biz.domain.dataobject.NoteDO">
     update t_note
     set title = #{title,jdbcType=VARCHAR},
-      is_content_empty = #{isContentEmpty,jdbcType=BIT},
-      creator_id = #{creatorId,jdbcType=BIGINT},
-      topic_id = #{topicId,jdbcType=BIGINT},
-      topic_name = #{topicName,jdbcType=VARCHAR},
-      is_top = #{isTop,jdbcType=BIT},
-      `type` = #{type,jdbcType=TINYINT},
-      img_uris = #{imgUris,jdbcType=VARCHAR},
-      video_uri = #{videoUri,jdbcType=VARCHAR},
-      visible = #{visible,jdbcType=TINYINT},
-      create_time = #{createTime,jdbcType=TIMESTAMP},
-      update_time = #{updateTime,jdbcType=TIMESTAMP},
-      `status` = #{status,jdbcType=TINYINT},
-      content_uuid = #{contentUuid,jdbcType=VARCHAR}
+        is_content_empty = #{isContentEmpty,jdbcType=BIT},
+        topic_id = #{topicId,jdbcType=BIGINT},
+        topic_name = #{topicName,jdbcType=VARCHAR},
+        `type` = #{type,jdbcType=TINYINT},
+        img_uris = #{imgUris,jdbcType=VARCHAR},
+        video_uri = #{videoUri,jdbcType=VARCHAR},
+        update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
 </mapper>

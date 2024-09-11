@@ -6,6 +6,7 @@ import com.alibaba.nacos.shaded.com.google.common.base.Preconditions;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import jakarta.annotation.Resource;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.example.framework.biz.context.holder.LoginUserContextHolder;
@@ -24,6 +25,7 @@ import org.example.smallredbook.note.biz.enums.ResponseCodeEnum;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
 import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
 import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
 import org.example.smallredbook.note.biz.rpc.DistributedIdGeneratorRpcService;
 import org.example.smallredbook.note.biz.rpc.KeyValueRpcService;
 import org.example.smallredbook.note.biz.rpc.UserRpcService;
@@ -39,6 +41,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -80,7 +83,6 @@ public class NoteServiceImpl implements NoteService {
      * @param publishNoteReqVO
      * @return
      */
-    @Transactional
     public Response<?> publishNote(PublishNoteReqVO publishNoteReqVO) {
         //笔记类型
         Integer type = publishNoteReqVO.getType();
@@ -185,6 +187,7 @@ public class NoteServiceImpl implements NoteService {
      * @param findNoteDetailReqVO
      * @return
      */
+    @SneakyThrows
     public Response<FindNoteDetailRspVO> findNoteDetail(FindNoteDetailReqVO findNoteDetailReqVO) {
         //查询的笔记id
         Long noteId = findNoteDetailReqVO.getId();
@@ -237,38 +240,50 @@ public class NoteServiceImpl implements NoteService {
 
         //RPC: 调用用户服务 查看笔记创建者信息
         Long creatorId = noteDO.getCreatorId();
-        FindUserByIdRspDTO findUserByIdRspDTO = userRpcService.findById(creatorId);
+        CompletableFuture<FindUserByIdRspDTO> userResultFuture = CompletableFuture
+                .supplyAsync(() -> userRpcService.findById(creatorId), threadPoolTaskExecutor);
         //RPC: 调用kv服务 查看笔记内容
-        String content = null;
+        CompletableFuture<String> contentResultFuture = CompletableFuture.completedFuture(null);
         if(Objects.equals(noteDO.getIsContentEmpty(),Boolean.FALSE)) {
-            content = keyValueRpcService.findNoteContent(noteDO.getContentUuid());
+            contentResultFuture = CompletableFuture
+                    .supplyAsync(()->keyValueRpcService.findNoteContent(noteDO.getContentUuid()));
         }
 
-        //若查询的笔记类型为图文模式，还需要将图片链接拆分开，转成集合；
-        Integer noteType = noteDO.getType();
-        String imgUrisStr = noteDO.getImgUris();
-        //图文链接集合
-        List<String> imgUris = null;
-        if(Objects.equals(noteType,NoteTypeEnum.IMAGE_TEXT) && StringUtils.isNotBlank(imgUrisStr)) {
-            imgUris = List.of(imgUrisStr.split(","));
-        }
+        CompletableFuture<String> finalContentResultFuture = contentResultFuture;
+        CompletableFuture<FindNoteDetailRspVO> resultFuture = CompletableFuture.allOf(userResultFuture, contentResultFuture)
+                .thenApply(s -> {
+                    //获取 Future 返回的结果
+                    FindUserByIdRspDTO findUserByIdRspDTO = userResultFuture.join();
+                    String content = finalContentResultFuture.join();//为什么要用finalxxx.join,因为使用contentResultFuture可能会阻塞线程
 
-        // 构建返参 VO 实体类
-        FindNoteDetailRspVO findNoteDetailRspVO = FindNoteDetailRspVO.builder()
-                .id(noteDO.getId())
-                .type(noteDO.getType())
-                .title(noteDO.getTitle())
-                .content(content)
-                .imgUris(imgUris)
-                .topicId(noteDO.getTopicId())
-                .topicName(noteDO.getTopicName())
-                .creatorId(userId)
-                .creatorName(findUserByIdRspDTO.getNickName())
-                .avatar(findUserByIdRspDTO.getAvatar())
-                .videoUri(noteDO.getVideoUri())
-                .updateTime(noteDO.getUpdateTime())
-                .visible(noteDO.getVisible())
-                .build();
+                    //若查询的笔记类型为图文模式，还需要将图片链接拆分开，转成集合；
+                    Integer noteType = noteDO.getType();
+                    String imgUrisStr = noteDO.getImgUris();
+                    //图文链接集合
+                    List<String> imgUris = null;
+                    if (Objects.equals(noteType, NoteTypeEnum.IMAGE_TEXT) && StringUtils.isNotBlank(imgUrisStr)) {
+                        imgUris = List.of(imgUrisStr.split(","));
+                    }
+
+                    // 构建返参 VO 实体类
+                    return FindNoteDetailRspVO.builder()
+                            .id(noteDO.getId())
+                            .type(noteDO.getType())
+                            .title(noteDO.getTitle())
+                            .content(content)
+                            .imgUris(imgUris)
+                            .topicId(noteDO.getTopicId())
+                            .topicName(noteDO.getTopicName())
+                            .creatorId(userId)
+                            .creatorName(findUserByIdRspDTO.getNickName())
+                            .avatar(findUserByIdRspDTO.getAvatar())
+                            .videoUri(noteDO.getVideoUri())
+                            .updateTime(noteDO.getUpdateTime())
+                            .visible(noteDO.getVisible())
+                            .build();
+                });
+
+        FindNoteDetailRspVO findNoteDetailRspVO = resultFuture.get();
 
         //异步线程中 将笔记详情存入redis中
         threadPoolTaskExecutor.execute(()->{
@@ -279,6 +294,98 @@ public class NoteServiceImpl implements NoteService {
         });
 
         return Response.success(findNoteDetailRspVO);
+    }
+
+    /**
+     * 更新笔记
+     * @param updateNoteReqVO
+     * @return
+     */
+    @Transactional(rollbackFor = Exception.class)
+    public Response<?> updateNote(UpdateNoteReqVO updateNoteReqVO) {
+        //笔记id ， 笔记类型
+        Long noteId = updateNoteReqVO.getId();
+        Integer type = updateNoteReqVO.getType();
+
+        NoteTypeEnum noteTypeEnum = NoteTypeEnum.valueOf(type);
+        if(Objects.isNull(noteTypeEnum)){
+            //如果不是 图文，视频，就跑出异常
+            throw  new BizException(ResponseCodeEnum.NOTE_TYPE_ERROR);
+        }
+
+        String imgUris = null;
+        String videoUri = null;
+        switch (noteTypeEnum) {
+            case IMAGE_TEXT: // 图文笔记
+                List<String> imgUriList = updateNoteReqVO.getImgUris();
+                // 校验图片是否为空
+                Preconditions.checkArgument(CollUtil.isNotEmpty(imgUriList), "笔记图片不能为空");
+                // 校验图片数量
+                Preconditions.checkArgument(imgUriList.size() <= 8, "笔记图片不能多于 8 张");
+
+                imgUris = StringUtils.join(imgUriList, ",");
+                break;
+            case VIDEO: // 视频笔记
+                videoUri = updateNoteReqVO.getVideoUri();
+                // 校验视频链接是否为空
+                Preconditions.checkArgument(StringUtils.isNotBlank(videoUri), "笔记视频不能为空");
+                break;
+            default:
+                break;
+        }
+
+        //话题
+        Long topicId = updateNoteReqVO.getTopicId();
+        String topicName = null;
+        if(Objects.nonNull(topicId)){
+            topicName = topicDOMapper.selectNameByPrimaryKey(topicId);
+
+            //判断提交的话题，是否存在
+            if(StringUtils.isBlank(topicName)){
+                throw new BizException(ResponseCodeEnum.TOPIC_NOT_FOUND);
+            }
+        }
+
+        //更新笔记元数据表t_note表
+        String content = updateNoteReqVO.getContent();
+        NoteDO noteDO = NoteDO.builder()
+                .id(noteId)
+                .isContentEmpty(StringUtils.isBlank(content))
+                .imgUris(imgUris)
+                .title(updateNoteReqVO.getTitle())
+                .topicId(updateNoteReqVO.getTopicId())
+                .topicName(topicName)
+                .type(type)
+                .updateTime(LocalDateTime.now())
+                .videoUri(videoUri)
+                .build();
+        noteDOMapper.updateByPrimaryKey(noteDO);
+
+        //删除redis缓存
+        String noteDetailRedisKey = RedisKeyConstants.buildNoteDetailKey(noteId);
+        redisTemplate.delete(noteDetailRedisKey);
+
+        //删除本地缓存
+        LOCAL_CACHE.invalidate(noteId);
+
+        //笔记内容更新
+        NoteDO noteDO1 = noteDOMapper.selectByPrimaryKey(noteId);
+        String contentUuid = noteDO1.getContentUuid();
+        //笔记内容是否更新成功
+        boolean isUpdateContentSuccess = false;
+        if(StringUtils.isBlank(content)){
+            //若笔记为空，就删除笔记
+            isUpdateContentSuccess = keyValueRpcService.deleteNoteContent(contentUuid);
+        }else {
+            //调用kv存储服务
+            isUpdateContentSuccess = keyValueRpcService.saveNoteContent(contentUuid,content);
+        }
+
+        //若更新失败，抛出异常，回滚事务
+        if(!isUpdateContentSuccess){
+            throw new BizException(ResponseCodeEnum.NOTE_UPDATE_FAIL);
+        }
+        return Response.success();
     }
 
     /**
