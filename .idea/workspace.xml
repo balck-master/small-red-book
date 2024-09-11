@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 新增Caffeine 二级缓存">
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/model/vo/FindNoteDetailReqVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/model/vo/FindNoteDetailRspVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/UserRpcService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/KeyValueRpcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/KeyValueRpcService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/NoteDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/mapper/NoteDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/api/UserFeignApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user/smallredbook-user-api/src/main/java/org/example/smallredbook/user/api/api/UserFeignApi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,7 +298,7 @@
       <workItem from="1725765747373" duration="5523000" />
       <workItem from="1725875508636" duration="617000" />
       <workItem from="1725949661608" duration="13547000" />
-      <workItem from="1725971789668" duration="15596000" />
+      <workItem from="1725971789668" duration="20289000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -457,7 +444,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725970368893</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add 笔记详情接口开发">
+      <option name="closed" value="true" />
+      <created>1726041418256</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726041418256</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透">
+      <option name="closed" value="true" />
+      <created>1726045045465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726045045465</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +495,10 @@
     <MESSAGE value="add 根据用户id查询用户信息接口开发" />
     <MESSAGE value="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数" />
     <MESSAGE value="add 新增Caffeine 二级缓存" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 新增Caffeine 二级缓存" />
+    <MESSAGE value="add 笔记详情接口开发" />
+    <MESSAGE value="add 过滤器bug修复" />
+    <MESSAGE value="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,18 +564,13 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/exception/GlobalExceptionHandler.java</url>
           <line>98</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>64</line>
+          <line>85</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -579,12 +580,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>102</line>
+          <line>123</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>123</line>
+          <line>144</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -601,6 +602,11 @@
           <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java</url>
           <line>25</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

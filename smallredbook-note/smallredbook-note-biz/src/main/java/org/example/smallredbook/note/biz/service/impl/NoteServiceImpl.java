@@ -3,6 +3,8 @@ package org.example.smallredbook.note.biz.service.impl;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.nacos.shaded.com.google.common.base.Preconditions;
+import com.github.benmanes.caffeine.cache.Cache;
+import com.github.benmanes.caffeine.cache.Caffeine;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -62,6 +64,15 @@ public class NoteServiceImpl implements NoteService {
     private RedisTemplate redisTemplate;
     @Resource
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    /**
+     * 笔记详情本地缓存
+     */
+    private static final Cache<Long, String> LOCAL_CACHE = Caffeine.newBuilder()
+            .initialCapacity(10000) // 设置初始容量为 10000 个条目
+            .maximumSize(10000) // 设置缓存的最大容量为 10000 个条目
+            .expireAfterWrite(1, TimeUnit.HOURS) // 设置缓存条目在写入后 1 小时过期
+            .build();
 
     /**
      * 发布笔记
@@ -179,6 +190,16 @@ public class NoteServiceImpl implements NoteService {
         Long noteId = findNoteDetailReqVO.getId();
         Long userId = LoginUserContextHolder.getUserId();//当前登录用户
 
+        //先从本地缓存中获取
+        String findNoteDetailRspVOStrLocalCache  = LOCAL_CACHE.getIfPresent(noteId);
+        if(StringUtils.isNotBlank(findNoteDetailRspVOStrLocalCache)){
+            FindNoteDetailRspVO findNoteDetailRspVO = JsonUtils.parseObject(findNoteDetailRspVOStrLocalCache, FindNoteDetailRspVO.class);
+            log.info("==>命中了本地缓存：{}",findNoteDetailRspVOStrLocalCache);
+            //可见性校验
+            checkNoteVisibleFromVO(userId,findNoteDetailRspVO);
+            return Response.success(findNoteDetailRspVO);
+        }
+
         //从redis缓存中获取
         String noteDetailRedisKey = RedisKeyConstants.buildNoteDetailKey(noteId);
         String noteDetailJson = (String) redisTemplate.opsForValue().get(noteDetailRedisKey);
@@ -186,11 +207,13 @@ public class NoteServiceImpl implements NoteService {
         //若缓存中有该笔记的数据，则直接返回
         if(StringUtils.isNotBlank(noteDetailJson)){
             FindNoteDetailRspVO findNoteDetailRspVO = JsonUtils.parseObject(noteDetailJson, FindNoteDetailRspVO.class);
+            //异步线程中奖用户信息存入本地缓存
+            threadPoolTaskExecutor.submit(()->{
+                LOCAL_CACHE.put(noteId , Objects.isNull(findNoteDetailRspVO) ?"null" : JsonUtils.toJsonString(findNoteDetailRspVO));
+            });
+
             //可见性校验
-            if(Objects.nonNull(findNoteDetailRspVO)){
-                Integer visible = findNoteDetailRspVO.getVisible();
-                checkNoteVisible(visible,userId, findNoteDetailRspVO.getCreatorId());
-            }
+            checkNoteVisibleFromVO(userId,findNoteDetailRspVO );
             return Response.success(findNoteDetailRspVO);
         }
 
@@ -270,6 +293,18 @@ public class NoteServiceImpl implements NoteService {
         if (Objects.equals(visible, NoteVisibleEnum.PRIVATE.getCode())
                 && !Objects.equals(currUserId, creatorId)) {
             throw new BizException(ResponseCodeEnum.NOTE_PRIVATE);
+        }
+    }
+
+    /**
+     * 校验笔记的可见性（针对 VO 实体类）
+     * @param userId
+     * @param findNoteDetailRspVO
+     */
+    private void checkNoteVisibleFromVO(Long userId, FindNoteDetailRspVO findNoteDetailRspVO) {
+        if (Objects.nonNull(findNoteDetailRspVO)) {
+            Integer visible = findNoteDetailRspVO.getVisible();
+            checkNoteVisible(visible,userId,findNoteDetailRspVO.getCreatorId());
         }
     }
 }
