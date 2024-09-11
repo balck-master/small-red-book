@@ -1,6 +1,7 @@
 package org.example.smallredbook.note.biz.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.util.RandomUtil;
 import com.alibaba.nacos.shaded.com.google.common.base.Preconditions;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
@@ -8,7 +9,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.example.framework.biz.context.holder.LoginUserContextHolder;
 import org.example.framework.common.exception.BizException;
 import org.example.framework.common.response.Response;
+import org.example.framework.common.utils.JsonUtils;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.note.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.note.biz.domain.dataobject.NoteDO;
 import org.example.smallredbook.note.biz.domain.mapper.NoteDOMapper;
 import org.example.smallredbook.note.biz.domain.mapper.TopicDOMapper;
@@ -24,6 +27,9 @@ import org.example.smallredbook.note.biz.rpc.KeyValueRpcService;
 import org.example.smallredbook.note.biz.rpc.UserRpcService;
 import org.example.smallredbook.note.biz.service.NoteService;
 import org.example.smallredbook.user.api.dto.resp.FindUserByIdRspDTO;
+import org.springframework.data.redis.connection.RedisPipelineException;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -31,6 +37,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: tzy
@@ -49,9 +56,12 @@ public class NoteServiceImpl implements NoteService {
     private TopicDOMapper topicDOMapper;
     @Resource
     private NoteDOMapper noteDOMapper;
-
     @Resource
     private UserRpcService userRpcService;
+    @Resource
+    private RedisTemplate redisTemplate;
+    @Resource
+    private ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
     /**
      * 发布笔记
@@ -167,11 +177,34 @@ public class NoteServiceImpl implements NoteService {
     public Response<FindNoteDetailRspVO> findNoteDetail(FindNoteDetailReqVO findNoteDetailReqVO) {
         //查询的笔记id
         Long noteId = findNoteDetailReqVO.getId();
-        Long userId = LoginUserContextHolder.getUserId();
+        Long userId = LoginUserContextHolder.getUserId();//当前登录用户
+
+        //从redis缓存中获取
+        String noteDetailRedisKey = RedisKeyConstants.buildNoteDetailKey(noteId);
+        String noteDetailJson = (String) redisTemplate.opsForValue().get(noteDetailRedisKey);
+
+        //若缓存中有该笔记的数据，则直接返回
+        if(StringUtils.isNotBlank(noteDetailJson)){
+            FindNoteDetailRspVO findNoteDetailRspVO = JsonUtils.parseObject(noteDetailJson, FindNoteDetailRspVO.class);
+            //可见性校验
+            if(Objects.nonNull(findNoteDetailRspVO)){
+                Integer visible = findNoteDetailRspVO.getVisible();
+                checkNoteVisible(visible,userId, findNoteDetailRspVO.getCreatorId());
+            }
+            return Response.success(findNoteDetailRspVO);
+        }
+
+        //若redis缓存中获取不到，则走数据库查询
         NoteDO noteDO = noteDOMapper.selectByPrimaryKey(noteId);
 
-        //笔记不存在
+        //笔记不存在,抛出业务异常
         if (Objects.isNull(noteDO)) {
+            threadPoolTaskExecutor.execute(()->{
+                // 防止缓存穿透，将空数据存入 Redis 缓存 (过期时间不宜设置过长)
+                // 保底1分钟 + 随机秒数
+                long expireSeconds = 60+ RandomUtil.randomInt(60);
+                redisTemplate.opsForValue().set(noteDetailRedisKey,"null",expireSeconds,TimeUnit.SECONDS);
+            });
             throw new BizException(ResponseCodeEnum.NOTE_NOT_FOUND);
         }
 
@@ -214,6 +247,13 @@ public class NoteServiceImpl implements NoteService {
                 .visible(noteDO.getVisible())
                 .build();
 
+        //异步线程中 将笔记详情存入redis中
+        threadPoolTaskExecutor.execute(()->{
+            String noteDetailJson1 = JsonUtils.toJsonString(findNoteDetailRspVO);
+            // 过期时间（保底1天 + 随机秒数，将缓存过期时间打散，防止同一时间大量缓存失效，导致数据库压力太大）
+            long expireSeconds = 60*60*24 + RandomUtil.randomInt(60*60*24);
+            redisTemplate.opsForValue().set(noteDetailRedisKey,noteDetailJson1,expireSeconds,TimeUnit.SECONDS);
+        });
 
         return Response.success(findNoteDetailRspVO);
     }

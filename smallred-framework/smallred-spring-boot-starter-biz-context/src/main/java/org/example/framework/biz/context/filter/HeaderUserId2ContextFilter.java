@@ -19,7 +19,6 @@ import java.io.IOException;
  * @Date: 2024/8/4 22:15
  */
 @Slf4j
-@Component
 public class HeaderUserId2ContextFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws ServletException, IOException {
