@@ -5,6 +5,9 @@ import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.api.KeyValueFeignApi;
 import org.example.smallredbook.kv.dto.req.AddNoteContentReqDTO;
 import org.example.smallredbook.kv.dto.req.DeleteNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.kv.dto.rsp.FindNoteContentRspDTO;
+import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
@@ -48,5 +51,21 @@ public class KeyValueRpcService {
         }
 
         return true;
+    }
+
+    /**
+     * 查询笔记内容
+     * @param uuid
+     * @return
+     */
+    public String findNoteContent(String uuid){
+        FindNoteContentReqDTO findNoteContentReqDTO = new FindNoteContentReqDTO();
+        findNoteContentReqDTO.setUuid(uuid);
+        Response<FindNoteContentRspDTO> response = keyValueFeignApi.findNoteContent(findNoteContentReqDTO);
+
+        if(Objects.isNull(response) || !response.isSuccess() || Objects.isNull(response.getData())){
+            return null;
+        }
+        return response.getData().getContent();
     }
 }

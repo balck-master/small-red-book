@@ -2,9 +2,11 @@ package org.example.smallredbook.user.api.api;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.api.constant.ApiConstants;
+import org.example.smallredbook.user.api.dto.req.FindUserByIdReqDTO;
 import org.example.smallredbook.user.api.dto.req.FindUserByPhoneReqDTO;
 import org.example.smallredbook.user.api.dto.req.RegisterUserReqDTO;
 import org.example.smallredbook.user.api.dto.req.UpdateUserPasswordReqDTO;
+import org.example.smallredbook.user.api.dto.resp.FindUserByIdRspDTO;
 import org.example.smallredbook.user.api.dto.resp.FindUserByPhoneRspDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -43,4 +45,12 @@ public interface UserFeignApi {
      */
     @PostMapping(value = PREFIX + "/password/update")
     Response<?> updatePassword(@RequestBody UpdateUserPasswordReqDTO updateUserPasswordReqDTO);
+
+    /**l;l;.
+     * 根据用户id查询用户信息
+     * @param findUserByIdReqDTO
+     * @return
+     */
+    @PostMapping(value = PREFIX +"/findById")
+    Response<FindUserByIdRspDTO> findById(@RequestBody FindUserByIdReqDTO findUserByIdReqDTO) ;
 }

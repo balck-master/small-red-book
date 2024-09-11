@@ -102,6 +102,10 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-user-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

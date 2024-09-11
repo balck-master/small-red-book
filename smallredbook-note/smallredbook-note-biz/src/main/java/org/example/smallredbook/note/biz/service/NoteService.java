@@ -1,6 +1,9 @@
 package org.example.smallredbook.note.biz.service;
 
 import org.example.framework.common.response.Response;
+import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
+import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
 import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
 
 /**
@@ -15,4 +18,12 @@ public interface NoteService {
      * @return
      */
     Response<?> publishNote(PublishNoteReqVO publishNoteReqVO);
+
+
+    /**
+     * 笔记详情
+     * @param findNoteDetailReqVO
+     * @return
+     */
+    Response<FindNoteDetailRspVO> findNoteDetail(FindNoteDetailReqVO findNoteDetailReqVO);
 }
