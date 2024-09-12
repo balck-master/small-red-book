@@ -56,3 +56,15 @@ spring:
 logging:
   level:
     com.quanxiaoha.xiaohashu.user.biz.domain.mapper: debug
+
+rocketmq:
+  name-server: 106.54.241.247:9876 # name server 地址
+  producer:
+    group: xiaohashu_group
+    send-message-timeout: 3000 # 消息发送超时时间，默认 3s
+    retry-times-when-send-failed: 3 # 同步发送消息失败后，重试的次数
+    retry-times-when-send-async-failed: 3 # 异步发送消息失败后，重试的次数
+    max-message-size: 4096 # 消息最大大小
+  consumer:
+    group: xiaohashu_group
+    pull-batch-size: 5 # 每次拉取的最大消息数

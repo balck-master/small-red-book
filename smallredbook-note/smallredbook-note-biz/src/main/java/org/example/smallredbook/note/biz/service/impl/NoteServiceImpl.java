@@ -9,11 +9,14 @@ import jakarta.annotation.Resource;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.example.framework.biz.context.holder.LoginUserContextHolder;
 import org.example.framework.common.exception.BizException;
 import org.example.framework.common.response.Response;
 import org.example.framework.common.utils.JsonUtils;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
+import org.example.smallredbook.note.biz.config.RocketMQConfig;
+import org.example.smallredbook.note.biz.constant.MQConstants;
 import org.example.smallredbook.note.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.note.biz.domain.dataobject.NoteDO;
 import org.example.smallredbook.note.biz.domain.mapper.NoteDOMapper;
@@ -67,6 +70,9 @@ public class NoteServiceImpl implements NoteService {
     private RedisTemplate redisTemplate;
     @Resource
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    @Resource
+    private RocketMQTemplate rocketMQTemplate;
 
     /**
      * 笔记详情本地缓存
@@ -366,7 +372,11 @@ public class NoteServiceImpl implements NoteService {
         redisTemplate.delete(noteDetailRedisKey);
 
         //删除本地缓存
-        LOCAL_CACHE.invalidate(noteId);
+//        LOCAL_CACHE.invalidate(noteId);
+        //同步发送广播模式MQ，将所有实例中的本地缓存都删除掉
+        rocketMQTemplate.syncSend(MQConstants.TOPIC_DELETE_NOTE_LOCAL_CACHE,noteId);
+        log.info("====》MQ：删除笔记本地缓存发送成功..." );
+
 
         //笔记内容更新
         NoteDO noteDO1 = noteDOMapper.selectByPrimaryKey(noteId);
@@ -386,6 +396,15 @@ public class NoteServiceImpl implements NoteService {
             throw new BizException(ResponseCodeEnum.NOTE_UPDATE_FAIL);
         }
         return Response.success();
+    }
+
+    /**
+     * 删除本地笔记缓存
+     * @param noteId
+     */
+    @Override
+    public void deleteNoteLocalCache(Long noteId) {
+        LOCAL_CACHE.invalidate(noteId);
     }
 
     /**
