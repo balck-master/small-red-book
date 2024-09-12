@@ -2,10 +2,7 @@ package org.example.smallredbook.note.biz.service;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.kv.dto.req.FindNoteContentReqDTO;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
-import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
-import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.*;
 
 /**
  * @Author: tzy
@@ -40,4 +37,11 @@ public interface NoteService {
      * @param noteId
      */
     void deleteNoteLocalCache(Long noteId);
+    /**
+     * 删除笔记
+     * @param deleteNoteReqVO
+     * @return
+     */
+    Response<?> deleteNote(DeleteNoteReqVO deleteNoteReqVO);
+
 }

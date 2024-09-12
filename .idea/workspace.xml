@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记更新接口开发">
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/config/RocketMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/constant/MQConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/consumer/DeleteNoteLocalCacheConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/pom.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性">
+      <change afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/model/vo/DeleteNoteReqVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/NoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,16 +90,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1).executor": "Debug",
-    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor": "Run",
+    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor": "Debug",
     "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication.executor": "Debug",
-    "Spring Boot.XiaohashuGatewayApplication.executor": "Run",
-    "Spring Boot.XiaohashuKVBizApplication.executor": "Run",
-    "Spring Boot.XiaohashuOssBizApplication.executor": "Run",
-    "Spring Boot.XiaohashuUserBizApplication.executor": "Run",
-    "Spring Boot.XiaoredshuAuthApplication.executor": "Run",
-    "Spring Boot.XiaoredshuNoteBizApplication (1).executor": "Run",
-    "Spring Boot.XiaoredshuNoteBizApplication (2).executor": "Run",
-    "Spring Boot.XiaoredshuNoteBizApplication.executor": "Run",
+    "Spring Boot.XiaohashuGatewayApplication.executor": "Debug",
+    "Spring Boot.XiaohashuKVBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuOssBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication (1).executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication (2).executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication.executor": "Debug",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-note/smallredbook-note-biz/src/main/resources",
@@ -342,7 +337,7 @@
       <workItem from="1725875508636" duration="617000" />
       <workItem from="1725949661608" duration="13547000" />
       <workItem from="1725971789668" duration="30013000" />
-      <workItem from="1726102468227" duration="6553000" />
+      <workItem from="1726102468227" duration="11848000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -520,7 +515,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726064489144</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性">
+      <option name="closed" value="true" />
+      <created>1726124156973</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1726124156973</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +564,8 @@
     <MESSAGE value="add 使用caffeine增加查看笔记详情接口响应速度" />
     <MESSAGE value="add 使用 CompletableFuture 优化下游服务" />
     <MESSAGE value="add 笔记更新接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 笔记更新接口开发" />
+    <MESSAGE value="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -628,7 +632,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>93</line>
+          <line>90</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -638,12 +642,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>131</line>
+          <line>128</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>152</line>
+          <line>149</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -658,23 +662,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java</url>
-          <line>36</line>
+          <line>34</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>301</line>
+          <line>298</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>394</line>
-          <option name="timeStamp" value="56" />
+          <line>318</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
-          <line>321</line>
-          <option name="timeStamp" value="57" />
+          <line>367</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/consumer/DeleteNoteLocalCacheConsumer.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>381</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

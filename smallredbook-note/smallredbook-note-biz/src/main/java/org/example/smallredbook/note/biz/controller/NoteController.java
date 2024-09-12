@@ -5,11 +5,9 @@ import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
 import org.example.framework.common.response.Response;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
-import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
-import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.*;
 import org.example.smallredbook.note.biz.service.NoteService;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -40,5 +38,11 @@ public class NoteController {
     @ApiOperationLog(description = "笔记修改")
     public Response<?> updateNote(@Valid @RequestBody UpdateNoteReqVO updateNoteReqVO) {
         return noteService.updateNote(updateNoteReqVO);
+    }
+
+    @PostMapping(value = "/delete")
+    @ApiOperationLog(description = "删除笔记")
+    public Response<?> deleteNote(@Validated @RequestBody DeleteNoteReqVO deleteNoteReqVO) {
+        return noteService.deleteNote(deleteNoteReqVO);
     }
 }

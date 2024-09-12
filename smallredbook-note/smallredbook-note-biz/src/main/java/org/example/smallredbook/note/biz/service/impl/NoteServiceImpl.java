@@ -25,10 +25,7 @@ import org.example.smallredbook.note.biz.enums.NoteStatusEnum;
 import org.example.smallredbook.note.biz.enums.NoteTypeEnum;
 import org.example.smallredbook.note.biz.enums.NoteVisibleEnum;
 import org.example.smallredbook.note.biz.enums.ResponseCodeEnum;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailReqVO;
-import org.example.smallredbook.note.biz.model.vo.FindNoteDetailRspVO;
-import org.example.smallredbook.note.biz.model.vo.PublishNoteReqVO;
-import org.example.smallredbook.note.biz.model.vo.UpdateNoteReqVO;
+import org.example.smallredbook.note.biz.model.vo.*;
 import org.example.smallredbook.note.biz.rpc.DistributedIdGeneratorRpcService;
 import org.example.smallredbook.note.biz.rpc.KeyValueRpcService;
 import org.example.smallredbook.note.biz.rpc.UserRpcService;
@@ -405,6 +402,39 @@ public class NoteServiceImpl implements NoteService {
     @Override
     public void deleteNoteLocalCache(Long noteId) {
         LOCAL_CACHE.invalidate(noteId);
+    }
+
+    /**
+     * 删除笔记
+     * @param deleteNoteReqVO
+     * @return
+     */
+    @Transactional(rollbackFor = Exception.class)
+    public Response<?> deleteNote(DeleteNoteReqVO deleteNoteReqVO){
+        //笔记id
+        Long noteId = deleteNoteReqVO.getId();
+        NoteDO noteDO = NoteDO.builder()
+                .id(noteId)
+                .status(NoteStatusEnum.DELETED.getCode())
+                .updateTime(LocalDateTime.now())
+                .build();
+        int count = noteDOMapper.updateByPrimaryKeySelective(noteDO);
+
+        //如果影响的行数为0，则表示该笔记不存在
+        if(count == 0){
+            throw new BizException(ResponseCodeEnum.NOTE_NOT_FOUND);
+        }
+
+        //更新成功，
+        //删除redis中的缓存
+        String noteDetailKey = RedisKeyConstants.buildNoteDetailKey(noteId);
+        redisTemplate.delete(noteDetailKey);
+
+        //同步发送广播模式 MQ，将所有实例中的本地缓存都删除掉
+        rocketMQTemplate.syncSend(MQConstants.TOPIC_DELETE_NOTE_LOCAL_CACHE,noteId);
+        log.info("==> MQ:删除笔记本地缓存发送成功");
+
+        return Response.success();
     }
 
     /**
