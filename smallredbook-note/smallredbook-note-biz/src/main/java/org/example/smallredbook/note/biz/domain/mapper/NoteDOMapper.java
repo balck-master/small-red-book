@@ -15,5 +15,17 @@ public interface NoteDOMapper {
 
     int updateByPrimaryKey(NoteDO record);
 
+    /**
+     * 更新笔记状态为 仅自己可见
+     * @param noteDO
+     * @return
+     */
     int updateVisibleOnlyMe(NoteDO noteDO);
+
+    /**
+     * 更新笔记置顶状态
+     * @param noteDO
+     * @return
+     */
+    int updateIsTop(NoteDO noteDO);
 }
