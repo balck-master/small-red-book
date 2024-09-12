@@ -45,4 +45,9 @@ public class NoteController {
     public Response<?> deleteNote(@Validated @RequestBody DeleteNoteReqVO deleteNoteReqVO) {
         return noteService.deleteNote(deleteNoteReqVO);
     }
+    @PostMapping(value = "/visible/onlyme")
+    @ApiOperationLog(description = "修改笔记为仅自己可见")
+    public Response<?> visibleOnlyMe(@Valid @RequestBody UpdateNoteVisibleOnlyMeReqVO updateNoteVisibleOnlyMeReqVO) {
+        return noteService.visibleOnlyMe(updateNoteVisibleOnlyMeReqVO);
+    }
 }

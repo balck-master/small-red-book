@@ -44,4 +44,11 @@ public interface NoteService {
      */
     Response<?> deleteNote(DeleteNoteReqVO deleteNoteReqVO);
 
+    /**
+     * 更新笔记成 仅自己可见
+     * @param updateNoteVisibleOnlyMeReqVO
+     * @return
+     */
+    Response<?> visibleOnlyMe(UpdateNoteVisibleOnlyMeReqVO updateNoteVisibleOnlyMeReqVO);
+
 }

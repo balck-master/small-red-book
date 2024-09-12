@@ -58,7 +58,7 @@ logging:
     com.quanxiaoha.xiaohashu.user.biz.domain.mapper: debug
 
 rocketmq:
-  name-server: 106.54.241.247:9876 # name server 地址
+  name-server: 150.158.116.206:9876 # name server 地址
   producer:
     group: xiaohashu_group
     send-message-timeout: 3000 # 消息发送超时时间，默认 3s
