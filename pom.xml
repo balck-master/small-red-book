@@ -32,6 +32,7 @@
     <module>smallredbook-kv</module>
       <module>smallredbook-distributed-id-generator</module>
       <module>smallredbook-note</module>
+      <module>smallredbook-user-relation</module>
 
   </modules>
 
