@@ -18,7 +18,8 @@ public enum ResponseCodeEnum implements BaseExceptionInterface {
     // ----------- 业务异常状态码 -----------
     CANT_FOLLOW_YOUR_SELF("RELATION-20001", "无法关注自己"),
     FOLLOW_USER_NOT_EXISTED("RELATION-20002", "关注的用户不存在"),
-    ;
+    FOLLOWING_COUNT_LIMIT("RELATION-20003", "您关注的用户已达上限，请先取关部分用户"),
+    ALREADY_FOLLOWED("RELATION-20004", "您已经关注了该用户"),
     ;
 
     // 异常码

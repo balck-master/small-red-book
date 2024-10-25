@@ -94,6 +94,12 @@
             <groupId>org.example</groupId>
             <artifactId>smallredbook-user-api</artifactId>
         </dependency>
+
+        <!-- hutool工具库-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

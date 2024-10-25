@@ -16,7 +16,14 @@
     from t_following
     where id = #{id,jdbcType=BIGINT}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    <select id="selectByUserId"
+            resultType="org.example.smallredbook.user.relation.biz.domain.dataobject.FollowingDO">
+      select
+        user_id, following_user_id, create_time
+      from t_following
+      where user_id = #{userId,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from t_following
     where id = #{id,jdbcType=BIGINT}
   </delete>

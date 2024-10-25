@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 用户关系服务搭建">
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 用户关注接口设计1">
+      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/DateUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/constant/RedisKeyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/controller/RelationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/model/vo/FollowUserReqVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/rpc/UserRpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/RelationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/LuaResultEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_add_and_expire.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_batch_add_and_expire.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_check_and_add.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-11-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/oss.2024-08-11-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/oss.2024-08-13-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/XiaohashuUserRelationBizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/XiaohashuUserRelationBizApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -366,7 +363,7 @@
       <workItem from="1729517717981" duration="2469000" />
       <workItem from="1729565638979" duration="4632000" />
       <workItem from="1729659508746" duration="1037000" />
-      <workItem from="1729825510350" duration="4069000" />
+      <workItem from="1729825510350" duration="7487000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -584,11 +581,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729603920046</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add 用户关注接口设计1">
+      <option name="closed" value="true" />
+      <created>1729846676268</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1729846676268</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.lua" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -602,7 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add KV 键值存储微服务搭建" />
     <MESSAGE value="add 笔记内容新增 接口开发" />
     <MESSAGE value="add 笔记内容查询 接口开发" />
     <MESSAGE value="add 笔记内容删除 接口开发" />
@@ -627,7 +634,8 @@
     <MESSAGE value="add 修改笔记成 仅自己可见接口开发" />
     <MESSAGE value="add 笔记置顶/笔记取消置顶 接口开发" />
     <MESSAGE value="add 用户关系服务搭建" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 用户关系服务搭建" />
+    <MESSAGE value="add 用户关注接口设计1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 用户关注接口设计1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
