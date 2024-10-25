@@ -4,31 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 笔记置顶/笔记取消置顶 接口开发">
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/XiaohashuUserRelationBizApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/dataobject/FansDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/dataobject/FollowingDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FansDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/config/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/config/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FansDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 用户关系服务搭建">
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/constant/RedisKeyConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/controller/RelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/model/vo/FollowUserReqVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/rpc/UserRpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/RelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/auth.2024-08-11-0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/oss.2024-08-11-0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/oss.2024-08-13-0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/createtable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/createtable.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/XiaohashuUserRelationBizApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/XiaohashuUserRelationBizApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -373,7 +364,9 @@
       <workItem from="1728908754399" duration="834000" />
       <workItem from="1728913761301" duration="38000" />
       <workItem from="1729517717981" duration="2469000" />
-      <workItem from="1729565638979" duration="3750000" />
+      <workItem from="1729565638979" duration="4632000" />
+      <workItem from="1729659508746" duration="1037000" />
+      <workItem from="1729825510350" duration="4069000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -583,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726146153983</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add 用户关系服务搭建">
+      <option name="closed" value="true" />
+      <created>1729603920046</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729603920046</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +602,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add 密码更新接口 代码重构" />
     <MESSAGE value="add KV 键值存储微服务搭建" />
     <MESSAGE value="add 笔记内容新增 接口开发" />
     <MESSAGE value="add 笔记内容查询 接口开发" />
@@ -626,7 +626,8 @@
     <MESSAGE value="add 笔记删除接口开发" />
     <MESSAGE value="add 修改笔记成 仅自己可见接口开发" />
     <MESSAGE value="add 笔记置顶/笔记取消置顶 接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 笔记置顶/笔记取消置顶 接口开发" />
+    <MESSAGE value="add 用户关系服务搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 用户关系服务搭建" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
