@@ -1,5 +1,6 @@
 package org.example.smallredbook.user.relation.biz.consumer;
 
+import com.alibaba.nacos.shaded.com.google.common.util.concurrent.RateLimiter;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 
@@ -38,8 +39,16 @@ public class FollowUnfollowConsumer implements RocketMQListener<Message> {
     private FollowingDOMapper followingDOMapper;
     @Resource
     private FansDOMapper fansDOMapper;
+
+    // 每秒创建 5000 个令牌
+    @Resource
+    private RateLimiter rateLimiter ;
     @Override
     public void onMessage(Message message) {
+        //使用令牌桶进行流量削峰:通过获取令牌，如果没有令牌可用，将阻塞，直到获得
+        rateLimiter.acquire();
+
+
         //消息体
         String bodyJsonStr = new String(message.getBody());
         String tags = message.getTags();
