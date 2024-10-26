@@ -4,19 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 用户关注接口设计1">
-      <change afterPath="$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/framework/common/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/constant/RedisKeyConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/LuaResultEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_add_and_expire.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_batch_add_and_expire.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/lua/follow_check_and_add.lua" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 用户关注接口设计2">
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/config/RocketMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/constant/MQConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/consumer/FollowUnfollowConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/model/dto/FollowUserMqDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/enums/ResponseCodeEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/config/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/config/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,73 +62,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.CassandraTests.testDelete.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CassandraTests.testInsert.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CassandraTests.testSelect.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CassandraTests.testUpdate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testEncodePassword (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testEncodePassword.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testSelect (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DruidTest.testSelect.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.small-red-book [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallred-oss [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-distributed-id-generator [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-gateway [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-kv [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-kv [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-kv [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-note [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-note-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-oss-biz [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-user [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-user [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbookshu-user-relation-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuKVBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuOssBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuUserBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaohashuUserRelationBizApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaoredshuNoteBizApplication (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaoredshuNoteBizApplication (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.XiaoredshuNoteBizApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3505747&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.XiaoredshuAuthApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.CassandraTests.testDelete.executor": "Run",
+    "JUnit.CassandraTests.testInsert.executor": "Run",
+    "JUnit.CassandraTests.testSelect.executor": "Run",
+    "JUnit.CassandraTests.testUpdate.executor": "Run",
+    "JUnit.DruidTest.testEncodePassword (1).executor": "Run",
+    "JUnit.DruidTest.testEncodePassword.executor": "Run",
+    "JUnit.DruidTest.testSelect (1).executor": "Run",
+    "JUnit.DruidTest.testSelect.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.small-red-book [clean].executor": "Run",
+    "Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallred-oss [clean].executor": "Run",
+    "Maven.smallredbook-auth [clean].executor": "Run",
+    "Maven.smallredbook-distributed-id-generator [clean].executor": "Run",
+    "Maven.smallredbook-gateway [clean].executor": "Run",
+    "Maven.smallredbook-kv [clean].executor": "Run",
+    "Maven.smallredbook-kv [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallredbook-kv [validate].executor": "Run",
+    "Maven.smallredbook-note [clean].executor": "Run",
+    "Maven.smallredbook-note-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor": "Run",
+    "Maven.smallredbook-oss-biz [clean].executor": "Run",
+    "Maven.smallredbook-user [clean].executor": "Run",
+    "Maven.smallredbook-user [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor": "Run",
+    "Maven.smallredbookshu-user-relation-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1).executor": "Debug",
+    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor": "Debug",
+    "Spring Boot.XiaohashuDistributedIdGeneratorBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuGatewayApplication.executor": "Run",
+    "Spring Boot.XiaohashuKVBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuOssBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuUserBizApplication.executor": "Debug",
+    "Spring Boot.XiaohashuUserRelationBizApplication.executor": "Run",
+    "Spring Boot.XiaoredshuAuthApplication.executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication (1).executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication (2).executor": "Debug",
+    "Spring Boot.XiaoredshuNoteBizApplication.executor": "Debug",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/javacode/dogXiaoHa/small-red-book/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3505747",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.XiaoredshuAuthApplication.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql_aurora_aws&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql_aurora_aws"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -363,7 +359,8 @@
       <workItem from="1729517717981" duration="2469000" />
       <workItem from="1729565638979" duration="4632000" />
       <workItem from="1729659508746" duration="1037000" />
-      <workItem from="1729825510350" duration="7487000" />
+      <workItem from="1729825510350" duration="9068000" />
+      <workItem from="1729855069067" duration="5617000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -589,7 +586,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729846676268</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add 用户关注接口设计2">
+      <option name="closed" value="true" />
+      <created>1729851257049</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1729851257049</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +615,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add 笔记内容新增 接口开发" />
     <MESSAGE value="add 笔记内容查询 接口开发" />
     <MESSAGE value="add 笔记内容删除 接口开发" />
     <MESSAGE value="add 分布式id微服务搭建" />
@@ -635,7 +639,8 @@
     <MESSAGE value="add 笔记置顶/笔记取消置顶 接口开发" />
     <MESSAGE value="add 用户关系服务搭建" />
     <MESSAGE value="add 用户关注接口设计1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 用户关注接口设计1" />
+    <MESSAGE value="add 用户关注接口设计2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 用户关注接口设计2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
