@@ -7,18 +7,25 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.common.message.Message;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
+import org.example.framework.common.utils.DateUtils;
 import org.example.framework.common.utils.JsonUtils;
 import org.example.smallredbook.user.relation.biz.constant.MQConstants;
 
+import org.example.smallredbook.user.relation.biz.constant.RedisKeyConstants;
 import org.example.smallredbook.user.relation.biz.domain.dataobject.FansDO;
 import org.example.smallredbook.user.relation.biz.domain.dataobject.FollowingDO;
 import org.example.smallredbook.user.relation.biz.domain.mapper.FansDOMapper;
 import org.example.smallredbook.user.relation.biz.domain.mapper.FollowingDOMapper;
 import org.example.smallredbook.user.relation.biz.model.dto.FollowUserMqDTO;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
+import org.springframework.scripting.support.ResourceScriptSource;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import java.time.LocalDateTime;
+import java.util.Collections;
 import java.util.Objects;
 
 /**
@@ -43,6 +50,9 @@ public class FollowUnfollowConsumer implements RocketMQListener<Message> {
     // 每秒创建 5000 个令牌
     @Resource
     private RateLimiter rateLimiter ;
+
+    @Resource
+    private RedisTemplate<String, Object> redisTemplate;
     @Override
     public void onMessage(Message message) {
         //使用令牌桶进行流量削峰:通过获取令牌，如果没有令牌可用，将阻塞，直到获得
@@ -103,7 +113,21 @@ public class FollowUnfollowConsumer implements RocketMQListener<Message> {
         }));
 
         log.error("## 数据库添加记录结果：{}",isSuccess);
-        //todo: 跟新redis中被关注用户的 ZSet粉丝列表
+        //若数据库操作成功，更新 Redis 中被关注用户的 ZSet 粉丝列表
 
+        if(isSuccess){
+            //从lua脚本中读取
+            DefaultRedisScript<Long> script = new DefaultRedisScript<>();
+            script.setScriptSource(new ResourceScriptSource(new ClassPathResource("/lua/follow_check_and_update_fans_zset.lua")));
+            script.setResultType(Long.class);
+
+            //时间戳
+            long timestamp = DateUtils.localDateTime2Timestamp(createTime);
+
+            //构建被关注用户的 粉丝列表 Redis Key
+            String fansRedisKey = RedisKeyConstants.buildUserFansKey(followUserId);
+            //执行脚本
+            redisTemplate.execute(script, Collections.singletonList(fansRedisKey),userId,timestamp);
+        }
     }
 }
