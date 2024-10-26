@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.framework.biz.operationlog.aspect.ApiOperationLog;
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.relation.biz.model.vo.FollowUserReqVO;
+import org.example.smallredbook.user.relation.biz.model.vo.UnfollowUserReqVO;
 import org.example.smallredbook.user.relation.biz.service.RelationService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -29,5 +30,11 @@ public class RelationController {
     @ApiOperationLog(description = "关注用户")
     public Response<?> follow(@Validated @RequestBody FollowUserReqVO followUserReqVO) {
         return relationService.follow(followUserReqVO);
+    }
+
+    @PostMapping("/unfollow")
+    @ApiOperationLog(description = "取关用户")
+    public Response<?> unfollow(@Validated @RequestBody UnfollowUserReqVO unfollowUserReqVO) {
+        return relationService.unfollow(unfollowUserReqVO);
     }
 }

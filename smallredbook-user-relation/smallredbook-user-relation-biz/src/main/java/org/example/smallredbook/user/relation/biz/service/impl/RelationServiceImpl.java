@@ -20,7 +20,9 @@ import org.example.smallredbook.user.relation.biz.domain.mapper.FollowingDOMappe
 import org.example.smallredbook.user.relation.biz.enums.LuaResultEnum;
 import org.example.smallredbook.user.relation.biz.enums.ResponseCodeEnum;
 import org.example.smallredbook.user.relation.biz.model.dto.FollowUserMqDTO;
+import org.example.smallredbook.user.relation.biz.model.dto.UnfollowUserMqDTO;
 import org.example.smallredbook.user.relation.biz.model.vo.FollowUserReqVO;
+import org.example.smallredbook.user.relation.biz.model.vo.UnfollowUserReqVO;
 import org.example.smallredbook.user.relation.biz.rpc.UserRpcService;
 import org.example.smallredbook.user.relation.biz.service.RelationService;
 import org.springframework.core.io.ClassPathResource;
@@ -158,6 +160,59 @@ public class RelationServiceImpl implements RelationService {
             }
         });
 
+        return Response.success();
+    }
+
+    @Override
+    public Response<?> unfollow(UnfollowUserReqVO unfollowUserReqVO) {
+        // 想要取关了用户 ID
+        Long unfollowUserId = unfollowUserReqVO.getUnfollowUserId();
+        // 当前登录用户 ID
+        Long userId = LoginUserContextHolder.getUserId();
+
+        // 无法取关自己
+        if (Objects.equals(userId, unfollowUserId)) {
+            throw new BizException(ResponseCodeEnum.CANT_UNFOLLOW_YOUR_SELF);
+        }
+
+        //2. 校验取关的用户是否存在
+        FindUserByIdRspDTO findUserByIdRspDTO = userRpcService.findById(unfollowUserId);
+        if(Objects.isNull(findUserByIdRspDTO)){
+            throw new BizException(ResponseCodeEnum.FOLLOW_USER_NOT_EXISTED);
+        }
+
+        //3.必须是关注了的用户，才能取关
+        String followingRedisKey = RedisKeyConstants.buildUserFollowingKey(userId);
+        Double score = redisTemplate.opsForZSet().score(followingRedisKey, unfollowUserId);//following:userId:unfollowUserId
+        if(Objects.isNull(score)){
+            throw new BizException(ResponseCodeEnum.NOT_FOLLOWED);
+        }
+        //从自己的关注列表中移除
+        redisTemplate.opsForZSet().remove(followingRedisKey,unfollowUserId);
+
+        // 发送MQ
+        UnfollowUserMqDTO unfollowUserMqDTO = UnfollowUserMqDTO.builder()
+                .unfollowUserId(unfollowUserId)
+                .userId(userId)
+                .createTime(LocalDateTime.now())
+                .build();
+        //将DTO对象转为json
+        MessageBuilder<String> message = MessageBuilder.withPayload(JsonUtils.toJsonString(unfollowUserMqDTO));
+        //拼接消费者mq 发送的的主题 topic+tag
+        String destination =  MQConstants.TOPIC_FOLLOW_OR_UNFOLLOW+":"+MQConstants.TAG_UNFOLLOW;
+        log.info("==> 开始发送取关操作 MQ, 消息体: {}", unfollowUserMqDTO);
+
+        rocketMQTemplate.asyncSend(destination, message, new SendCallback() {
+            @Override
+            public void onSuccess(SendResult sendResult) {
+                log.info("==> MQ 发送成功，SendResult: {}", sendResult);
+            }
+
+            @Override
+            public void onException(Throwable throwable) {
+                log.error("==> MQ 发送异常: ", throwable);
+            }
+        });
         return Response.success();
     }
 

@@ -2,6 +2,7 @@ package org.example.smallredbook.user.relation.biz.service;
 
 import org.example.framework.common.response.Response;
 import org.example.smallredbook.user.relation.biz.model.vo.FollowUserReqVO;
+import org.example.smallredbook.user.relation.biz.model.vo.UnfollowUserReqVO;
 
 /**
  * @Author: tzy
@@ -15,4 +16,11 @@ public interface RelationService {
      * @return
      */
     Response<?> follow(FollowUserReqVO followUserReqVO);
+
+    /**
+     * 取关用户
+     * @param unfollowUserReqVO
+     * @return
+     */
+    Response<?> unfollow(UnfollowUserReqVO unfollowUserReqVO);
 }
