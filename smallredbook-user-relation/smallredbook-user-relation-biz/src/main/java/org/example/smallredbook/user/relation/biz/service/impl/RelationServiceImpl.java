@@ -183,12 +183,50 @@ public class RelationServiceImpl implements RelationService {
 
         //3.必须是关注了的用户，才能取关
         String followingRedisKey = RedisKeyConstants.buildUserFollowingKey(userId);
-        Double score = redisTemplate.opsForZSet().score(followingRedisKey, unfollowUserId);//following:userId:unfollowUserId
-        if(Objects.isNull(score)){
+
+        DefaultRedisScript<Long> script = new DefaultRedisScript<>();
+        script.setScriptSource(new ResourceScriptSource(new ClassPathResource("lua/unfollow_check_and_delete.lua")));
+        script.setResultType(Long.class);
+
+        // 执行 Lua 脚本，拿到返回结果
+        Long result  = (Long) redisTemplate.execute(script, Collections.singletonList(followingRedisKey), unfollowUserId);
+        if(Objects.equals(result,LuaResultEnum.NOT_FOLLOWED.getCode())){//未关注该用户，抛出异常
             throw new BizException(ResponseCodeEnum.NOT_FOLLOWED);
         }
-        //从自己的关注列表中移除
-        redisTemplate.opsForZSet().remove(followingRedisKey,unfollowUserId);
+
+        if(Objects.equals(result,LuaResultEnum.ZSET_NOT_EXIST.getCode())){//ZSet关注列表不存在
+            //从数据库查询当前用户的关注关系 记录
+            List<FollowingDO> followingDOS = followingDOMapper.selectByUserId(userId);
+
+            long expireSeconds = 60*60*24 +RandomUtil.randomInt(60*60*24);
+
+            //若记录为空，表示当前用户还未关注任何人
+            if(CollUtil.isEmpty(followingDOS)){
+                throw new BizException(ResponseCodeEnum.NOT_FOLLOWED);
+            }else{ // 若记录不为空，则将关注关系数据全量同步到 Redis 中，并设置过期时间；
+                Object[] luaArgs = buildLuaArgs(followingDOS, expireSeconds);
+
+                //执行lua脚本，批量同步关注关系 到redis中
+                DefaultRedisScript<Long> script3 = new DefaultRedisScript<>();
+                script3.setScriptSource(new ResourceScriptSource(new ClassPathResource("lua/unfollow_check_and_delete.lua")));
+                script3.setResultType(Long.class);
+                redisTemplate.execute(script3,Collections.singletonList(followingRedisKey),luaArgs);
+
+                //调用上面的lua脚本，将取关的用户删除
+                 result = (Long) redisTemplate.execute(script, Collections.singletonList(followingRedisKey), unfollowUserId);
+
+                 if(Objects.equals(result,LuaResultEnum.NOT_FOLLOWED.getCode())){
+                     throw new BizException(ResponseCodeEnum.NOT_FOLLOWED);
+                 }
+            }
+        }
+
+//        Double score = redisTemplate.opsForZSet().score(followingRedisKey, unfollowUserId);//following:userId:unfollowUserId
+//        if(Objects.isNull(score)){
+//            throw new BizException(ResponseCodeEnum.NOT_FOLLOWED);
+//        }
+//        //从自己的关注列表中移除
+//        redisTemplate.opsForZSet().remove(followingRedisKey,unfollowUserId);
 
         // 发送MQ
         UnfollowUserMqDTO unfollowUserMqDTO = UnfollowUserMqDTO.builder()
