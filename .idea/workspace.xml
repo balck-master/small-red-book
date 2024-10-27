@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 取关接口开发-未防止redis中关注列表不存在，大量请求打到数据库==&gt; 新增lua脚本（先缓存到redis，再删除取关的人）">
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 取关接口开发-mq发送取关消息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/consumer/FollowUnfollowConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/consumer/FollowUnfollowConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FansDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FansDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/domain/mapper/FollowingDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FansDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FansDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources/mapper/FollowingDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/MQTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/MQTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,7 +357,7 @@
       <workItem from="1729659508746" duration="1037000" />
       <workItem from="1729825510350" duration="9068000" />
       <workItem from="1729855069067" duration="16625000" />
-      <workItem from="1730004893162" duration="1658000" />
+      <workItem from="1730004893162" duration="2568000" />
     </task>
     <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
       <option name="closed" value="true" />
@@ -643,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729954916363</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add 取关接口开发-mq发送取关消息">
+      <option name="closed" value="true" />
+      <created>1730011234061</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730011234061</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add 笔记微服务搭建" />
     <MESSAGE value="add 笔记发布接口开发" />
     <MESSAGE value="add 添加dev文件" />
     <MESSAGE value="add 根据用户id查询用户信息接口开发" />
@@ -689,7 +692,8 @@
     <MESSAGE value="add 更新 Redis 中被关注用户的 ZSet 粉丝列表" />
     <MESSAGE value="add 取关接口开发" />
     <MESSAGE value="add 取关接口开发-未防止redis中关注列表不存在，大量请求打到数据库==&gt; 新增lua脚本（先缓存到redis，再删除取关的人）" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 取关接口开发-未防止redis中关注列表不存在，大量请求打到数据库==&gt; 新增lua脚本（先缓存到redis，再删除取关的人）" />
+    <MESSAGE value="add 取关接口开发-mq发送取关消息" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 取关接口开发-mq发送取关消息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

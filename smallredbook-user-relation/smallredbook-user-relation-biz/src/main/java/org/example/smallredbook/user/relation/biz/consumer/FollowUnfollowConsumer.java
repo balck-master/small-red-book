@@ -5,6 +5,7 @@ import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 
 import org.apache.rocketmq.common.message.Message;
+import org.apache.rocketmq.spring.annotation.ConsumeMode;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.example.framework.common.utils.DateUtils;
@@ -38,7 +39,8 @@ import java.util.Objects;
 @Slf4j
 //不知道发送模式,默认就是 点对点模式=>只有一个服务实例可以消费
 @RocketMQMessageListener(consumerGroup = "xiaohashu_group" ,
-                        topic = MQConstants.TOPIC_FOLLOW_OR_UNFOLLOW)
+                        topic = MQConstants.TOPIC_FOLLOW_OR_UNFOLLOW,
+                        consumeMode = ConsumeMode.ORDERLY)
 public class FollowUnfollowConsumer implements RocketMQListener<Message> {
 
     @Resource
