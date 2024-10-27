@@ -20,6 +20,11 @@
     delete from t_fans
     where id = #{id,jdbcType=BIGINT}
   </delete>
+  <delete id="deleteByUserIdAndFansUserId">
+    delete from t_fans
+    where user_id = #{userId}
+      and fans_user_id = #{fansUserId}
+  </delete>
   <insert id="insert" parameterType="org.example.smallredbook.user.relation.biz.domain.dataobject.FansDO">
     insert into t_fans (id, user_id, fans_user_id, 
       create_time)

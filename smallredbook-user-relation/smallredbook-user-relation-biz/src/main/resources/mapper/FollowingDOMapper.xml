@@ -27,7 +27,11 @@
     delete from t_following
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="org.example.smallredbook.user.relation.biz.domain.dataobject.FollowingDO">
+    <delete id="deleteByUserIdAndFollowingUserId">
+      delete from t_following
+      where user_id = #{userId} and following_user_id = #{unfollowUserId}
+    </delete>
+    <insert id="insert" parameterType="org.example.smallredbook.user.relation.biz.domain.dataobject.FollowingDO">
     insert into t_following (id, user_id, following_user_id, 
       create_time)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{followingUserId,jdbcType=BIGINT}, 
