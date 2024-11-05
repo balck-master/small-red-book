@@ -1,0 +1,2 @@
+org.example.framework.biz.context.config.ContextAutoConfiguration
+org.example.framework.biz.context.config.FeignContextAutoConfiguration

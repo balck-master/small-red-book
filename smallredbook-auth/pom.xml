@@ -22,6 +22,18 @@
 
     <dependencies>
 
+        <!-- Redis -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- Jackson 组件 -->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
+        </dependency>
+
 
         <!-- 服务注册发现 -->
         <dependency>
@@ -39,10 +51,10 @@
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.boot</groupId>-->
-<!--            <artifactId>nacos-config-spring-boot-starter</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.alibaba.boot</groupId>-->
+        <!--            <artifactId>nacos-config-spring-boot-starter</artifactId>-->
+        <!--        </dependency>-->
         <!-- Sa-Token 整合 Redis （使用 jackson 序列化方式） -->
         <dependency>
             <groupId>cn.dev33</groupId>
@@ -75,17 +87,6 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
-        <!-- Redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <!-- Redis 连接池 -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-        </dependency>
 
         <!-- Sa-Token 权限认证 -->
         <dependency>
@@ -93,42 +94,11 @@
             <artifactId>sa-token-spring-boot3-starter</artifactId>
         </dependency>
 
-        <!-- Druid 数据库连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-3-starter</artifactId>
-        </dependency>
-
-        <!-- Mybatis -->
-        <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-        </dependency>
-
-        <!-- MySQL 驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <!--      JackSon 日期格式化-->
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
-            <version>${revision}</version>
-        </dependency>
-
         <!-- 业务接口日志组件 -->
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>smallred-spring-boot-starter-biz-operationlog</artifactId>
             <version>${revision}</version>
-        </dependency>
-
-        <!--  -->
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
         </dependency>
 
         <dependency>
@@ -151,17 +121,33 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>transmittable-thread-local</artifactId>
+<!--            <version>${revision}</version>-->
+        </dependency>
+        <!--        上下文工具类-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-spring-boot-starter-biz-context</artifactId>
+        </dependency>
+
+        <!-- 密码加密 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+        </dependency>
+
+        <!-- 用户RPC层, 供其他服务调用-->
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallredbook-user-api</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- 代码生成器 -->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-            </plugin>
-
-
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

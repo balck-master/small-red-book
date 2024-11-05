@@ -47,13 +47,13 @@ public class VerificationCodeServiceImpl implements VerificationCodeService {
         //不存在，发验证码
         String verificationCode = RandomUtil.randomNumbers(6);
 
-        // 调用第三方短信发送服务
-       threadPoolTaskExecutor.submit(()->{
-           String signName = "阿里云短信测试";
-           String templateCode = "SMS_154950909";
-           String templateParam = String.format("{\"code\":\"%s\"}", verificationCode);
-           aliyunSmsHelper.sendMessage(signName,templateCode,phone,templateParam);
-       });
+        // 调用第三方短信发送服务 todo 短信发送暂时注销
+//       threadPoolTaskExecutor.submit(()->{
+//           String signName = "阿里云短信测试";
+//           String templateCode = "SMS_154950909";
+//           String templateParam = String.format("{\"code\":\"%s\"}", verificationCode);
+//           aliyunSmsHelper.sendMessage(signName,templateCode,phone,templateParam);
+//       });
 
 
 

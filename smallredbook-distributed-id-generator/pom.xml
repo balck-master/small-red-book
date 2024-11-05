@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.example</groupId>
+        <artifactId>small-red-book</artifactId>
+        <version>${revision}</version>
+    </parent>
+<!-- 打包方式-->
+    <packaging>pom</packaging>
+<!-- 子模块管理-->
+    <modules>
+        <module>smallredbook-distributed-id-generator-api</module>
+        <module>smallredbook-distributed-id-generator-biz</module>
+    </modules>
+
+    <artifactId>smallredbook-distributed-id-generator</artifactId>
+    <name>${project.artifactId}</name>
+    <description>分布式ID生成服务</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>

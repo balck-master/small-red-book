@@ -12,6 +12,16 @@
     <description>网关服务（负责路由转发、接口鉴权等功能）</description>
 
     <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>smallred-common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
         <!-- Sa-Token 权限认证，在线文档：https://sa-token.cc -->
         <dependency>
             <groupId>cn.dev33</groupId>
@@ -30,11 +40,6 @@
             <artifactId>commons-pool2</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
-        </dependency>
-
         <!-- 服务发现 -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -51,6 +56,16 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+<!--&lt;!&ndash; aop切面日志&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>smallred-spring-boot-starter-biz-operationlog</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
     </dependencies>
 

@@ -50,11 +50,11 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
         <!--      JackSon 日期格式化-->
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>smallred-spring-boot-starter-jackson</artifactId>
-            <version>${revision}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.example</groupId>-->
+<!--            <artifactId>smallred-spring-boot-starter-jackson</artifactId>-->
+<!--            <version>${revision}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

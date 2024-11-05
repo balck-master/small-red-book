@@ -4,29 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="add Nacos配置中心+服务注册">
-      <change afterPath="$PROJECT_DIR$/logs/auth.2024-07-24-0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/SaTokenConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/auth/StpInterfaceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/XiaohashuGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/smallredbook-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="add 取关接口开发-mq发送取关消息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/src/main/resources/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-auth/target/classes/config/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/test-classes/com/example/xiaoredshu/auth/DruidTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smallredbook-auth/target/test-classes/com/example/xiaoredshu/auth/XiaoredshuAuthApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/MQTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/test/java/org/example/smallredbook/user/relation/biz/MQTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Enum" />
+        <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -45,14 +25,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -67,51 +43,81 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2ijrxsMt3VSpkVzCg6vC9AoFtVl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2khAH1pR0T8OrzTgNP9b1KjIlkI" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
-    <option name="showExcludedFiles" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;JUnit.RedisTemplateConfigTest.redisTemplate.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTemplateConfigTest.testGetValue.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTemplateConfigTest.testHasKey.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ThreadPoolConfigTest.testSubmit.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.CassandraTests.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTests.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTests.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTests.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DruidTest.testEncodePassword (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DruidTest.testEncodePassword.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DruidTest.testSelect (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DruidTest.testSelect.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MQTests.testBatchSendMQ.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.smallredbook-auth [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.small-red-book [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.small-red-book [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallred-oss [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-auth [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-distributed-id-generator [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-kv [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-kv [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-kv [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-note [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-note-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-oss-biz [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-user [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-user [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbook-user-biz [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbookshu-user-relation-biz [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.smallredbookshu-user-relation-biz [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.5:generate].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication .executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuDistributedIdGeneratorBizApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuGatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.XiaohashuKVBizApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuOssBizApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaohashuUserBizApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.XiaohashuUserRelationBizApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.XiaoredshuAuthApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;Spring Boot.XiaoredshuNoteBizApplication (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaoredshuNoteBizApplication (2).executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.XiaoredshuNoteBizApplication.executor&quot;: &quot;Debug&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-gateway/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/javacode/dogXiaoHa/small-red-book/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3505747&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.XiaoredshuAuthApplication.executor&quot;: &quot;Run&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -124,107 +130,46 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-gateway\src\main\resources" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\java\org\example\framework\biz\operationlog\aspect" />
-      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallred-framework\smallred-spring-boot-starter-biz-operationlog\src\main\resources\META-INF.spring" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user-relation\smallredbook-user-relation-biz\src\main\resources" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-user-relation\smallredbook-user-relation-biz\src\main\resources\config" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-note\smallredbook-note-biz\src\main\resources" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\resources" />
+      <recent name="E:\javacode\dogXiaoHa\small-red-book\smallredbook-distributed-id-generator\smallredbook-distributed-id-generator-biz\src\main\java\org\example\distributed\id\generator\biz" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.smallredbook.note.biz" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.xiaoredshu.auth.config" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.smallredbook.user.biz" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.XiaoredshuAuthApplication">
-    <configuration name="RedisTemplateConfigTest.redisTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MQTests.testBatchSendMQ">
+    <configuration name="MQTests.testBatchSendMQ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-user-relation-biz" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
+          <option name="PATTERN" value="org.example.smallredbook.user.relation.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="redisTemplate" />
+      <option name="PACKAGE_NAME" value="org.example.smallredbook.user.relation.biz" />
+      <option name="MAIN_CLASS_NAME" value="org.example.smallredbook.user.relation.biz.MQTests" />
+      <option name="METHOD_NAME" value="testBatchSendMQ" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTemplateConfigTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testDelete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTemplateConfigTest.testGetValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testGetValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTemplateConfigTest.testHasKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.RedisTemplateConfigTest" />
-      <option name="METHOD_NAME" value="testHasKey" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ThreadPoolConfigTest.testSubmit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="smallredbook-auth" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.xiaoredshu.auth.config.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.xiaoredshu.auth.config" />
-      <option name="MAIN_CLASS_NAME" value="com.example.xiaoredshu.auth.config.ThreadPoolConfigTest" />
-      <option name="METHOD_NAME" value="testSubmit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
+    <configuration name="XiaohashuDistributedIdGeneratorBizApplication " type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="smallredbook-distributed-id-generator-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.distributed.id.generator.biz.XiaohashuDistributedIdGeneratorBizApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,20 +181,124 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XiaoredshuAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="XiaohashuKVBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-kv-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.kv.biz.XiaohashuKVBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.kv.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaohashuOssBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-oss-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.oss.biz.XiaohashuOssBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.oss.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaohashuUserBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="smallredbook-user-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.user.biz.XiaohashuUserBizApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaohashuUserRelationBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-user-relation-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.user.relation.biz.XiaohashuUserRelationBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.user.relation.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaoredshuAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="smallredbook-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.xiaoredshu.auth.XiaoredshuAuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XiaoredshuNoteBizApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <envs>
+        <env name="--server.port" value="8087" />
+      </envs>
+      <module name="smallredbook-note-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.note.biz.XiaoredshuNoteBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.note.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaoredshuNoteBizApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <envs>
+        <env name="--server.port" value="8088" />
+      </envs>
+      <module name="smallredbook-note-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.note.biz.XiaoredshuNoteBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.note.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XiaoredshuNoteBizApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="smallredbook-note-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.smallredbook.note.biz.XiaoredshuNoteBizApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.smallredbook.note.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MQTests.testBatchSendMQ" />
+      <item itemvalue="Spring Boot.XiaohashuUserBizApplication" />
+      <item itemvalue="Spring Boot.XiaohashuDistributedIdGeneratorBizApplication " />
+      <item itemvalue="Spring Boot.XiaohashuGatewayApplication" />
+      <item itemvalue="Spring Boot.XiaoredshuAuthApplication" />
+      <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication (1)" />
+      <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication (2)" />
+      <item itemvalue="Spring Boot.XiaohashuUserRelationBizApplication" />
+      <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
+      <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication" />
+      <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ThreadPoolConfigTest.testSubmit" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.testGetValue" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.testHasKey" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.testDelete" />
-        <item itemvalue="JUnit.RedisTemplateConfigTest.redisTemplate" />
+        <item itemvalue="Spring Boot.XiaohashuUserRelationBizApplication" />
+        <item itemvalue="JUnit.MQTests.testBatchSendMQ" />
+        <item itemvalue="Spring Boot.XiaohashuKVBizApplication" />
+        <item itemvalue="Spring Boot.XiaoredshuNoteBizApplication" />
+        <item itemvalue="Spring Boot.XiaohashuOssBizApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -263,159 +312,349 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="1b8bfa82-f537-46b2-8b42-b253c7ebb7a0" name="变更" comment="" />
-      <created>1720015079733</created>
+      <changelist id="0fb9aad3-06d8-4929-b6aa-187ad69cea89" name="更改" comment="" />
+      <created>1723725344074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720015079733</updated>
-      <workItem from="1720015082027" duration="1719000" />
-      <workItem from="1720100087601" duration="212000" />
-      <workItem from="1720100335748" duration="1494000" />
-      <workItem from="1720102051818" duration="4021000" />
-      <workItem from="1720144395955" duration="13933000" />
-      <workItem from="1720272268361" duration="404000" />
-      <workItem from="1720272692225" duration="1284000" />
-      <workItem from="1720346447608" duration="2005000" />
-      <workItem from="1720353390268" duration="5224000" />
-      <workItem from="1720402123169" duration="2121000" />
-      <workItem from="1720406060430" duration="1030000" />
-      <workItem from="1720416470373" duration="2770000" />
-      <workItem from="1720443144421" duration="3798000" />
-      <workItem from="1720489059601" duration="259000" />
-      <workItem from="1720494166325" duration="142000" />
-      <workItem from="1720494326188" duration="1877000" />
-      <workItem from="1720515833222" duration="362000" />
-      <workItem from="1720516210066" duration="1659000" />
-      <workItem from="1720525994553" duration="4381000" />
-      <workItem from="1720600266405" duration="7470000" />
-      <workItem from="1720661529174" duration="599000" />
-      <workItem from="1720663812670" duration="599000" />
-      <workItem from="1720855160235" duration="5098000" />
-      <workItem from="1720875099103" duration="7708000" />
-      <workItem from="1720960403572" duration="8488000" />
-      <workItem from="1721132080753" duration="935000" />
-      <workItem from="1721133346694" duration="12000" />
-      <workItem from="1721133412901" duration="4100000" />
-      <workItem from="1721179914888" duration="51000" />
-      <workItem from="1721179990436" duration="461000" />
-      <workItem from="1721186803201" duration="9730000" />
-      <workItem from="1721207608275" duration="598000" />
-      <workItem from="1721305410232" duration="4204000" />
-      <workItem from="1721352166490" duration="597000" />
-      <workItem from="1721454673385" duration="11599000" />
-      <workItem from="1721536181525" duration="14707000" />
-      <workItem from="1721611072739" duration="1056000" />
-      <workItem from="1721627731662" duration="4720000" />
-      <workItem from="1721641200992" duration="693000" />
-      <workItem from="1721651047552" duration="4164000" />
-      <workItem from="1721655263211" duration="439000" />
-      <workItem from="1721698962423" duration="6324000" />
-      <workItem from="1721784286345" duration="7327000" />
+      <updated>1723725344074</updated>
+      <workItem from="1723725345245" duration="449000" />
+      <workItem from="1723725813953" duration="3120000" />
+      <workItem from="1723728954081" duration="1937000" />
+      <workItem from="1723771193193" duration="8327000" />
+      <workItem from="1723788954464" duration="1800000" />
+      <workItem from="1724031487094" duration="495000" />
+      <workItem from="1724031999875" duration="1759000" />
+      <workItem from="1724033799091" duration="216000" />
+      <workItem from="1724034045551" duration="1659000" />
+      <workItem from="1724036014271" duration="8957000" />
+      <workItem from="1724051594045" duration="9851000" />
+      <workItem from="1724117102943" duration="29000" />
+      <workItem from="1724663688327" duration="2344000" />
+      <workItem from="1725331882097" duration="3300000" />
+      <workItem from="1725359173109" duration="16553000" />
+      <workItem from="1725444819549" duration="26229000" />
+      <workItem from="1725547118468" duration="1190000" />
+      <workItem from="1725590489906" duration="17149000" />
+      <workItem from="1725685670443" duration="2600000" />
+      <workItem from="1725689258732" duration="1433000" />
+      <workItem from="1725691125005" duration="13409000" />
+      <workItem from="1725765747373" duration="5523000" />
+      <workItem from="1725875508636" duration="617000" />
+      <workItem from="1725949661608" duration="13547000" />
+      <workItem from="1725971789668" duration="30013000" />
+      <workItem from="1726102468227" duration="21097000" />
+      <workItem from="1726212447913" duration="1909000" />
+      <workItem from="1726316974627" duration="1882000" />
+      <workItem from="1726630254222" duration="2872000" />
+      <workItem from="1726821009824" duration="2487000" />
+      <workItem from="1726882782852" duration="1221000" />
+      <workItem from="1726921315217" duration="2349000" />
+      <workItem from="1728816231071" duration="2174000" />
+      <workItem from="1728908754399" duration="834000" />
+      <workItem from="1728913761301" duration="38000" />
+      <workItem from="1729517717981" duration="2469000" />
+      <workItem from="1729565638979" duration="4632000" />
+      <workItem from="1729659508746" duration="1037000" />
+      <workItem from="1729825510350" duration="9068000" />
+      <workItem from="1729855069067" duration="16625000" />
+      <workItem from="1730004893162" duration="2568000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1720106328674</created>
+    <task id="LOCAL-00001" summary="add 代码重构: 用户注册功能=&gt; auth模块远程调用user模块的register接口（openFeign）">
+      <option name="closed" value="true" />
+      <created>1724057148133</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1720106328674</updated>
+      <updated>1724057148133</updated>
     </task>
-    <task id="LOCAL-00002" summary="add MyBatis+Druid连接池(含数据库解密)">
-      <created>1720354731317</created>
+    <task id="LOCAL-00002" summary="add 手机号查询用户信息接口重构(通过openFeign)">
+      <option name="closed" value="true" />
+      <created>1724061259909</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1720354731317</updated>
+      <updated>1724061259909</updated>
     </task>
-    <task id="LOCAL-00003" summary="add MyBatis代码生成器+Jackson支持LocalDataTime日期API">
-      <created>1720433245801</created>
+    <task id="LOCAL-00003" summary="add 密码更新接口 代码重构">
+      <option name="closed" value="true" />
+      <created>1725270928839</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1720433245801</updated>
+      <updated>1725270928840</updated>
     </task>
-    <task id="LOCAL-00004" summary="add logback日志框架">
-      <created>1720444895605</created>
+    <task id="LOCAL-00004" summary="add KV 键值存储微服务搭建">
+      <option name="closed" value="true" />
+      <created>1725363390740</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1720444895605</updated>
+      <updated>1725363390740</updated>
     </task>
-    <task id="LOCAL-00005" summary="add 插件flatten-maven-plugin，子模块单独打包">
-      <created>1720447370883</created>
+    <task id="LOCAL-00005" summary="add 笔记内容新增 接口开发">
+      <option name="closed" value="true" />
+      <created>1725371687185</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1720447370883</updated>
+      <updated>1725371687185</updated>
     </task>
-    <task id="LOCAL-00006" summary="add 全局参数校验、接口参数校验">
+    <task id="LOCAL-00006" summary="add 笔记内容查询 接口开发">
       <option name="closed" value="true" />
-      <created>1720605248267</created>
+      <created>1725427086171</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1720605248267</updated>
+      <updated>1725427086171</updated>
     </task>
-    <task id="LOCAL-00007" summary="add 全局参数校验、接口参数校验">
+    <task id="LOCAL-00007" summary="add 笔记内容删除 接口开发">
       <option name="closed" value="true" />
-      <created>1720606380684</created>
+      <created>1725431892067</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1720606380684</updated>
+      <updated>1725431892067</updated>
     </task>
-    <task id="LOCAL-00008" summary="add 获取手机验证码接口+redisTemplate">
+    <task id="LOCAL-00008" summary="add 分布式id微服务搭建">
       <option name="closed" value="true" />
-      <created>1720877513481</created>
+      <created>1725508126978</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1720877513481</updated>
+      <updated>1725508126978</updated>
     </task>
-    <task id="LOCAL-00009" summary="add 自定义线程池">
+    <task id="LOCAL-00009" summary="add 分布式id生成服务 整合美团leaf源码">
       <option name="closed" value="true" />
-      <created>1720879098363</created>
+      <created>1725517298140</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1720879098363</updated>
+      <updated>1725517298140</updated>
     </task>
-    <task id="LOCAL-00010" summary="add 自定义@PhoneNumber手机号校验注解+SaToken整合redis（持久化登录信息）">
+    <task id="LOCAL-00010" summary="add 调用分布式id 生成用户id、小红书id&#10;add 修复zookeeper的bug">
       <option name="closed" value="true" />
-      <created>1721097902023</created>
+      <created>1725611904907</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1721097902023</updated>
+      <updated>1725611904907</updated>
     </task>
-    <task id="LOCAL-00011" summary="add 用户登录注册功能">
+    <task id="LOCAL-00011" summary="add Bug修复：Gateway 网关SaToken第一次获取loginId为空问题">
       <option name="closed" value="true" />
-      <created>1721314132982</created>
+      <created>1725612980427</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1721314132982</updated>
+      <updated>1725612980427</updated>
     </task>
-    <task id="LOCAL-00012" summary="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）">
+    <task id="LOCAL-00012" summary="add 笔记微服务搭建">
       <option name="closed" value="true" />
-      <created>1721551890129</created>
+      <created>1725628351736</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1721551890129</updated>
+      <updated>1725628351736</updated>
     </task>
-    <task id="LOCAL-00013" summary="add Nacos配置中心+服务注册">
+    <task id="LOCAL-00013" summary="add 笔记发布接口开发">
       <option name="closed" value="true" />
-      <created>1721559081601</created>
+      <created>1725801457204</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1721559081601</updated>
+      <updated>1725801457204</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add 添加dev文件">
+      <option name="closed" value="true" />
+      <created>1725801638086</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725801638086</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add 根据用户id查询用户信息接口开发">
+      <option name="closed" value="true" />
+      <created>1725952463831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725952463831</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数">
+      <option name="closed" value="true" />
+      <created>1725959754193</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1725959754193</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数">
+      <option name="closed" value="true" />
+      <created>1725960729596</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1725960729596</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add 新增Caffeine 二级缓存">
+      <option name="closed" value="true" />
+      <created>1725970368893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1725970368893</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add 笔记详情接口开发">
+      <option name="closed" value="true" />
+      <created>1726041418256</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726041418256</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透">
+      <option name="closed" value="true" />
+      <created>1726045045465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726045045465</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add 使用caffeine增加查看笔记详情接口响应速度">
+      <option name="closed" value="true" />
+      <created>1726057145432</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1726057145432</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add 笔记更新接口开发">
+      <option name="closed" value="true" />
+      <created>1726064489144</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1726064489144</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性">
+      <option name="closed" value="true" />
+      <created>1726124156973</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1726124156973</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add 笔记删除接口开发">
+      <option name="closed" value="true" />
+      <created>1726129757237</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1726129757237</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add 修改笔记成 仅自己可见接口开发">
+      <option name="closed" value="true" />
+      <created>1726143684381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1726143684381</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add 笔记置顶/笔记取消置顶 接口开发">
+      <option name="closed" value="true" />
+      <created>1726146153983</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1726146153983</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add 用户关系服务搭建">
+      <option name="closed" value="true" />
+      <created>1729603920046</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1729603920046</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add 用户关注接口设计1">
+      <option name="closed" value="true" />
+      <created>1729846676268</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1729846676268</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add 用户关注接口设计2">
+      <option name="closed" value="true" />
+      <created>1729851257049</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1729851257049</updated>
+    </task>
+    <task id="LOCAL-00030" summary="add 发送携带tag标签的MQ消息+消费者开发">
+      <option name="closed" value="true" />
+      <created>1729923539177</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1729923539177</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add Guava令牌桶实现MQ流量削峰">
+      <option name="closed" value="true" />
+      <created>1729934262446</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934262446</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add Bug 修复：笔记更新、删除、仅对自己可见  权限校验问题">
+      <option name="closed" value="true" />
+      <created>1729934439585</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1729934439585</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add 更新 Redis 中被关注用户的 ZSet 粉丝列表">
+      <option name="closed" value="true" />
+      <created>1729935723602</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1729935723602</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add 取关接口开发">
+      <option name="closed" value="true" />
+      <created>1729951032854</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1729951032854</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add 取关接口开发-未防止redis中关注列表不存在，大量请求打到数据库==&gt; 新增lua脚本（先缓存到redis，再删除取关的人）">
+      <option name="closed" value="true" />
+      <created>1729954916363</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1729954916363</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add 取关接口开发-mq发送取关消息">
+      <option name="closed" value="true" />
+      <created>1730011234061</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1730011234061</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.lua" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -429,48 +668,175 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="add MyBatis+Druid连接池(含数据库解密)" />
-    <MESSAGE value="add MyBatis代码生成器+Jackson支持LocalDataTime日期API" />
-    <MESSAGE value="add logback日志框架" />
-    <MESSAGE value="add 插件flatten-maven-plugin，子模块单独打包" />
-    <MESSAGE value="add 全局参数校验、接口参数校验" />
-    <MESSAGE value="add 获取手机验证码接口+redisTemplate" />
-    <MESSAGE value="add 自定义线程池" />
-    <MESSAGE value="add 自定义@PhoneNumber手机号校验注解+SaToken整合redis（持久化登录信息）" />
-    <MESSAGE value="add 用户登录注册功能" />
-    <MESSAGE value="add 编程式事务+同步角色-权限数据到redis + 维护共享资源一致性（setnx）" />
-    <MESSAGE value="add Nacos配置中心+服务注册" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Nacos配置中心+服务注册" />
+    <MESSAGE value="add 笔记发布接口开发" />
+    <MESSAGE value="add 添加dev文件" />
+    <MESSAGE value="add 根据用户id查询用户信息接口开发" />
+    <MESSAGE value="add 对根据用户id查询信息接口 增加redis缓存，并增加防止缓存穿透的随机数" />
+    <MESSAGE value="add 新增Caffeine 二级缓存" />
+    <MESSAGE value="add 笔记详情接口开发" />
+    <MESSAGE value="add 过滤器bug修复" />
+    <MESSAGE value="add 使用redis增加查看笔记详情接口响应速度 + 防止缓存穿透" />
+    <MESSAGE value="add 使用caffeine增加查看笔记详情接口响应速度" />
+    <MESSAGE value="add 使用 CompletableFuture 优化下游服务" />
+    <MESSAGE value="add 笔记更新接口开发" />
+    <MESSAGE value="add 增加RocketMQ广播消息删除本地缓存，实现缓存一致性" />
+    <MESSAGE value="add 笔记删除接口开发" />
+    <MESSAGE value="add 修改笔记成 仅自己可见接口开发" />
+    <MESSAGE value="add 笔记置顶/笔记取消置顶 接口开发" />
+    <MESSAGE value="add 用户关系服务搭建" />
+    <MESSAGE value="add 用户关注接口设计1" />
+    <MESSAGE value="add 用户关注接口设计2" />
+    <MESSAGE value="add 发送携带tag标签的MQ消息+消费者开发" />
+    <MESSAGE value="add Guava令牌桶实现MQ流量削峰" />
+    <MESSAGE value="add Bug 修复：笔记更新、删除、仅对自己可见  权限校验问题" />
+    <MESSAGE value="add 更新 Redis 中被关注用户的 ZSet 粉丝列表" />
+    <MESSAGE value="add 取关接口开发" />
+    <MESSAGE value="add 取关接口开发-未防止redis中关注列表不存在，大量请求打到数据库==&gt; 新增lua脚本（先缓存到redis，再删除取关的人）" />
+    <MESSAGE value="add 取关接口开发-mq发送取关消息" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 取关接口开发-mq发送取关消息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-operationlog/src/main/java/org/example/framework/biz/operationlog/aspect/ApiOperationLogAspect.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/AuthServiceImpl.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallred-framework/smallred-common/src/main/java/org/example/response/Response.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/controller/UserController.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/UserServiceImpl.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/alarm/impl/MailAlarmHelper.java</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/holder/LoginUserContextHolder.java</url>
+          <line>25</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/AuthServiceImpl.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/rpc/DistributedIdGeneratorRpcService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/smallredbook/distributed/id/generator/biz/controller/LeafController.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/smallredbook/distributed/id/generator/biz/controller/LeafController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-distributed-id-generator/smallredbook-distributed-id-generator-biz/src/main/java/org/example/smallredbook/distributed/id/generator/biz/controller/LeafController.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-user/smallredbook-user-biz/src/main/java/org/example/smallredbook/user/biz/service/impl/UserServiceImpl.java</url>
+          <line>199</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-auth/src/main/java/com/example/xiaoredshu/auth/service/impl/AuthServiceImpl.java</url>
+          <line>153</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/exception/GlobalExceptionHandler.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/rpc/KeyValueRpcService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-gateway/src/main/java/com/example/xiaoredshu/gateway/filter/AddUserId2HeaderFilter.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallred-framework/smallred-spring-boot-starter-biz-context/src/main/java/org/example/framework/biz/context/filter/HeaderUserId2ContextFilter.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/controller/NoteController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>298</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>318</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>382</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/consumer/DeleteNoteLocalCacheConsumer.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>396</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>429</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>418</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-note/smallredbook-note-biz/src/main/java/org/example/smallredbook/note/biz/service/impl/NoteServiceImpl.java</url>
+          <line>462</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/smallredbook-user-relation/smallredbook-user-relation-biz/src/main/java/org/example/smallredbook/user/relation/biz/service/impl/RelationServiceImpl.java</url>
+          <line>223</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

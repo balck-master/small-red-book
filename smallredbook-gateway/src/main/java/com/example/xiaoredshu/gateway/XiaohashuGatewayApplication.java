@@ -1,5 +1,6 @@
 package com.example.xiaoredshu.gateway;
 
+import cn.dev33.satoken.SaManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,7 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date: 2024/7/22 14:59
  */
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.example.xiaoredshu.gateway.auth","com.example.xiaoredshu.gateway.config","com.example.xiaoredshu.gateway.filter"})
+
 public class XiaohashuGatewayApplication {
 
     public static void main(String[] args) {

@@ -1,0 +1,5 @@
+spring:
+  cassandra:
+    keyspace-name: xiaohashu
+    contact-points: 106.54.241.247
+    port: 9042
